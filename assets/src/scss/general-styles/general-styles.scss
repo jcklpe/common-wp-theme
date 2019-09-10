@@ -1,0 +1,198 @@
+//- 2. GENERAL STYLES
+
+header,
+body,
+p {
+  font-family: 'ManifoldDSA-Medium';
+  font-weight: 400;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+  font-family: 'ManifoldDSA-ExtraBold', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small {
+  opacity: 0.85
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.page blockquote {
+  font-size: 1.5rem;
+  color: #231F20;
+  border-left: 0px solid #ec1f27;
+  padding: 25px 0 25px 0;
+}
+
+.page blockquote p {
+  font-size: 1.5rem;
+  color: #231F20;
+  padding: 0;
+}
+
+img.bullet-icon {
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
+  float: left;
+  margin-top: 0.5em;
+}
+
+.dropdown.menu>li.opens-right>.is-dropdown-submenu {
+  width: 100%;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+  border-color: #ec1f27 transparent transparent;
+}
+
+.calendar-category-menu .menu.vertical>li {
+  margin: 0;
+}
+
+.calendar-category-menu .js-dropdown-active,
+ul.dropdown.menu.calendar-category-menu>li:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+ul.dropdown.menu.calendar-category-menu>li>a:hover {
+  background-color: transparent;
+  color: #ec1f27;
+}
+
+.calendar-category-menu>li {
+  background-color: #fefefe;
+  width: 100%;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.calendar-category-menu>li.is-active {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.tribe-events-category-new-member .tribe-events-month-event-title a:after {
+  content: "🌹";
+}
+
+img.icon-list {
+  height: 3rem;
+  width: auto;
+  display: inline-block;
+}
+
+.page blockquote:before {
+  content: '';
+  width: 50%;
+  top: 25px;
+  border-top: 8px solid #231F20;
+}
+
+.page blockquote:after {
+  content: '';
+  width: 50%;
+  bottom: 25px;
+  border-bottom: 8px solid #231F20;
+}
+
+.sdsa-page-hero {
+  background-attachment: initial;
+  background-size: 1rem, 100%;
+  background-repeat: repeat, no-repeat;
+  padding: 1rem;
+  border-radius: 1rem;
+  min-height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: left top, center 25%;
+}
+
+.sdsa-page-hero .page-title {
+  color: white;
+  margin: 1rem;
+  font-size: 4rem;
+}
+
+.archive.category .post .entry-content p,
+.archive.category .post .entry-content h1,
+.archive.category .post .entry-content h2,
+.archive.category .post .entry-content h3,
+.archive.category .post .entry-content h4,
+.archive.category .post .entry-content h5 {
+  margin-bottom: 1rem;
+  font-size: 100%;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  font-family: 'ManifoldDSA-Medium', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.archive-header-card {
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.archive-card.bdr-stripe-red {
+  padding: 24px 24px 12px 24px;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.archive-card .row.archive-item-image {
+  margin: 0 -13px 1rem -13px;
+}
+
+.archive #content {
+  background-color: #ddd;
+}
+
+.archive #content #inner-content {
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.archive-item-image a {
+  display: block;
+  min-height: 12rem;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home .page-title {
+  display: none;
+}
+
+.dsa-main {
+  padding-bottom: 2rem;
+}
+
+.icon-bullet {
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
+  float: left;
+  margin-top: 0.5em;
+}
+
+.dsa-main-logo {
+  float: left;
+  margin: 1rem 1rem 0 0;
+}

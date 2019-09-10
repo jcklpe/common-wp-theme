@@ -1,0 +1,119 @@
+/******************************************************************
+24. PRINT STYLESHEET
+******************************************************************/
+@media print {
+    * {
+      background: transparent !important;
+      color: black !important;
+      text-shadow: none !important;
+      -webkit-filter: none !important;
+      filter: none !important;
+      -ms-filter: none !important;
+    }
+
+    a,
+    a:visited {
+      color: #444 !important;
+      text-decoration: underline;
+    }
+
+    a:after,
+    a:visited:after {
+      content: " ("attr(href) ")";
+    }
+
+    a abbr[title]:after,
+    a:visited abbr[title]:after {
+      content: " ("attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+      content: "";
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    thead {
+      display: table-header-group;
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    @page {
+      margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+
+    .sidebar,
+    .page-navigation,
+    .wp-prev-next,
+    .respond-form,
+    nav {
+      display: none;
+    }
+
+    a.tribe-events-gmap,
+    hr,
+    .tribe-events-single-section.tribe-events-event-meta a:after,
+    .tribe-events-meta-group .tribe-events-event-categories-label,
+    .tribe-events-meta-group .tribe-events-event-categories,
+    .tribe-events-start-date-label,
+    .tribe-events-start-time-label,
+    .tribe-country-name,
+    .tribe-region.tribe-events-abbr:after,
+    .tribe-events-before-html,
+    .tribe-events-abbr.tribe-events-start-date:after {
+      display: none;
+    }
+
+    .tribe-events-meta-group.tribe-events-meta-group-details,
+    .tribe-events-meta-group.tribe-events-meta-group-venue {
+      width: 50%;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .tribe-events-meta-group .tribe-events-single-section-title {
+      font-size: 1.25rem;
+      color: #ec1f27;
+    }
+
+    .tribe-events-single-event-description.tribe-events-content {
+      word-wrap: break-word;
+    }
+
+    .tribe-events-meta-group.tribe-events-meta-group-gmap,
+    .tribe-events-venue-map,
+    .single-tribe_events .tribe-events-event-meta,
+    .tribe-events-meta-group .tribe-events-single-section-title,
+    #tribe-events-content,
+    .footer.padding-top,
+    .padding-top {
+      margin: 0;
+      padding: 0;
+    }
+  }

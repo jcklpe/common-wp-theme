@@ -1,0 +1,29 @@
+/*********************
+19. TABS
+*********************/
+
+.tabs {
+    background-color: #ec1f27;
+    border-bottom: 0;
+  }
+
+  .tabs-title>a {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .tabs-title>a:focus,
+  .tabs-title>a[aria-selected=true] {
+    color: black;
+    background: white;
+    box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .tabs-title>a:hover {
+    color: white;
+    background: black;
+  }
+
+  .tabs-panel {
+    box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2);
+  }

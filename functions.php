@@ -1,27 +1,27 @@
 <?php
 // Theme support options
-require_once(get_template_directory().'/assets/functions/theme-support.php'); 
+include(get_template_directory().'/assets/php/functions/theme-support.php');
 
 // WP Head and other cleanup functions
-require_once(get_template_directory().'/assets/functions/cleanup.php'); 
+require_once(get_template_directory().'/assets/php/functions/cleanup.php');
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/assets/functions/enqueue-scripts.php'); 
+require_once(get_template_directory().'/assets/php/functions/enqueue-scripts.php');
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/assets/functions/menu.php'); 
+require_once(get_template_directory().'/assets/php/functions/menu.php');
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/assets/functions/sidebar.php'); 
+require_once(get_template_directory().'/assets/php/functions/sidebar.php');
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/assets/functions/comments.php'); 
+require_once(get_template_directory().'/assets/php/functions/comments.php');
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/assets/functions/page-navi.php');
+require_once(get_template_directory().'/assets/php/functions/page-navi.php');
 
 // Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php'); 
+require_once(get_template_directory().'/assets/translation/translation.php');
 
 
 /*****
@@ -35,7 +35,7 @@ add_action( 'save_post', 'myplugin_save_postdata' );
 /* Adds a box to the main column on the Post and Page edit screens */
 function myplugin_add_custom_box() {
   global $post;
-    if ( 'template-homepage-2017.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+    if ( 'homepage.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
           add_meta_box( 'wp_editor_test_8_box', 'Email Signup Box (use Mailchimp embed code)', 'wp_editor_meta_box_8' );
           add_meta_box( 'wp_editor_test_11_box', 'DSA Alert Box', 'wp_editor_meta_box_11' );
     }
@@ -64,9 +64,9 @@ function wp_editor_meta_box_11( $post ) {
 /* When the post is saved, saves our custom data */
 function myplugin_save_postdata( $post_id ) {
 
-  // verify if this is an auto save routine. 
+  // verify if this is an auto save routine.
   // If it is our form has not been submitted, so we dont want to do anything
-  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
       return;
 
   // verify this came from the our screen and with proper authorization,
@@ -78,7 +78,7 @@ function myplugin_save_postdata( $post_id ) {
   if ( ( isset ( $_POST['post_type'] ) ) && ( 'page' == $_POST['post_type'] )  ) {
     if ( ! current_user_can( 'edit_page', $post_id ) ) {
       return;
-    }    
+    }
   }
   else {
     if ( ! current_user_can( 'edit_post', $post_id ) ) {
@@ -87,7 +87,7 @@ function myplugin_save_postdata( $post_id ) {
   }
 
   // OK, we're authenticated: we need to find and save the data
-  
+
   if ( isset ( $_POST['_email_signup'] ) ) {
     update_post_meta( $post_id, '_email_signup', $_POST['_email_signup'] );
   }
@@ -117,19 +117,19 @@ add_action( 'after_setup_theme', 'tribe_attachment_404_fix' );
 
 
 // Remove 4.2 Emoji Support
-// require_once(get_template_directory().'/assets/functions/disable-emoji.php'); 
+// require_once(get_template_directory().'/assets/php/functions/disable-emoji.php');
 
 // Adds site styles to the WordPress editor
-//require_once(get_template_directory().'/assets/functions/editor-styles.php'); 
+//require_once(get_template_directory().'/assets/php/functions/editor-styles.php');
 
 // Related post function - no need to rely on plugins
-// require_once(get_template_directory().'/assets/functions/related-posts.php'); 
+// require_once(get_template_directory().'/assets/php/functions/related-posts.php');
 
 // Use this as a template for custom post types
-// require_once(get_template_directory().'/assets/functions/custom-post-type.php');
+// require_once(get_template_directory().'/assets/php/functions/custom-post-type.php');
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/functions/login.php'); 
+// require_once(get_template_directory().'/assets/php/functions/login.php');
 
 // Customize the WordPress admin
-// require_once(get_template_directory().'/assets/functions/admin.php'); 
+// require_once(get_template_directory().'/assets/php/functions/admin.php');

@@ -1,0 +1,23 @@
+
+/*********************
+10. IMAGE GALLERY STYLES
+*********************/
+.gallery-columns-2 .gallery-item {
+    width: 45%;
+    padding: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f7f7f7;
+    border: 1px solid #d7d7d7;
+  }
+
+  .gallery-columns-3 .gallery-item {
+    width: 27.5%;
+    padding: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f7f7f7;
+    border: 1px solid #d7d7d7;
+  }

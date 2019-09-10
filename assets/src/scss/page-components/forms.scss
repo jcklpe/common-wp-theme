@@ -1,0 +1,51 @@
+/*********************
+16. FORM STYLES
+*********************/
+[type=phone] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    border-radius: 0;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px hsla(0, 0%, 4%, .1);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0a0a0a;
+    -webkit-transition: border-color .25s ease-in-out, -webkit-box-shadow .5s;
+    transition: box-shadow .5s, border-color .25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #page #mc_embed_signup .button {
+    background-color: #231F20 !important;
+    color: #fff;
+    border-radius: 2em;
+    transition: all 150ms;
+    text-transform: uppercase;
+    font-family: 'ManifoldDSA-ExtraBold', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  #page #mc_embed_signup .button.dark:hover {
+    background-color: #231F20;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  input[type="submit"] {
+    background-color: #EC1F27;
+    padding: 1rem;
+    color: white;
+    border: 0px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: black;
+  }

@@ -1,0 +1,55 @@
+/*********************
+20. Accordion
+*********************/
+.accordion-title {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color: #ec1f27;
+    border-top: 0.15rem solid #0a0a0a;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    transition: background .35s ease-in-out;
+    padding: 0.5rem 1rem;
+  }
+
+  .accordion-title:hover,
+  .accordion-title:active,
+  .accordion-title:focus {
+    color: #fff;
+    background-color: #0a0a0a;
+  }
+
+  .accordion-title:before {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    margin-top: 0;
+    top: inherit;
+  }
+
+  :last-child:not(.is-active)>.accordion-title,
+  :last-child>.accordion-content:last-child {
+    border-bottom: 0.1rem solid #0a0a0a;
+  }
+
+  .accordion-title img {
+    height: 4rem;
+    width: auto;
+    margin-right: 0.5rem;
+  }
+
+  .accordion-content {
+    border-top: 0.15rem solid #0a0a0a;
+    border-left: 0.15rem solid #0a0a0a;
+    border-right: 0.15rem solid #0a0a0a;
+    border-bottom: 0px solid transparent;
+  }
+
+  .accordion-content ol {
+    padding-left: 2.5rem;
+    border-left: 0.1rem solid #0a0a0a;
+  }
+
+  .accordion-content ol li {
+    padding-left: 0.75rem;
+  }

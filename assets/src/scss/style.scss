@@ -1,0 +1,36 @@
+// general styles that apply on a broad based stylistic level that isn't contained to just one component or piece of UI. Type and palette hiearchies should go here.
+//- General Styles
+@import 'general-styles/fonts';
+@import 'general-styles/full-page';
+@import 'general-styles/general-styles';
+@import 'general-styles/h1-h6-styles';
+@import 'general-styles/link-styles';
+@import 'general-styles/page-navi';
+@import 'general-styles/plugins';
+@import 'general-styles/post-and-content';
+@import 'general-styles/post-format';
+@import 'general-styles/print-styles';
+
+// components which are generally self contained and exist outside of normal post content context. These are largely brought over from the original theme project this was forked from. Eventually as many of these page components should be relegated to being gutenberg blocks, instead of being called via a template.
+//- Page Components
+@import 'page-components/accordion';
+@import 'page-components/buttons';
+@import 'page-components/comments';
+@import 'page-components/footer';
+@import 'page-components/forms';
+@import 'page-components/header';
+@import 'page-components/image-gallery';
+@import 'page-components/menu-and-nav';
+@import 'page-components/respond-form';
+@import 'page-components/sidebar';
+@import 'page-components/tables';
+@import 'page-components/tabs';
+
+// full on page wide template
+//- Page Templates
+@import 'page-templates/2017-front-page';
+@import 'page-templates/2019-front-page';
+
+
+// as much styling should be contained to individual component level stylings defined and used through gutenberg blocks content editor, so as to ensure maximum usability for not devs.
+//- Blocks

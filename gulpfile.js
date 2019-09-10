@@ -17,7 +17,7 @@ var gulp = require("gulp"),
 
 //TODO: Fix build process to only create necessary css
 // Compile Sass, Autoprefix and minify
-gulp.task("styles", function() {
+gulp.task("scss", function() {
   return gulp
     .src("./assets/src/scss/*.scss")
     .pipe(
@@ -139,7 +139,7 @@ gulp.task("browsersync", function() {
     proxy: "http://localhost/"
   });
 
-  gulp.watch("./assets/scss/**/*.scss", ["styles"]);
+  gulp.watch("./assets/scss/**/*.scss", ["scss"]);
   gulp
     .watch("./assets/js/scripts/*.js", ["site-js"])
     .on("change", browserSync.reload);
@@ -148,7 +148,7 @@ gulp.task("browsersync", function() {
 // Watch files for changes (without Browser-Sync)
 gulp.task("watch", function() {
   // Watch .scss files
-  gulp.watch("./assets/src/scss/**/*.scss", ["styles"]);
+  gulp.watch("./assets/src/scss/**/*.scss", ["scss"]);
 
   // Watch site-js files
   gulp.watch("./assets/build/js/scripts/*.js", ["site-js"]);
@@ -159,5 +159,5 @@ gulp.task("watch", function() {
 
 // Run styles, site-js and foundation-js
 gulp.task("default", function() {
-  gulp.start("styles", "site-js", "foundation-js");
+  gulp.start("scss", "site-js", "foundation-js");
 });

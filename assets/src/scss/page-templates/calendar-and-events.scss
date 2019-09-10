@@ -1,0 +1,53 @@
+/*********************
+22. CALENDAR via THEEVENTSCALENDAR PLUGIN
+*********************/
+
+table.tribe-events-calendar tbody tr:nth-child(even) {
+    background-color: #fefefe;
+  }
+
+  .tribe-events-calendar div[id*=tribe-events-daynum-],
+  .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+    font-size: 1.35rem;
+    color: #333;
+    text-align: right;
+    background: transparent;
+  }
+
+  .events-archive.events-gridview #tribe-events-content table .type-tribe_events {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0;
+  }
+
+  .events-archive.events-gridview #tribe-events-content table .type-tribe_events:last-child {
+    border-bottom: 0px solid transparent;
+  }
+
+  .events-archive.events-gridview #tribe-events-content table .type-tribe_events a.url {
+    display: block;
+    width: 100%;
+  }
+
+  #tribe-events-content .tribe-events-calendar div[id*=tribe-events-event-] h3.tribe-events-month-event-title {
+    font-family: 'ManifoldDSA-Medium', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.9rem;
+  }
+
+  @media print,
+  screen and (min-width: 40em) {
+    .tribe-events-tooltip h3 {
+      font-size: 1rem;
+      padding: 0 0.25rem;
+      font-weight: bolder;
+    }
+  }
+
+  .tribe-events-tooltip .tribe-events-event-body {
+    font-size: 0.8rem;
+  }
+
+  #tribe-events-pg-template,
+  .tribe-events-pg-template {
+    margin: 4rem auto;
+  }

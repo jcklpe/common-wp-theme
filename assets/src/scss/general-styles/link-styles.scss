@@ -1,0 +1,21 @@
+//- Link Styles
+a:link,
+a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #ec1f27;
+}
+
+a:focus,
+a:hover {
+  color: #EC1F27;
+  background-color: rgba(236, 31, 39, 0.1);
+}
