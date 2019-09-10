@@ -1,11 +1,20 @@
-//- 2. GENERAL STYLES
+//- General Styles Master Branch Version
+header,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.25;
+}
 
 header,
 body,
 p {
-  font-family: 'ManifoldDSA-Medium';
   font-weight: 400;
-
 }
 
 h1,
@@ -15,7 +24,6 @@ h4,
 h5,
 b,
 strong {
-  font-family: 'ManifoldDSA-ExtraBold', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 600;
 }
 
@@ -26,6 +34,8 @@ h4 small,
 h5 small {
   opacity: 0.85
 }
+
+
 
 .txt-center {
   text-align: center;
@@ -72,6 +82,10 @@ ul.dropdown.menu.calendar-category-menu>li:hover {
 ul.dropdown.menu.calendar-category-menu>li>a:hover {
   background-color: transparent;
   color: #ec1f27;
+}
+
+.dropdown.menu>li.is-active>a {
+  color: #fff;
 }
 
 .calendar-category-menu>li {
@@ -128,6 +142,19 @@ img.icon-list {
   font-size: 4rem;
 }
 
+.archive #content {
+  background-color: #EC1f27;
+}
+
+.archive.post-type-archive-tribe_events #content {
+  background-color: #fff;
+}
+
+.archive.post-type-archive-tribe_events .tribe-events-tooltip p {
+  font-size: 1rem;
+}
+
+
 .archive.category .post .entry-content p,
 .archive.category .post .entry-content h1,
 .archive.category .post .entry-content h2,
@@ -138,20 +165,27 @@ img.icon-list {
   font-size: 100%;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  font-family: 'ManifoldDSA-Medium', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.archive-header-card {
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  margin-bottom: 2rem;
-  background-color: white;
-  padding: 2rem;
-}
+// this is from the original
+// .archive-header-card {
+  //   box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  //   margin-bottom: 2rem;
+  //   background-color: white;
+  //   padding: 2rem;
+  // }
 
-.archive-card.bdr-stripe-red {
-  padding: 24px 24px 12px 24px;
-  background-color: white;
-  margin-bottom: 2rem;
+  // .archive-card.bdr-stripe-red {
+  //   padding: 24px 24px 12px 24px;
+  //   background-color: white;
+  //   margin-bottom: 2rem;
+  // }
+
+// this is from the copy
+.archive-header,
+.archive-header .page-title {
+  color: white;
 }
 
 .archive-card .row.archive-item-image {

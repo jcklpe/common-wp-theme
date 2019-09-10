@@ -1,9 +1,15 @@
 /*********************
-8. POSTS & CONTENT STYLES
+8. POSTS & CONTENT STYLES copy
 *********************/
 #content #inner-content {
     padding: 1rem 0rem;
 }
+
+#content .entry-content figure {
+    margin: 2rem 0;
+}
+
+//this is from master
 
 #content #inner-content .article-header h1,
 #content #inner-content h2 {
@@ -119,7 +125,7 @@
     border-radius: 2em;
     font-size: 1rem;
     transition: all 150ms;
-    font-family: 'ManifoldDSA-ExtraBold', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     text-transform: capitalize;
     padding: 0.5rem 1rem;
     line-height: 1;

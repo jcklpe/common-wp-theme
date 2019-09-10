@@ -3,58 +3,58 @@
 *********************/
 
 .post-template-single2018-php #content #inner-content header {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    border-bottom: 1px solid #efefef;
-    margin-bottom: 2rem;
-  }
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 2rem;
+}
 
-  .post-template-single2018-php #content #inner-content main#main {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 2rem;
-  }
+.post-template-single2018-php #content #inner-content main#main {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+}
 
-  .post-template-single2018-php #content #inner-content div#sidebar1 {
-    margin-top: 4rem;
-  }
+.post-template-single2018-php #content #inner-content div#sidebar1 {
+  margin-top: 4rem;
+}
 
-  #content #inner-content .dsa-share {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-  }
+#content #inner-content .dsa-share {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
 
-  #content #inner-content .button.dsa-share {
-    padding: 0.75rem;
-  }
+#content #inner-content .button.dsa-share {
+  padding: 0.75rem;
+}
 
-  #content #inner-content .button.dsa-share .button-icon {
-    width: 1.5rem;
-    height: auto;
-  }
+#content #inner-content .button.dsa-share .button-icon {
+  width: 1.5rem;
+  height: auto;
+}
 
-  .post-password-form input[type="submit"] {
-    display: inline-block;
-    text-align: center;
-    line-height: 1;
-    cursor: pointer;
-    -webkit-appearance: none;
-    transition: all 0.25s ease-out;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    border-radius: 0;
-    padding: 0.85em 1em;
-    margin: 0 1rem 1rem 0;
-    font-size: 0.9rem;
-    background: #2199e8;
-    color: #fff;
-  }
+.post-password-form input[type="submit"] {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  background: #2199e8;
+  color: #fff;
+}
 
-  [data-whatinput='mouse'] .post-password-form input[type="submit"] {
-    outline: 0;
-  }
+[data-whatinput='mouse'] .post-password-form input[type="submit"] {
+  outline: 0;
+}
 
-  .post-password-form input[type="submit"]:hover,
-  .post-password-form input[type="submit"]:focus {
-    background: #1583cc;
-    color: #fff;
-  }
+.post-password-form input[type="submit"]:hover,
+.post-password-form input[type="submit"]:focus {
+  background: #1583cc;
+  color: #fff;
+}

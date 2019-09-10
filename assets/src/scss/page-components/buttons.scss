@@ -1,145 +1,161 @@
 /***************
-7. BUTTONS
+7. BUTTONS MASTER COPY
 ****************/
 
 a.button.radius.button-white {
-    border: none;
-    color: black;
-  }
+  border: none;
+  color: black;
+}
 
-  a.hollow {
-    border-width: 2px;
-  }
+a.hollow {
+  border-width: 2px;
+}
 
-  a.button.hollow {
-    border-width: 2px;
-    border-color: #ec1f27;
-    color: #ec1f27;
-  }
+a.button.hollow {
+  border-width: 2px;
+  border-color: #ec1f27;
+  color: #ec1f27;
+}
 
-  a.button.radius.button-white:hover {
-    border: none;
-    background-color: #ec1f27;
-    color: white;
-  }
+a.button.radius.button-white:hover {
+  border: none;
+  background-color: #ec1f27;
+  color: white;
+}
 
-  a.button.button-clear-white {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    margin-left: 1rem;
-  }
+// a.button.button-clear-white {
+//   background-color: transparent;
+//   color: white;
+//   border: 1px solid white;
+//   margin-left: 1rem;
+// }
 
-  a.button.button-red-white {
-    background-color: #ec1f27;
-    color: white;
-  }
+// a.button.button-red-white {
+//   background-color: #ec1f27;
+//   color: white;
+// }
 
-  a.button.button-clear-blue {
-    background-color: white;
-    color: #5555ee;
-    border: 2px solid #5555ee;
-  }
+// a.button.button-clear-blue {
+//   background-color: white;
+//   color: #5555ee;
+//   border: 2px solid #5555ee;
+// }
 
-  a.button.button-clear-blue {
-    background-color: #5555ee;
-    color: white;
-    border: 2px solid #5555ee;
-  }
+// a.button.button-clear-blue {
+//   background-color: #5555ee;
+//   color: white;
+//   border: 2px solid #5555ee;
+// }
 
-  a.button.button-clear-black {
-    background-color: white;
-    color: #231F20;
-    border: 2px solid #231F20;
-  }
+// a.button.button-clear-black {
+//   background-color: white;
+//   color: #231F20;
+//   border: 2px solid #231F20;
+// }
 
-  a.button.button-clear-black:hover {
-    background-color: #231F20;
-    color: white;
-    border: 2px solid #231F20;
-  }
+// a.button.button-clear-black:hover {
+//   background-color: #231F20;
+//   color: white;
+//   border: 2px solid #231F20;
+// }
 
-  a.button.button-clear-gold {
-    background-color: #E5B900;
-    color: white;
-    border: 2px solid #E5B900;
-  }
+// a.button.button-clear-gold {
+//   background-color: #E5B900;
+//   color: white;
+//   border: 2px solid #E5B900;
+// }
 
-  a.button.button-clear-gold:hover {
-    background-color: #FFDD4C;
-    color: white;
-    border: 2px solid #FFDD4C;
-  }
+// a.button.button-clear-gold:hover {
+//   background-color: #FFDD4C;
+//   color: white;
+//   border: 2px solid #FFDD4C;
+// }
 
-  .button.radius {
-    border-radius: 1rem;
+// .button.radius {
+//   border-radius: 1rem;
 
-  }
+// }
 
-  .button-group.expanded .button {
-    padding: 0.85em 0.5em;
-  }
+.button-group.expanded .button {
+  padding: 0.85em 0.5em;
+}
 
-  button,
-  .button,
-  input[type="button"],
-  .pagination .button {
-    background-color: #ec1f27;
-    color: #fff;
-    border-radius: 2em;
-    transition: all 150ms;
-    text-transform: uppercase;
-    font-family: 'ManifoldDSA-ExtraBold', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
+button,
+.button,
+input[type="button"],
+.pagination .button {
+  background-color: #ec1f27;
+  color: #fff;
+  // border-radius: 2em;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 150ms;
+  // text-transform: uppercase;
+  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
+}
 
-  .pagination .current {
-    padding: .1875rem .625rem;
-    background-color: #ec1f27;
-  }
+button.hollow,
+.button.hollow,
+input[type="button"],
+.pagination .button.hollow {
+  background-color: #fff;
+  border: 2px solid #ec1f27;
+  color: #ec1f27;
+}
 
-  .pagination .button a,
-  .pagination .button a:hover {
-    background-color: transparent;
-    color: #fff;
-  }
+.pagination .current {
+  padding: .1875rem .625rem;
+  background-color: #ec1f27;
+}
 
-  .button:focus,
-  .button:hover,
-  input[type="button"]:hover,
-  .pagination .button:hover {
-    background-color: #f04e54;
-    color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
+.pagination .button a,
+.pagination .button a:hover {
+  background-color: transparent;
+  color: #fff;
+}
 
-  button.dark,
-  .button.dark,
-  #page #mc_embed_signup .button.dark,
-  .pagination .button.current {
-    background-color: #231F20;
-    color: #fff;
-    border-radius: 2em;
-    transition: all 150ms;
-  }
+button.hollow:hover,
+.button.hollow:hover,
+.button:focus,
+.button:hover,
+input[type="button"]:hover,
+.pagination .button:hover {
+  background-color: #f04e54;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
 
-  .button.dark:focus,
-  .button.dark:hover,
-  input[type="button"]:hover {
-    background-color: #333;
-    color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-  }
+button.dark,
+.button.dark,
+#page #mc_embed_signup .button.dark,
+.pagination .button.current {
+  background-color: #231F20;
+  color: #fff;
+  // border-radius: 2em;
+  transition: all 150ms;
+}
 
-  .button.success {
-    border-color: #3adb76;
-  }
+.button.dark:focus,
+.button.dark:hover,
+input[type="button"]:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  // transform: translateY(-2px);
+}
 
-  .button.alert {
-    border-color: #cc4b37;
-  }
+.button.success {
+  border-color: #3adb76;
+}
 
-  .button.warning {
-    border-color: #ffae00;
-  }
+.button.alert {
+  border-color: #cc4b37;
+}
+
+.button.warning {
+  border-color: #ffae00;
+}

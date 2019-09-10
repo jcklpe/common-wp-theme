@@ -1,117 +1,135 @@
 /*********************
-6. MENU & NAVIGATION
+6. MENU & NAVIGATION MASTER COPY
 *********************/
 .top-bar {
-    padding: 0;
-  }
+  padding: 0;
+}
 
-  .top-bar .title-area {
-    z-index: 1;
-  }
+.top-bar .title-area {
+  z-index: 1;
+}
 
-  .off-canvas-list ul {
-    margin-left: 0;
-  }
+.off-canvas-list ul {
+  margin-left: 0;
+}
 
-  .off-canvas-list ul li a {
-    border-bottom: 0px;
-  }
+.off-canvas-list ul li a {
+  border-bottom: 0px;
+}
 
-  .off-canvas-list ul .dropdown {
-    margin-left: 20px;
-  }
+.off-canvas-list ul .dropdown {
+  margin-left: 20px;
+}
 
-  .top-bar,
-  .top-bar ul,
-  .off-canvas {
-    background-color: #ec1f27;
-  }
+.top-bar,
+.top-bar ul,
+.off-canvas {
+  background-color: #ec1f27;
+}
 
-  .top-bar a,
-  .top-bar ul a {
-    color: white;
-  }
+.top-bar a,
+.top-bar ul a {
+  color: white;
+}
 
-  .top-bar-right a,
-  .off-canvas .menu>li>a {
-    text-transform: capitalize;
-    font-size: 1.25rem;
-    color: white;
-  }
+.top-bar-right a,
+.off-canvas .menu>li>a {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: white;
+}
 
-  .dropdown.menu.vertical>li.opens-left>a:after,
-  .is-accordion-submenu-parent>a:after {
-    border-color: white transparent transparent !important;
-  }
+.dropdown.menu.vertical>li.opens-left>a:after,
+.is-accordion-submenu-parent>a:after {
+  border-color: #EC1F27 transparent transparent !important;
+}
 
-  .page-title {
-    color: #231F20;
-    margin: 4rem 0 3rem 0;
-  }
+.page-title {
+  color: #231F20;
+  margin: 4rem 0 3rem 0;
+}
 
-  .bg-DSAblack {
-    background-color: #231F20;
-  }
+.bg-DSAblack {
+  background-color: #231F20;
+}
 
-  .txt-DSAred {
-    color: #ec1f27;
-  }
+.txt-DSAred {
+  color: #ec1f27;
+}
 
-  .btn.bg-DSAred {
-    color: #fff;
-  }
+.btn.bg-DSAred {
+  color: #fff;
+}
 
-  .txt-DSAblack {
-    color: #231F20;
-  }
+.txt-DSAblack {
+  color: #231F20;
+}
 
-  .txt-DSAwhite,
-  .txt-white {
-    color: white;
-  }
+.txt-DSAwhite,
+.txt-white {
+  color: white;
+}
 
-  a.txt-DSAwhite:hover {
-    background-color: #231F20;
-    color: white;
-  }
+a.txt-DSAwhite:hover {
+  background-color: #231F20;
+  color: white;
+}
 
-  .top-bar a:hover,
-  .menu .active a {
-    background: #231F20;
-  }
+.top-bar a:hover,
+.menu .active a {
+  background: #231F20;
+}
 
-  .top-bar img.dsa-rose-mark {
-    height: 2.5rem;
-    width: auto;
-    display: inline-block;
-    padding: 0;
-    margin: 0.25rem 0 0 0.25rem;
-    line-height: 1;
-    vertical-align: top;
-  }
+.top-bar img.dsa-rose-mark {
+  height: 2.5rem;
+  width: auto;
+  display: inline-block;
+  padding: 0;
+  margin: 0.25rem 0 0 0.25rem;
+  line-height: 1;
+  vertical-align: top;
+}
 
-  .menu>li>a.dsa-top-name {
-    display: inline-block;
-    padding: 1rem 0 1rem 0.35rem;
-    font-size: 1.2rem;
-    line-height: 1;
-  }
+.menu>li>a.dsa-top-name {
+  display: inline-block;
+  padding: 1rem 0 1rem 0.35rem;
+  font-size: 1.2rem;
+  line-height: 1;
+}
 
-  .menu>li>a {
-    padding: 1rem;
-    line-height: 1;
-    font-size: 1.2rem;
-  }
+.menu>li>a {
+  padding: 1rem;
+  line-height: 1;
+  font-size: 1.2rem;
+}
 
-  .menu.vertical>li {
-    padding-top: 0;
-  }
+.menu.vertical>li {
+  padding-top: 0;
+}
 
-  #menu-footer.menu>li {
-    width: 45%;
-    display: inline-block;
-  }
+// this is new
+.menu>li.active>a {
+  background: #fff;
+  color: #EC1F27;
+}
 
-  .menu>li>a.dsa-top-name:hover {
-    background-color: #ec1f27;
-  }
+.menu>li.active>a:hover,
+.off-canvas .menu>li>a:hover,
+.top-bar-right a:hover,
+.top-bar a:hover,
+.top-bar ul a:hover {
+  color: #EC1F27;
+  background-color: #fee;
+}
+
+// this is new
+
+#menu-footer.menu>li {
+  width: 45%;
+  display: inline-block;
+}
+
+.menu>li>a.dsa-top-name:hover {
+  background-color: #ec1f27;
+  color: #fff; // this is new
+}
