@@ -1,5 +1,9 @@
 # Common WP
 
+![](./assets/images/github.jpg)
+
+
+
 This is a wordpress theme for non-profit use. It's focus is on simple visual design, and clean componentized code for easy customization by organizations with diverse needs.
 
 ## Build Process
