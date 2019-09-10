@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Hompage 2017
+Template Name: Hompage
 */
 ?>
 
@@ -15,8 +15,8 @@ Template Name: Hompage 2017
 		      <div class="grid-x grid-margin-x">
 		        <div class="plate card cell large-offset-6 large-6 medium-offset-3 medium-9 small-12"><!-- Begin Main Content-->
 		        	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						<?php get_template_part( 'parts/loop', 'pagealt' ); ?> 
-					<?php endwhile; endif; ?>	
+						<?php get_template_part( 'parts/loop', 'pagealt' ); ?>
+					<?php endwhile; endif; ?>
 		        </div>
 		      </div>
 		    </div>
@@ -45,15 +45,15 @@ Template Name: Hompage 2017
 		    </div><!-- end bound -->
 		  </div><!-- end diptych -->
 		</div><!-- end sdsa-2017-frontispiece -->
-	
+
 		<div id="dsa-home-row-3" class="bg-DSAred">
 			<?php get_template_part( 'parts/content', 'events' ); ?> <!-- see /parts/content-events.php -->
-		</div> 
+		</div>
 
 		<div id="dsa-home-row-4" class="bg-dark-1">
 			<?php get_template_part( 'parts/content', 'dispatches' ); ?> <!-- see /parts/content-dispatches.php -->
 		</div>
-	
+
 	</div> <!-- end #content -->
 
 <?php get_footer(); ?>

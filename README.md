@@ -1,6 +1,20 @@
-### DSA Wordpress Theme
+# Common WP
 
-This theme uses JointsWP, a blank Wordpress Theme built using ZURB Foundation for Sites 6.5.3.
+This is a wordpress theme for non-profit use. It's focus is on simple visual design, and clean componentized code for easy customization by organizations with diverse needs.
 
-### Optional Theme Function
-The Events Calendar Plugin: Adds events to the Homepage 2017 page template and enables the printable Upcoming Events page template. Lots of custom stylings for this plugin are included.
+## Build Process
+
+This theme comes with a gulp based build scheme. To build the theme you just need to install npm and run "npm install" in the theme root folder then run "gulp build" to build a new version of the styles.css files.
+
+## TODO:
+
+- [ ] componentize out scss parts and reorganize build process
+- [ ] replace all hardcoded logos with global custom fields
+- [ ] replace all hardcoded text with global custom fields
+- [ ] convert all custom template blocks into template partials
+- [ ] convert all template partials into Gutenberg Blocks to be used in posts
+- [ ] white label all organizational references
+
+## License
+
+This theme uses modified version of GPL 3 which restricts use and distribution of this software to non-profit non-capitalist uses.
