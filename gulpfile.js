@@ -51,7 +51,7 @@ gulp.task("site-js", function() {
   return gulp
     .src([
       // Grab your custom scripts
-      "./assets/src/js/scripts/*.js"
+      "./assets/src/js/*.js"
     ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -128,8 +128,8 @@ gulp.task("bower", function() {
 gulp.task("browsersync", function() {
   // Watch files
   var files = [
-    "./assets/css/*.css",
-    "./assets/js/*.js",
+    "./assets/build/scss/*.css",
+    "./assets/build/js/*.js",
     "**/*.php",
     "assets/images/**/*.{png,jpg,gif,svg,webp}"
   ];
@@ -139,9 +139,9 @@ gulp.task("browsersync", function() {
     proxy: "http://localhost/"
   });
 
-  gulp.watch("./assets/scss/**/*.scss", ["scss"]);
+  gulp.watch("./assets/src/scss/**/*.scss", ["scss"]);
   gulp
-    .watch("./assets/js/scripts/*.js", ["site-js"])
+    .watch("./assets/src/js/*.js", ["site-js"])
     .on("change", browserSync.reload);
 });
 
@@ -151,7 +151,7 @@ gulp.task("watch", function() {
   gulp.watch("./assets/src/scss/**/*.scss", ["scss"]);
 
   // Watch site-js files
-  gulp.watch("./assets/build/js/scripts/*.js", ["site-js"]);
+  gulp.watch("./assets/src/js/*.js", ["site-js"]);
 
   // Watch foundation-js files
   gulp.watch("./vendor/foundation-sites/js/*.js", ["foundation-js"]);

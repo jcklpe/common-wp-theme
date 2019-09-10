@@ -10,9 +10,9 @@ Use:	Shares platform of beliefs, similar to Black Panther Program, as well as po
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/white/calendar.svg" loading="lazy" class="cell large-2 large-offset-5 medium-4 medium-offset-4 small-6 small-offset-3" />
 		<br />
 		<h2 class="dsa-section-title txt-DSAwhite cell">Upcoming Events</h2>
-		<div class="cell grid-x grid-margin-x grid-margin-y">		
+		<div class="cell grid-x grid-margin-x grid-margin-y">
 			<?php // Retrieve the next 2 upcoming events
-				if(in_array('the-events-calendar/the-events-calendar.php', apply_filters('active_plugins', get_option('active_plugins')))){ 
+				if(in_array('the-events-calendar/the-events-calendar.php', apply_filters('active_plugins', get_option('active_plugins')))){
 					//plugin is activated
 
 
@@ -20,7 +20,7 @@ Use:	Shares platform of beliefs, similar to Black Panther Program, as well as po
 					    'posts_per_page' => 2,
 					    'start_date' => date( 'Y-m-d H:i:s', strtotime("-6 hours")),
 					) );
-					
+
 					function empty_content($str) {
 						    return trim(str_replace('&nbsp;','',strip_tags($str))) == '';
 					}
@@ -62,7 +62,7 @@ Use:	Shares platform of beliefs, similar to Black Panther Program, as well as po
 						    					<?php echo tribe_get_venue_single_line_address ( $event->ID, $link = false ); ?>
 						    				</p>
 									    	<p>
-										    	<?php 
+										    	<?php
 												if ( tribe_show_google_map_link($event->ID) ) {
 													echo '<a href="'.tribe_get_map_link($event->ID).'" class="button">Google Map</a>';
 												} ?>
@@ -79,9 +79,9 @@ Use:	Shares platform of beliefs, similar to Black Panther Program, as well as po
 							<a class="button dark" href="<?php echo home_url(); ?>/events/">See All</a>
 						</div>
 					<?php }
-				else { 
+				else {
 					?><div class="text-center cell">This template uses The Events Calendar plugin.</div>
-					<?php 
+					<?php
 				}
 			?>
 		</div>

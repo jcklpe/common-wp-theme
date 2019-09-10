@@ -47,7 +47,10 @@ Template Name: Hompage
 		</div><!-- end sdsa-2017-frontispiece -->
 
 		<div id="dsa-home-row-3" class="bg-DSAred">
-			<?php get_template_part( 'parts/content', 'events' ); ?> <!-- see /parts/content-events.php -->
+
+		<?php include( get_template_directory() . '/assets/src/php/template-parts/events-section.php' );
+			 //get_template_part( 'parts/content', 'events' );
+			 ?> <!-- see /parts/content-events.php -->
 		</div>
 
 		<div id="dsa-home-row-4" class="bg-dark-1">

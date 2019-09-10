@@ -1,24 +1,24 @@
 <?php
 // Theme support options
-include(get_template_directory().'/assets/php/functions/theme-support.php');
+require_once(get_template_directory().'/assets/src/php/functions/theme-support.php');
 
 // WP Head and other cleanup functions
-require_once(get_template_directory().'/assets/php/functions/cleanup.php');
+require_once(get_template_directory().'/assets/src/php/functions/cleanup.php');
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/assets/php/functions/enqueue-scripts.php');
+require_once(get_template_directory().'/assets/src/php/functions/enqueue-scripts.php');
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/assets/php/functions/menu.php');
+require_once(get_template_directory().'/assets/src/php/functions/menu.php');
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/assets/php/functions/sidebar.php');
+require_once(get_template_directory().'/assets/src/php/functions/sidebar.php');
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/assets/php/functions/comments.php');
+require_once(get_template_directory().'/assets/src/php/functions/comments.php');
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/assets/php/functions/page-navi.php');
+require_once(get_template_directory().'/assets/src/php/functions/page-navi.php');
 
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php');
