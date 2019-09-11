@@ -29,8 +29,10 @@
 						// and content for each
 						foreach ( $events as $event ) {
 							$dsa_event_description = $event->post_content;
+							?>
 
-						    echo "<div class=\"card-gray large-10 large-centered medium-10 medium-centered small-12\"><h4>";
+						    <div class="card-gray large-10 large-centered medium-10 medium-centered small-12\">
+								<h4>
 						    echo tribe_get_event_link( $event->ID, $full_link=true);
 							echo "</h4><hr><div class=\"row\"><div class=\"large-6 medium-6 small-12 column\"><p>";
 							    echo substr($dsa_event_description, 0, 300);
