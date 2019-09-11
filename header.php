@@ -4,14 +4,14 @@
 
 	<head>
 		<meta charset="utf-8">
-		
+
 		<!-- Force IE to use the latest rendering engine available -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta class="foundation-mq">
-		
+
 		<!-- If Site Icon isn't set in customizer -->
 		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
 			<!-- Icons & Favicons -->
@@ -31,7 +31,7 @@
 			<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-152x152.png" />
 			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon-32x32.png" sizes="32x32" />
 			<link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon-16x16.png" sizes="16x16" />
-			
+
 	    <?php } ?>
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -42,22 +42,22 @@
 		<!-- end analytics -->
 
 	</head>
-	
-	<!-- Uncomment this line if using the Off-Canvas Menu --> 
-		
+
+	<!-- Uncomment this line if using the Off-Canvas Menu -->
+
 	<body <?php body_class(); ?>>
 		<!-- For Seattle DSA only <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQX7PPW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 
 		<div class="off-canvas-wrapper">
-							
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-			
+
+			<?php get_template_part( 'assets/src/php/page-components/content', 'offcanvas' ); ?>
+
 			<div class="off-canvas-content" data-off-canvas-content>
-				
+
 				<header class="header hide-for-print" role="banner">
-						
-					 <!-- This navs will be applied to the topbar, above all content 
+
+					 <!-- This navs will be applied to the topbar, above all content
 						  To see additional nav styles, visit the /parts directory -->
-					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-	 	
+					 <?php get_template_part( 'assets/src/php/page-components/nav', 'offcanvas-topbar' ); ?>
+
 				</header> <!-- end .header -->

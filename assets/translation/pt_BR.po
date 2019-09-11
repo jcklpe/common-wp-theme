@@ -282,40 +282,40 @@ msgstr "Comentários mais recentes"
 msgid "Comments are closed."
 msgstr "Os comentários estãos fechados."
 
-#: parts/content-missing.php:6
+#: assets/src/php/page-components/content-missing.php:6
 msgid "Sorry, No Results."
 msgstr "Desculpe, nenhum resultado."
 
-#: parts/content-missing.php:10
+#: assets/src/php/page-components/content-missing.php:10
 msgid "Try your search again."
 msgstr "Tente pesquisar novamente."
 
-#: parts/content-missing.php:18 parts/content-missing.php:36
-msgid "This is the error message in the parts/content-missing.php template."
-msgstr "Esta é a mensagem de erro no modelo parts/content-missing.php."
+#: assets/src/php/page-components/content-missing.php:18 assets/src/php/page-components/content-missing.php:36
+msgid "This is the error message in the assets/src/php/page-components/content-missing.php template."
+msgstr "Esta é a mensagem de erro no modelo assets/src/php/page-components/content-missing.php."
 
-#: parts/content-missing.php:24
+#: assets/src/php/page-components/content-missing.php:24
 msgid "Oops, Post Not Found!"
 msgstr "Ops! Postagem não encontrada!"
 
-#: parts/content-missing.php:28
+#: assets/src/php/page-components/content-missing.php:28
 msgid "Uh Oh. Something is missing. Try double checking things."
 msgstr "Ops. Falta algo. Verifique de novo."
 
-#: parts/loop-archive-grid.php:26 parts/loop-archive.php:9
+#: assets/src/php/page-components/loop-archive-grid.php:26 assets/src/php/page-components/loop-archive.php:9
 msgid "Read more..."
 msgstr "Leia mais..."
 
-#: parts/loop-archive.php:13 parts/loop-single.php:15
+#: assets/src/php/page-components/loop-archive.php:13 assets/src/php/page-components/loop-single.php:15
 msgid "Tags:"
 msgstr "Etiquetas:"
 
-#: parts/loop-single.php:14
+#: assets/src/php/page-components/loop-single.php:14
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: parts/nav-offcanvas-topbar.php:16 parts/nav-offcanvas.php:10
-#: parts/nav-title-bar.php:7
+#: assets/src/php/page-components/nav-offcanvas-topbar.php:16 assets/src/php/page-components/nav-offcanvas.php:10
+#: assets/src/php/page-components/nav-title-bar.php:7
 msgid "Menu"
 msgstr "Menu"
 
