@@ -1,6 +1,14 @@
 <div class="sdsa-2017-frontispiece">
 
+<?php
 
+$thumb_id = get_post_thumbnail_id();
+$thumbURL = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+?>
+
+<figure>
+  <img src="<?php echo $thumbURL[0]; ?>" alt="" >
+</figure>
 
 <?php
 
