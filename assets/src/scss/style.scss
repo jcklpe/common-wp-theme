@@ -1,10 +1,16 @@
 //- Functions
 @import 'general-styles/color-variables';
 @import 'functions/responsive-mixins';
+@import 'functions/utility-classes';
+
+//- Vendor styles
+@import '../../vendor/foundation-sites/dist/css/foundation-flex.css';
+@import '../../vendor/foundation-sites/dist/css/foundation.css';
 
 
 //- General Styles
 // general styles that apply on a broad based stylistic level that isn't contained to just one component or piece of UI. Type and palette hiearchies should go here.
+
 @import 'general-styles/fonts';
 @import 'general-styles/full-page';
 @import 'general-styles/general-styles';
@@ -18,7 +24,7 @@
 
 
 //- Page Components
-// components which are generally self contained and exist outside of normal post content context. These are largely brought over from the original theme project this was forked from. Eventually this section should eventualy be completely converted over to a pure "blocks" section.
+// components which are generally self contained and exist outside of normal post content context. These are largely brought over from the original theme project this was forked from. Eventually this section should be completely converted over to pure "blocks".
 @import 'page-components/accordion';
 @import 'page-components/buttons';
 @import 'page-components/comments';
@@ -37,6 +43,8 @@
 @import 'page-components/card';
 @import 'page-components/newsletter-signup';
 @import 'page-components/text-carousel-card';
+@import 'page-components/alert';
+@import 'page-components/sections';
 
 // full on page wide template
 //- Page Templates

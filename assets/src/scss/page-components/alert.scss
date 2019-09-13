@@ -1,0 +1,28 @@
+//- ALERT
+
+.alert.card {
+    background-color: #0a0a0a;
+    color: white;
+
+    p {
+        display: inline;
+    }
+}
+
+.alert-icon {
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: auto;
+}
+
+button.close {
+    background-color: transparent;
+    color: white;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 2rem;
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    padding: 0;
+    max-width: none !important;
+}

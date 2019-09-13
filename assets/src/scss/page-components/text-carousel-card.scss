@@ -1,11 +1,10 @@
 .text-carousel-card {
-    background: url("../../images/ui-glyphs/essay-plate-bottom.svg") repeat-x left top,
-        url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
+    background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
     background-size: 18px 109px, 18px 16px;
     background-color: $base-color;
     color: white;
     order: 2;
-    margin-top: -1rem;
+    //margin-top: -1rem;
     // margin: 0 20px;
     border-right: 1px solid white;
     // padding: 138px 0 65px;

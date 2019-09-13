@@ -5,8 +5,9 @@ div.frontpage {
     .plate {
         background: white;
         padding: 3rem 4rem;
+        line-height: 1.4;
 
-        line-height: 1.4 h1 {
+        h1 {
             font-size: 1.875rem;
             line-height: 1.2;
             font-weight: 500;
@@ -79,13 +80,13 @@ div.frontpage {
         text-align: center;
         border: 0px transparent;
         margin-bottom: 0;
-        margin-top: -1rem;
+        // margin-top: -1rem;
     }
 
     // old
     // @media screen and (max-width: 899px) {
     //   .frontpage .plate,
-    //   .dsa-alert {
+    //   .alert {
     //     box-sizing: border-box;
     //     max-width: 550px;
     //     margin: 0 auto
@@ -98,6 +99,6 @@ div.frontpage {
 
     @include breakpoint(mobile) {
         background: url("../images/ui-foregrounds/mobile-mural.png") no-repeat left top;
-        background-size: 100% auto
+        background-size: 100% auto;
     }
 }

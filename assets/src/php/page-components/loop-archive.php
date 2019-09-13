@@ -3,19 +3,18 @@
 		<div class="archive-item-background cell large-4 medium-4 small-12">
 			<a href="<?php the_permalink() ?>" class="archive-image-link">
 				<?php
-					if ( has_post_thumbnail() ) {
-							the_post_thumbnail('large');
-						}
-						else {
-							echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/dsa_blog.png" />';
-						}
+				if (has_post_thumbnail()) {
+					the_post_thumbnail('large');
+				} else {
+					echo '<img src="' . get_bloginfo('stylesheet_directory') . '/assets/images/dsa_blog.png" />';
+				}
 				?>
 			</a>
 
 		</div>
 		<header class="archive-item-content cell large-8 medium-8 small-12">
 			<h2 class="txt-bold archive-item-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			include( get_template_directory() . '/assets/src/php/page-components/byline.php' );
+			<?php include(get_template_directory() . '/assets/src/php/page-components/byline.php'); ?>
 			<section class="archive-item-excerpt" itemprop="articleBody">
 				<?php the_excerpt(); ?>
 			</section> <!-- end archive-item-excerpt -->
