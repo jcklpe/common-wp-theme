@@ -24,7 +24,7 @@
   }
 
   #page #mc_embed_signup .button {
-    background-color: #231F20 !important;
+    background-color: $dark-brown !important;
     color: #fff;
     border-radius: 2em;
     transition: all 150ms;
@@ -34,14 +34,14 @@
   }
 
   #page #mc_embed_signup .button.dark:hover {
-    background-color: #231F20;
+    background-color: $dark-brown;
     color: #fff;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
   }
 
   input[type="submit"] {
-    background-color: #EC1F27;
+    background-color: $base-color;
     padding: 1rem;
     color: white;
     border: 0px;

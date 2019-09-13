@@ -24,7 +24,7 @@
 .top-bar,
 .top-bar ul,
 .off-canvas {
-  background-color: #ec1f27;
+  background-color: $base-color;
 }
 
 .top-bar a,
@@ -41,20 +41,20 @@
 
 .dropdown.menu.vertical>li.opens-left>a:after,
 .is-accordion-submenu-parent>a:after {
-  border-color: #EC1F27 transparent transparent !important;
+  border-color: $base-color transparent transparent !important;
 }
 
 .page-title {
-  color: #231F20;
+  color: $dark-brown;
   margin: 4rem 0 3rem 0;
 }
 
 .bg-DSAblack {
-  background-color: #231F20;
+  background-color: $dark-brown;
 }
 
 .txt-DSAred {
-  color: #ec1f27;
+  color: $base-color;
 }
 
 .btn.bg-DSAred {
@@ -62,7 +62,7 @@
 }
 
 .txt-DSAblack {
-  color: #231F20;
+  color: $dark-brown;
 }
 
 .txt-DSAwhite,
@@ -71,13 +71,13 @@
 }
 
 a.txt-DSAwhite:hover {
-  background-color: #231F20;
+  background-color: $dark-brown;
   color: white;
 }
 
 .top-bar a:hover,
 .menu .active a {
-  background: #231F20;
+  background: $dark-brown;
 }
 
 .top-bar img.dsa-rose-mark {
@@ -110,7 +110,7 @@ a.txt-DSAwhite:hover {
 // this is new
 .menu>li.active>a {
   background: #fff;
-  color: #EC1F27;
+  color: $base-color;
 }
 
 .menu>li.active>a:hover,
@@ -118,7 +118,7 @@ a.txt-DSAwhite:hover {
 .top-bar-right a:hover,
 .top-bar a:hover,
 .top-bar ul a:hover {
-  color: #EC1F27;
+  color: $base-color;
   background-color: #fee;
 }
 
@@ -130,6 +130,6 @@ a.txt-DSAwhite:hover {
 }
 
 .menu>li>a.dsa-top-name:hover {
-  background-color: #ec1f27;
+  background-color: $base-color;
   color: #fff; // this is new
 }

@@ -10,7 +10,7 @@ add_action( 'save_post', 'myplugin_save_postdata' );
 /* Adds a box to the main column on the Post and Page edit screens */
 function myplugin_add_custom_box() {
   global $post;
-    if ( 'homepage.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+    if ( 'page-templates/homepage.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
           add_meta_box( 'wp_editor_test_8_box', 'Email Signup Box (use Mailchimp embed code)', 'wp_editor_meta_box_8' );
           add_meta_box( 'wp_editor_test_11_box', 'DSA Alert Box', 'wp_editor_meta_box_11' );
     }

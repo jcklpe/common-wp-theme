@@ -20,9 +20,9 @@
 			<!--[if IE]>
 				<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 			<![endif]-->
-			<meta name="msapplication-TileColor" content="#ec1f27">
+			<meta name="msapplication-TileColor" content="$base-color">
 			<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
-	    	<meta name="theme-color" content="#ec1f27">
+	    	<meta name="theme-color" content="$base-color">
 	    	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-57x57.png" />
 			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-114x114.png" />
 			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon-72x72.png" />

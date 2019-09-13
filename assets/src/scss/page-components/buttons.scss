@@ -13,13 +13,13 @@ a.hollow {
 
 a.button.hollow {
   border-width: 2px;
-  border-color: #ec1f27;
-  color: #ec1f27;
+  border-color: $base-color;
+  color: $base-color;
 }
 
 a.button.radius.button-white:hover {
   border: none;
-  background-color: #ec1f27;
+  background-color: $base-color;
   color: white;
 }
 
@@ -31,7 +31,7 @@ a.button.radius.button-white:hover {
 // }
 
 // a.button.button-red-white {
-//   background-color: #ec1f27;
+//   background-color: $base-color;
 //   color: white;
 // }
 
@@ -49,14 +49,14 @@ a.button.radius.button-white:hover {
 
 // a.button.button-clear-black {
 //   background-color: white;
-//   color: #231F20;
-//   border: 2px solid #231F20;
+//   color: $dark-brown;
+//   border: 2px solid $dark-brown;
 // }
 
 // a.button.button-clear-black:hover {
-//   background-color: #231F20;
+//   background-color: $dark-brown;
 //   color: white;
-//   border: 2px solid #231F20;
+//   border: 2px solid $dark-brown;
 // }
 
 // a.button.button-clear-gold {
@@ -84,7 +84,7 @@ button,
 .button,
 input[type="button"],
 .pagination .button {
-  background-color: #ec1f27;
+  background-color: $base-color;
   color: #fff;
   // border-radius: 2em;
   border-radius: 0.5rem;
@@ -102,13 +102,13 @@ button.hollow,
 input[type="button"],
 .pagination .button.hollow {
   background-color: #fff;
-  border: 2px solid #ec1f27;
-  color: #ec1f27;
+  border: 2px solid $base-color;
+  color: $base-color;
 }
 
 .pagination .current {
   padding: .1875rem .625rem;
-  background-color: #ec1f27;
+  background-color: $base-color;
 }
 
 .pagination .button a,
@@ -133,7 +133,7 @@ button.dark,
 .button.dark,
 #page #mc_embed_signup .button.dark,
 .pagination .button.current {
-  background-color: #231F20;
+  background-color: $dark-brown;
   color: #fff;
   // border-radius: 2em;
   transition: all 150ms;

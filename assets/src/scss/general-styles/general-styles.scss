@@ -43,14 +43,14 @@ h5 small {
 
 .page blockquote {
   font-size: 1.5rem;
-  color: #231F20;
-  border-left: 0px solid #ec1f27;
+  color: $dark-brown;
+  border-left: 0px solid $base-color;
   padding: 25px 0 25px 0;
 }
 
 .page blockquote p {
   font-size: 1.5rem;
-  color: #231F20;
+  color: $dark-brown;
   padding: 0;
 }
 
@@ -67,7 +67,7 @@ img.bullet-icon {
 }
 
 .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-  border-color: #ec1f27 transparent transparent;
+  border-color: $base-color transparent transparent;
 }
 
 .calendar-category-menu .menu.vertical>li {
@@ -81,7 +81,7 @@ ul.dropdown.menu.calendar-category-menu>li:hover {
 
 ul.dropdown.menu.calendar-category-menu>li>a:hover {
   background-color: transparent;
-  color: #ec1f27;
+  color: $base-color;
 }
 
 .dropdown.menu>li.is-active>a {
@@ -113,14 +113,14 @@ img.icon-list {
   content: '';
   width: 50%;
   top: 25px;
-  border-top: 8px solid #231F20;
+  border-top: 8px solid $dark-brown;
 }
 
 .page blockquote:after {
   content: '';
   width: 50%;
   bottom: 25px;
-  border-bottom: 8px solid #231F20;
+  border-bottom: 8px solid $dark-brown;
 }
 
 .sdsa-page-hero {
@@ -143,7 +143,7 @@ img.icon-list {
 }
 
 .archive #content {
-  background-color: #EC1f27;
+  background-color: $base-color;
 }
 
 .archive.post-type-archive-tribe_events #content {

@@ -1,0 +1,122 @@
+.newsletter-signup {
+    background: url("../../images/ui-glyphs/stripes-red.svg") repeat-x left bottom;
+    background-size: 18px 16px;
+    background-color: #f7f7f7;
+    order: 1;
+    box-shadow: 0 -5px 0 #f7f7f7;
+    margin-top: 2rem;
+
+    .grid-x {
+        padding: 40px 0 12px;
+
+    }
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    .frontpage .diptych .newsletter-signup .pairing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .frontpage .diptych .newsletter-signup figure {
+        width: 29.116465863454%;
+        margin: 0 auto
+    }
+
+    .frontpage .diptych .newsletter-signup .form {
+        width: 61.847389558233%;
+        margin: 0
+    }
+}
+
+.frontpage .diptych .newsletter-signup .frontpage .diptych .newsletter-signup figure {
+    max-width: 145px;
+    margin: 0 auto 30px
+}
+
+.frontpage .diptych .newsletter-signup .fields {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.frontpage .diptych .newsletter-signup h1 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 41px
+}
+
+.frontpage .diptych .newsletter-signup input[type="text"],
+.frontpage .diptych .newsletter-signup input[type="email"] {
+    border: none;
+    color: black;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    background: white;
+    padding: 11px 10px 11px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05)
+}
+
+input#mce-FNAME::placeholder,
+input#mce-LNAME::placeholder,
+input#mce-EMAIL::placeholder {
+    color: #aaa;
+}
+
+.frontpage .diptych .newsletter-signup h1 {
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.frontpage .diptych .newsletter-signup input[type="email"] {
+    width: 100%;
+}
+
+.frontpage .diptych .newsletter-signup input::-webkit-input-placeholder,
+.frontpage .diptych .newsletter-signup input::-ms-input-placeholder,
+.frontpage .diptych .newsletter-signup input::placeholder {
+    color: #aaa
+}
+
+.frontpage .diptych .newsletter-signup input[type="submit"] {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    padding: 12px 30px 12px;
+    background: $base-color;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms
+}
+
+.frontpage .diptych .newsletter-signup input[type="submit"].small {
+    padding: 6px 13px 3px
+}
+
+.frontpage .diptych .newsletter-signup input[type="submit"]:hover {
+    background: #f04e54;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+}
+
+.frontpage .diptych .newsletter-signup input[type="submit"].dark {
+    background: black
+}
+
+.frontpage .diptych .newsletter-signup input[type="submit"].dark:hover {
+    background: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+}

@@ -1,0 +1,35 @@
+{
+  "name": "05-media-block",
+  "mode": "production",
+  "version": "1.0.0",
+  "description": "test",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jcklpe/Jackalope-Gutenberg"
+  },
+  "main": "block.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack",
+    "dev": "cross-env BABEL_ENV=default webpack --watch"
+  },
+  "author": "jcklpe",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-transform-react-jsx": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ],
+    "plugins": [
+      "@babel/transform-react-jsx"
+    ]
+  },
+  "dependencies": {}
+}

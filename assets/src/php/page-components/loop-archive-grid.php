@@ -19,7 +19,7 @@ $grid_columns = 4; ?>
 
 				<header class="article-header">
 					<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-					<?php get_template_part( 'assets/src/php/page-components/content', 'byline' ); ?>
+					include( get_template_directory() . '/assets/src/php/page-components/byline.php' );
 				</header> <!-- end article header -->
 
 				<section class="entry-content" itemprop="articleBody">

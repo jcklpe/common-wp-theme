@@ -35,7 +35,7 @@
 
     pre,
     blockquote {
-      border: 1px solid #999;
+      border: 1px solid $gray;
       page-break-inside: avoid;
     }
 
@@ -99,7 +99,7 @@
 
     .tribe-events-meta-group .tribe-events-single-section-title {
       font-size: 1.25rem;
-      color: #ec1f27;
+      color: $base-color;
     }
 
     .tribe-events-single-event-description.tribe-events-content {

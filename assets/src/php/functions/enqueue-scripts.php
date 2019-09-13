@@ -1,4 +1,16 @@
 <?php
+
+
+
+
+
+
+
+
+
+
+
+
 function site_scripts() {
   global $wp_styles; // Call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 

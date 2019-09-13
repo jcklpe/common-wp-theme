@@ -24,7 +24,7 @@
 
 .entry-content p,
 .entry-content li {
-    color: rgba(0, 0, 0, 0.9);
+    color: $black9;
     font-size: 1.25rem;
     line-height: 1.58;
 }
@@ -46,7 +46,7 @@
 }
 
 .byline {
-    color: #999;
+    color: $gray;
 }
 
 .entry-content img {
@@ -94,7 +94,7 @@
 
 .single .tribe-events-schedule .recurringinfo {
     float: right;
-    background-color: #edeeef;
+    background-color: $off-white;
     border-radius: 1rem;
     padding: 0.25rem 0.75rem;
     font-size: 0.9rem;
@@ -103,12 +103,12 @@
 .single .post .entry-content .post-thumbnail-caption,
 .single .event-thumbnail-image .event-thumbnail-caption {
     padding: 1rem 1.5rem 1rem;
-    background-color: #EDEEEF;
+    background-color: $off-white;
     border-radius: 0rem 0rem 2rem 2rem;
 }
 
 .single .tribe-events-schedule .recurringinfo .tribe-events-divider {
-    color: #edeeef;
+    color: $off-white;
 }
 
 .single-tribe_events .tribe-events-cal-links {
@@ -120,7 +120,7 @@
 }
 
 .tribe-events-gmap {
-    background-color: #ec1f27;
+    background-color: $base-color;
     color: #fff;
     border-radius: 2em;
     font-size: 1rem;

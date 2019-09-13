@@ -11,11 +11,11 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: #ec1f27;
+  color: $base-color;
 }
 
 a:focus,
 a:hover {
-  color: #EC1F27;
+  color: $base-color;
   background-color: rgba(236, 31, 39, 0.1);
 }

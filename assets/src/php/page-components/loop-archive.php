@@ -15,7 +15,7 @@
 		</div>
 		<header class="archive-item-content cell large-8 medium-8 small-12">
 			<h2 class="txt-bold archive-item-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			<?php get_template_part( 'assets/src/php/page-components/content', 'byline' ); ?>
+			include( get_template_directory() . '/assets/src/php/page-components/byline.php' );
 			<section class="archive-item-excerpt" itemprop="articleBody">
 				<?php the_excerpt(); ?>
 			</section> <!-- end archive-item-excerpt -->

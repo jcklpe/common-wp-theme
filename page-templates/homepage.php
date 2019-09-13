@@ -13,7 +13,7 @@ Template Name: Homepage
 <div id="content">
 <?php
 
-include( get_template_directory() . '/assets/src/php/page-components/frontispiece.php' );
+include( get_template_directory() . '/assets/src/php/page-components/frontpage.php' );
 
 include( get_template_directory() . '/assets/src/php/page-components/events-section.php' );
 

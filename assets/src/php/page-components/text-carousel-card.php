@@ -1,11 +1,8 @@
-<div class="card cell large-6 medium-6 small-12 beliefs-cycle">
+<div class="card cell large-6 medium-6 small-12 text-carousel-card">
 
-	<div class="inner">
-
-	<div class="contents">
 	  <h2>What we believe</h2>
 
-	  <div class="beliefs-carousel">
+	  <div class="text-carousel">
 	    <button class="control prev" aria-hidden="true"></button>
 	    <button class="control next" aria-hidden="true"></button>
 	    <ol class="beliefs">
@@ -28,18 +25,18 @@
 	  <div class="action">
 	    <a href="<?php echo home_url(); ?>/platform/" class="dark button">Read full platform</a>
 	  </div>
-	</div>
+
 
 </div><!-- end .inner -->
 
 <!-- Beliefs Carousel Script -->
 
 <script async>jQuery(document).ready(function($) {
-		  if($(".beliefs-carousel").length) {
+		  if($(".text-carousel").length) {
 
 
-		    var curActive = $(".beliefs-carousel .active");
-		    var totalBeliefs = $(".beliefs-carousel li").length;
+		    var curActive = $(".text-carousel .active");
+		    var totalBeliefs = $(".text-carousel li").length;
 		    var curIndex = 1;
 
 
@@ -48,7 +45,7 @@
 		    function beliefAdvance() {
 		      curActive = curActive.next();
 		      if(curIndex == totalBeliefs) {
-		        curActive = $(".beliefs-carousel li:eq(0)")
+		        curActive = $(".text-carousel li:eq(0)")
 		        $(curActive).addClass("active");
 		        curIndex = 1;
 		      } else {
@@ -60,7 +57,7 @@
 		    function beliefRewind() {
 		      curActive = curActive.prev();
 		      if(curIndex == 1) {
-		        curActive = $(".beliefs-carousel li:eq(11)")
+		        curActive = $(".text-carousel li:eq(11)")
 		        $(curActive).addClass("active");
 		        curIndex = totalBeliefs;
 		      } else {
@@ -72,7 +69,7 @@
 
 		    $(".control").click(function(){
 
-		      $(".beliefs-carousel li").removeClass("active");
+		      $(".text-carousel li").removeClass("active");
 		      if($(this).hasClass("next")) {
 		        beliefAdvance();
 		        //console.log("curIndex is: " + curIndex);

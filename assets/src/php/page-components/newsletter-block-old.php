@@ -1,3 +1,9 @@
+<?php
+	 //- Declare variables for custom logo
+$custom_logo_id = get_theme_mod( 'custom_logo' );
+$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+?>
+
 <div class="card newsletter-signup">
   <div class="inner">
     <div class="pairing">

@@ -107,7 +107,7 @@ h2.dsa-local-brand {
 // }
 
 // .card-red {
-//   background-color: #ec1f27;
+//   background-color: $base-color;
 //   padding: 2rem 4rem;
 // }
 
@@ -254,7 +254,7 @@ h1.home-title {
 
 .sdsa-2017-global-footer {
   padding: 50px 0;
-  background: #EC1F27;
+  background: $base-color;
   color: white
 }
 
@@ -282,450 +282,16 @@ h1.home-title {
   padding-top: 3rem;
 }
 
-.sdsa-2017-frontispiece {
-  padding-bottom: 50px
-}
 
-.sdsa-2017-frontispiece .essay {
-  position: relative
-}
 
 
-@media screen and (min-width: 900px) {}
-
-@media screen and (max-width: 899px) {
-  .sdsa-2017-frontispiece .essay {
-    background: url("../images/ui-foregrounds/mobile-mural.png") no-repeat left top;
-    background-size: 100% auto
-  }
-}
-
-// old
-// .sdsa-2017-frontispiece .essay .inner {
-//   padding: 164px 0 0 52.833333333333%
-// }
-
-// @media screen and (max-width: 899px) {
-//   .sdsa-2017-frontispiece .essay .inner {
-//     padding: 15% 0 0 0
-//   }
-// }
-
-.sdsa-2017-frontispiece .plate {
-  background: #f7f7f7;
-  padding: 3rem 4rem;
-  line-height: 1.4
-}
-
-// new
-.sdsa-2017-frontispiece .card,
-.card {
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding: 2rem;
-  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.15);
-  border: none;
-  background-color: #fff;
-}
-
-//new
-.card p {
-  text-align: left;
-}
-
-// old
-// @media screen and (max-width: 899px) {
-//   .sdsa-2017-frontispiece .plate,
-//   .dsa-alert {
-//     box-sizing: border-box;
-//     max-width: 550px;
-//     margin: 0 auto
-//}
-//}
-
-.sdsa-2017-frontispiece .plate h1 {
-  font-size: 1.875rem;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  margin: 0 -10px 2.5rem 0
-}
-
-// old
-// .sdsa-2017-frontispiece .plate h1 mark {
-//   font-weight: 700
-// }
-
-// .sdsa-2017-frontispiece .plate p {
-//   margin-bottom: 1.75em
-// }
-
-// .sdsa-2017-frontispiece .plate p:last-of-type {
-//   margin-bottom: 0
-// }
-
-// .sdsa-2017-frontispiece .plate .actions {
-//   padding-top: 40px
-// }
-
-// .sdsa-2017-frontispiece .plate .actions ul {
-//   text-align: center;
-//   margin: 0px;
-// }
-
-// .sdsa-2017-frontispiece .plate .actions li {
-//   display: inline-block
-// }
-
-// .sdsa-2017-frontispiece .plate .actions li {
-//   margin: 0 6px 10px 0
-// }
-
-// .sdsa-2017-frontispiece .plate .actions a {
-//   display: inline-block;
-//   text-transform: uppercase;
-//   color: white;
-//   padding: 10px 30px 10px;
-//   background: #EC1F27;
-//   font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-
-//   border-radius: 30px;
-//   font-weight: 700;
-//   font-size: 1.0625rem;
-//   border: none;
-//   cursor: pointer;
-//   transition: all 150ms
-// }
-
-// .sdsa-2017-frontispiece .plate .actions a.small {
-//   padding: 8px 13px 8px;
-// }
-
-// .sdsa-2017-frontispiece .plate .actions a:hover {
-//   background: #f04e54;
-//   transform: translateY(-2px);
-//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-// }
-
-// .sdsa-2017-frontispiece .plate .actions a.dark {
-//   background: black
-// }
-
-// .sdsa-2017-frontispiece .plate .actions a.dark:hover {
-//   background: #333;
-//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-// }
-
-// .sdsa-2017-frontispiece .diptych .card {
-//   text-align: center;
-//   border: 0px transparent;
-//   margin-bottom: 0;
-//   margin-top: -1rem;
-// }
-
-@media screen and (min-width: 900px) {
-  //old
-  // .sdsa-2017-frontispiece .diptych .cards {
-  //   display: -ms-flexbox;
-  //   display: flex;
-  //   -ms-flex-pack: justify;
-  //   justify-content: space-between;
-  //   width: 100%
-
-
-
-
-  .sdsa-2017-frontispiece .diptych .card {
-    width: 47.166666666667%;
-    //old
-    text-align: center
-  }
-}
-
-
-// old
-// @media screen and (max-width: 899px) {
-//   .sdsa-2017-frontispiece .diptych .card {
-//     max-width: 550px;
-//     margin: 0 auto 60px;
-//   }
-
-//   .sdsa-2017-frontispiece .diptych .card:last-of-type {
-//     margin-bottom: 0;
-//   }
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup {
-//   background: url("../../images/ui-glyphs/stripes-red.svg") repeat-x left bottom;
-//   background-size: 18px 16px;
-//   background-color: #f7f7f7;
-//   -ms-flex-order: 1;
-//   order: 1;
-//   box-shadow: 0 -5px 0 #f7f7f7;
-//   margin-top: 2rem;
-//}
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup .inner {
-//   padding: 40px 0 12px;
-// }
-
-// @media screen and (min-width: 1100px) {
-//   .sdsa-2017-frontispiece .diptych .newsletter-signup .pairing {
-//     display: -ms-flexbox;
-//     display: flex;
-//     -ms-flex-pack: justify;
-//     justify-content: space-between;
-//     -ms-flex-align: center;
-//     align-items: center
-//   }
-
-//   .sdsa-2017-frontispiece .diptych .newsletter-signup figure {
-//     width: 29.116465863454%;
-//     margin: 0 auto
-//   }
-
-//   .sdsa-2017-frontispiece .diptych .newsletter-signup .form {
-//     width: 61.847389558233%;
-//     margin: 0
-//   }
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup .pairing {
-//   width: 85.862068965517%;
-//   margin: 0 auto
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup figure {
-//   max-width: 145px;
-//   margin: 0 auto 30px
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup .fields {
-//   max-width: 250px;
-//   margin: 0 auto
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup h1 {
-//   font-size: 1.875rem;
-//   font-weight: 500;
-//   line-height: 1.05;
-//   margin-bottom: 41px
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="text"],
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="email"] {
-//   border: none;
-//   color: black;
-//   font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-//   display: inline-block;
-//   text-align: center;
-//   width: 45%;
-//   background: white;
-//   padding: 11px 10px 11px;
-//   border-radius: 50px;
-//   box-sizing: border-box;
-//   margin-bottom: 20px;
-//   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05)
-// }
-
-// input#mce-FNAME::placeholder,
-// input#mce-LNAME::placeholder,
-// input#mce-EMAIL::placeholder {
-//   color: #aaa;
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup h1 {
-//   font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="email"] {
-//   width: 100%;
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input::-webkit-input-placeholder,
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input::-ms-input-placeholder,
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input::placeholder {
-//   color: #aaa
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="submit"] {
-//   display: inline-block;
-//   text-transform: uppercase;
-//   color: white;
-//   padding: 12px 30px 12px;
-//   background: #EC1F27;
-//   font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-
-//   border-radius: 30px;
-//   font-weight: 700;
-//   font-size: 1.0625rem;
-//   border: none;
-//   cursor: pointer;
-//   transition: all 150ms
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="submit"].small {
-//   padding: 6px 13px 3px
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="submit"]:hover {
-//   background: #f04e54;
-//   transform: translateY(-2px);
-//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="submit"].dark {
-//   background: black
-// }
-
-// .sdsa-2017-frontispiece .diptych .newsletter-signup input[type="submit"].dark:hover {
-//   background: #333;
-//   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-// }
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle {
-  // old background: url("../../images/ui-glyphs/essay-plate-bottom.svg") repeat-x left top, url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
-  background-size: 18px 109px, 18px 16px;
-  background-color: #EC1F27;
-  color: white;
-  -ms-flex-order: 2;
-  order: 2;
-  // old margin-top: -1rem;
-  // old border-right: 1px solid #fff;
-}
-
-// old .sdsa-2017-frontispiece .diptych .beliefs-cycle .inner {
-//   padding: 138px 0 65px
-//}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .contents {
-  margin: 0 20px
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle h1 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .beliefs-carousel {
-  position: relative;
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .action {
-  padding-top: 2rem;
-}
-
-// new
-.sdsa-2017-frontispiece .diptych .card.beliefs-cycle .action a {
-  cursor: pointer;
-  transition: all 150ms
-}
-
-// old .sdsa-2017-frontispiece .diptych .beliefs-cycle .action a {
-//   display: inline-block;
-//   text-transform: uppercase;
-//   color: white;
-//   padding: 12px 30px 12px;
-//   background: #EC1F27;
-//   font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-
-//   border-radius: 30px;
-//   font-weight: 700;
-//   font-size: 1.0625rem;
-//   border: none;
-//   cursor: pointer;
-//   transition: all 150ms
-// }
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .action a.small {
-  padding: 8px 13px 8px
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .action a:hover {
-  background: #f04e54;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-}
-
-//old
-// .sdsa-2017-frontispiece .diptych .beliefs-cycle .action a.dark {
-//   background: black
-// }
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .action a.dark:hover {
-  background: #333;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .beliefs {
-  position: relative;
-  z-index: 1;
-  min-height: 50px
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .beliefs li {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
-  font-size: 1.3rem;
-  line-height: 1.1;
-  box-sizing: border-box;
-  padding: 0 40px;
-  opacity: 0;
-  transition: all 400ms;
-  font-weight: 400;
-  list-style: none;
-}
 
 //new
 .text-center {
   text-align: center;
 }
 
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .beliefs li.active {
-  opacity: 1
-}
 
-@media screen and (max-width: 370px) {
-  .sdsa-2017-frontispiece .diptych .beliefs-cycle .beliefs li {
-    font-size: 1.125rem
-  }
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .control {
-  position: absolute;
-  background: url("../../images/ui-glyphs/caret-leftward.svg") no-repeat center center;
-  background-size: 10px 18px;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  border: none;
-  cursor: pointer;
-  transition: all 200ms;
-  transform: translateY(-50%) scale(1);
-  z-index: 2
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .control.prev {
-  left: -10px
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .control.next {
-  right: -10px;
-  background-image: url("../../images/ui-glyphs/caret-rightward.svg")
-}
-
-.sdsa-2017-frontispiece .diptych .beliefs-cycle .control:hover {
-  transform: translateY(-50%) scale(1.2)
-}
 
 
 
@@ -733,7 +299,7 @@ h1.home-title {
   #dsa-home-row-1 .dsa-home-row-2-edit .dsa-slides {
     background: url(../../images/card-top-blue.png) repeat-x left top;
     background-size: 18px 109px, 18px 16px;
-    background-color: #EC1F27;
+    background-color: $base-color;
     color: white;
     -ms-flex-order: 2 !important;
     order: 2 !important;
@@ -748,7 +314,7 @@ h1.home-title {
   }
 
   #dsa-home-row-1 .dsa-home-row-2-edit .dsa-slides {
-    background: #ec1f27 none;
+    background: $base-color none;
   }
 
   .card-gray {
@@ -784,7 +350,7 @@ h1.home-title {
 }
 
 div#dsa-home-row-3 {
-  background-color: #EC1F27;
+  background-color: $base-color;
 }
 
 div#dsa-home-row-4 {

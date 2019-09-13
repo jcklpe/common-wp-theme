@@ -1,0 +1,103 @@
+div.frontpage {
+    position: relative;
+    padding-bottom: 50px;
+
+    .plate {
+        background: white;
+        padding: 3rem 4rem;
+
+        line-height: 1.4 h1 {
+            font-size: 1.875rem;
+            line-height: 1.2;
+            font-weight: 500;
+            letter-spacing: -0.015em;
+            margin: 0 -10px 2.5rem 0
+        }
+
+        p {
+            margin-bottom: 1.75em
+        }
+
+        p:last-of-type {
+            margin-bottom: 0
+        }
+
+        .actions {
+            padding-top: 40px;
+
+            ul {
+                text-align: center;
+                margin: 0px;
+
+                li {
+                    display: inline-block;
+                    margin: 0 6px 10px 0;
+                }
+            }
+
+            a {
+                display: inline-block;
+                text-transform: uppercase;
+                color: white;
+                padding: 10px 30px 10px;
+                background: $base-color;
+                font-family: 'Manifold DSA',
+                    Roboto,
+                    Helvetica,
+                    Arial,
+                    sans-serif,
+                    "Apple Color Emoji",
+                    "Segoe UI Emoji",
+                    "Segoe UI Symbol";
+                border-radius: 30px;
+                font-weight: 700;
+                font-size: 1.0625rem;
+                border: none;
+                cursor: pointer;
+
+                transition: all 150ms;
+
+                &:hover {
+                    background: $base-color;
+                    transform: translateY(-2px);
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+                }
+
+                &.dark {
+                    background: black;
+
+                    &:hover {
+                        background: #333;
+                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
+                    }
+                }
+            }
+        }
+    }
+
+    .diptych .card {
+        text-align: center;
+        border: 0px transparent;
+        margin-bottom: 0;
+        margin-top: -1rem;
+    }
+
+    // old
+    // @media screen and (max-width: 899px) {
+    //   .frontpage .plate,
+    //   .dsa-alert {
+    //     box-sizing: border-box;
+    //     max-width: 550px;
+    //     margin: 0 auto
+    //}
+    //}
+
+
+
+
+
+    @include breakpoint(mobile) {
+        background: url("../images/ui-foregrounds/mobile-mural.png") no-repeat left top;
+        background-size: 100% auto
+    }
+}

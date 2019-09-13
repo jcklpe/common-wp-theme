@@ -2,7 +2,7 @@
 
 	<header class="article-header">
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-		<?php get_template_part( 'assets/src/php/page-components/content', 'byline' ); ?>
+		include( get_template_directory() . '/assets/src/php/page-components/byline.php' );
     </header> <!-- end article header -->
 	<div class="dsa-share">
 		<strong>Share:</strong>

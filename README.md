@@ -2,13 +2,15 @@
 
 ![](./assets/images/github.jpg)
 
-
-
 This is a wordpress theme for non-profit use. It's focus is on simple visual design, and clean componentized code for easy customization by organizations with diverse needs.
 
 ## Build Process
 
-This theme comes with a gulp based build scheme. To build the theme you just need to install npm and run "npm install" in the theme root folder then run "gulp build" to build a new version of the styles.css files.
+This theme comes with a [gulp](https://gulpjs.com/) based build system. It's super easy to use! You just need some basic knowledge of [CLI](https://www.youtube.com/watch?v=4RPtJ9UyHS0).
+
+To build the theme you just need to install the package manager [npm](https://www.npmjs.com/) and run `npm install` in the theme root folder then run `gulp build` to build a new version of the `build` files.
+
+You can also use the command `gulp watch` to watch the `src` folder for any changes to the files as you work so that it can seamlessly build new versions of the build files in the background.
 
 ## TODO:
 
