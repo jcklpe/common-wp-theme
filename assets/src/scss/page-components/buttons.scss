@@ -2,26 +2,75 @@
 7. BUTTONS MASTER COPY
 ****************/
 
+div.wp-block-button {
+  display: inline-block;
+  margin: 0 6px 10px 0;
+
+  a {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 30px 10px;
+    font-family: 'Manifold DSA',
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms;
+
+    &:hover {
+      // background: $base-color;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    &.has-base-background-color {
+      background-color: $base-color;
+
+      &:hover {
+        background-color: $base-color-bright;
+      }
+    }
+
+    &.has-dark-gray-background-color {
+      background-color: $dark-gray;
+
+      &:hover {
+        background-color: $dark-gray-bright;
+      }
+    }
+  }
+
+}
+
 a.button.radius.button-white {
   border: none;
   color: black;
 }
 
-a.hollow {
-  border-width: 2px;
-}
+// a.hollow {
+//   border-width: 2px;
+// }
 
-a.button.hollow {
-  border-width: 2px;
-  border-color: $base-color;
-  color: $base-color;
-}
+// a.button.hollow {
+//   border-width: 2px;
+//   border-color: $base-color;
+//   color: $base-color;
+// }
 
-a.button.radius.button-white:hover {
-  border: none;
-  background-color: $base-color;
-  color: white;
-}
+// a.button.radius.button-white:hover {
+//   border: none;
+//   background-color: $base-color;
+//   color: white;
+// }
 
 // a.button.button-clear-white {
 //   background-color: transparent;
@@ -49,14 +98,14 @@ a.button.radius.button-white:hover {
 
 // a.button.button-clear-black {
 //   background-color: white;
-//   color: $dark-brown;
-//   border: 2px solid $dark-brown;
+//   color: $dark-gray;
+//   border: 2px solid $dark-gray;
 // }
 
 // a.button.button-clear-black:hover {
-//   background-color: $dark-brown;
+//   background-color: $dark-gray;
 //   color: white;
-//   border: 2px solid $dark-brown;
+//   border: 2px solid $dark-gray;
 // }
 
 // a.button.button-clear-gold {
@@ -80,6 +129,9 @@ a.button.radius.button-white:hover {
   padding: 0.85em 0.5em;
 }
 
+
+
+//- Pagination buttons
 button,
 .button,
 input[type="button"],
@@ -129,33 +181,16 @@ input[type="button"]:hover,
   transform: translateY(-2px);
 }
 
-button.dark,
-.button.dark,
-#page #mc_embed_signup .button.dark,
-.pagination .button.current {
-  background-color: $dark-brown;
-  color: #fff;
-  // border-radius: 2em;
-  transition: all 150ms;
-}
 
-.button.dark:focus,
-.button.dark:hover,
-input[type="button"]:hover {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  // transform: translateY(-2px);
-}
 
-.button.success {
-  border-color: #3adb76;
-}
+// .button.success {
+//   border-color: #3adb76;
+// }
 
-.button.alert {
-  border-color: #cc4b37;
-}
+// .button.alert {
+//   border-color: #cc4b37;
+// }
 
-.button.warning {
-  border-color: #ffae00;
-}
+// .button.warning {
+//   border-color: #ffae00;
+// }

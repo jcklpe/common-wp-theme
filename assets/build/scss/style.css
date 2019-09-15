@@ -600,22 +600,36 @@ a:hover {
 /***************
 7. BUTTONS MASTER COPY
 ****************/
+div.wp-block-button {
+  display: inline-block;
+  margin: 0 6px 10px 0; }
+  div.wp-block-button a {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 30px 10px;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms; }
+    div.wp-block-button a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+    div.wp-block-button a.has-base-background-color {
+      background-color: #EC1F27; }
+      div.wp-block-button a.has-base-background-color:hover {
+        background-color: #ff0061; }
+    div.wp-block-button a.has-dark-gray-background-color {
+      background-color: #231F20; }
+      div.wp-block-button a.has-dark-gray-background-color:hover {
+        background-color: #352c2e; }
+
 a.button.radius.button-white {
   border: none;
   color: black; }
-
-a.hollow {
-  border-width: 2px; }
-
-a.button.hollow {
-  border-width: 2px;
-  border-color: #EC1F27;
-  color: #EC1F27; }
-
-a.button.radius.button-white:hover {
-  border: none;
-  background-color: #EC1F27;
-  color: white; }
 
 .button-group.expanded .button {
   padding: 0.85em 0.5em; }
@@ -661,30 +675,6 @@ input[type="button"]:hover,
   color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
-
-button.dark,
-.button.dark,
-#page #mc_embed_signup .button.dark,
-.pagination .button.current {
-  background-color: #231F20;
-  color: #fff;
-  transition: all 150ms; }
-
-.button.dark:focus,
-.button.dark:hover,
-input[type="button"]:hover {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
-
-.button.success {
-  border-color: #3adb76; }
-
-.button.alert {
-  border-color: #cc4b37; }
-
-.button.warning {
-  border-color: #ffae00; }
 
 /*********************
 12. COMMENT STYLES
@@ -951,10 +941,13 @@ a.txt-DSAwhite:hover {
   font-size: 1.2rem;
   line-height: 1; }
 
-.menu > li > a {
+.menu li a {
   padding: 1rem;
   line-height: 1;
   font-size: 1.2rem; }
+
+.menu li img {
+  margin: 20px; }
 
 .menu.vertical > li {
   padding-top: 0; }
@@ -1126,7 +1119,9 @@ div.frontpage {
   position: relative;
   padding-bottom: 50px; }
   div.frontpage .plate {
-    background: white;
+    background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
+    background-size: 18px 16px;
+    background-color: #f7f7f7;
     padding: 3rem 4rem;
     line-height: 1.4; }
     div.frontpage .plate h1 {
@@ -1167,7 +1162,7 @@ div.frontpage {
         div.frontpage .plate .actions a.dark {
           background: black; }
           div.frontpage .plate .actions a.dark:hover {
-            background: #333;
+            background: #231F20;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
   div.frontpage .diptych .card {
     text-align: center;
@@ -1187,9 +1182,6 @@ div.frontpage {
   .card p {
     text-align: left; }
 
-.plate {
-  background-color: #f7f7f7; }
-
 @media screen and (max-width: 40em) {
   .card-gray {
     margin-bottom: 2rem; } }
@@ -1201,7 +1193,7 @@ div.frontpage {
   -ms-flex-order: 1;
   order: 1;
   box-shadow: 0 -5px 0 #f7f7f7;
-  margin-top: 2rem; }
+  margin-top: -5rem; }
   .newsletter-signup .grid-x {
     padding: 40px 0 12px; }
 
@@ -1296,7 +1288,7 @@ input#mce-EMAIL::placeholder {
   background: black; }
 
 .frontpage .diptych .newsletter-signup input[type="submit"].dark:hover {
-  background: #333;
+  background: #231F20;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
 
 .text-carousel-card {
@@ -1306,7 +1298,8 @@ input#mce-EMAIL::placeholder {
   color: white;
   -ms-flex-order: 2;
   order: 2;
-  border-right: 1px solid white; }
+  border-right: 1px solid white;
+  background-origin: border-box; }
   .text-carousel-card h1 {
     text-transform: uppercase;
     font-size: 1rem;

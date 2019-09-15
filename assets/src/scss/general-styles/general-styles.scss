@@ -43,14 +43,14 @@ h5 small {
 
 .page blockquote {
   font-size: 1.5rem;
-  color: $dark-brown;
+  color: $dark-gray;
   border-left: 0px solid $base-color;
   padding: 25px 0 25px 0;
 }
 
 .page blockquote p {
   font-size: 1.5rem;
-  color: $dark-brown;
+  color: $dark-gray;
   padding: 0;
 }
 
@@ -113,14 +113,14 @@ img.icon-list {
   content: '';
   width: 50%;
   top: 25px;
-  border-top: 8px solid $dark-brown;
+  border-top: 8px solid $dark-gray;
 }
 
 .page blockquote:after {
   content: '';
   width: 50%;
   bottom: 25px;
-  border-bottom: 8px solid $dark-brown;
+  border-bottom: 8px solid $dark-gray;
 }
 
 .sdsa-page-hero {

@@ -45,12 +45,12 @@
 }
 
 .page-title {
-  color: $dark-brown;
+  color: $dark-gray;
   margin: 4rem 0 3rem 0;
 }
 
 .bg-DSAblack {
-  background-color: $dark-brown;
+  background-color: $dark-gray;
 }
 
 .txt-DSAred {
@@ -62,7 +62,7 @@
 }
 
 .txt-DSAblack {
-  color: $dark-brown;
+  color: $dark-gray;
 }
 
 .txt-DSAwhite,
@@ -71,13 +71,13 @@
 }
 
 a.txt-DSAwhite:hover {
-  background-color: $dark-brown;
+  background-color: $dark-gray;
   color: white;
 }
 
 .top-bar a:hover,
 .menu .active a {
-  background: $dark-brown;
+  background: $dark-gray;
 }
 
 .top-bar img.dsa-rose-mark {
@@ -97,10 +97,20 @@ a.txt-DSAwhite:hover {
   line-height: 1;
 }
 
-.menu>li>a {
-  padding: 1rem;
-  line-height: 1;
-  font-size: 1.2rem;
+.menu {
+
+  li {
+
+    a {
+      padding: 1rem;
+      line-height: 1;
+      font-size: 1.2rem;
+    }
+
+    img {
+      margin: 20px;
+    }
+  }
 }
 
 .menu.vertical>li {

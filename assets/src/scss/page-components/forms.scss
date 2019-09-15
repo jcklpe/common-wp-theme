@@ -32,7 +32,7 @@ input#mce-EMAIL::placeholder {
 }
 
 #page #mc_embed_signup .button {
-  background-color: $dark-brown !important;
+  background-color: $dark-gray !important;
   color: #fff;
   border-radius: 2em;
   transition: all 150ms;
@@ -42,7 +42,7 @@ input#mce-EMAIL::placeholder {
 }
 
 #page #mc_embed_signup .button.dark:hover {
-  background-color: $dark-brown;
+  background-color: $dark-gray;
   color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);

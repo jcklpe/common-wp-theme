@@ -2,8 +2,10 @@
 
 // general color palette
 $red: #EC1F27;
+$red-bright: #ff0061;
 $gray: #999;
-$dark-brown: #231F20;
+$dark-gray: #231F20;
+$dark-gray-bright: #352c2e;
 $off-white: #edeeef;
 
 
@@ -14,4 +16,6 @@ $black9: rgba(0, 0, 0, 0.9);
 
 
 //- Theme colors
+// don't forget to also change colors offered in editor by default
 $base-color: $red;
+$base-color-bright: $red-bright;

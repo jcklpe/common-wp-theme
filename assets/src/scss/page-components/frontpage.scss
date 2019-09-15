@@ -3,7 +3,10 @@ div.frontpage {
     padding-bottom: 50px;
 
     .plate {
-        background: white;
+        background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
+        background-size: 18px 16px;
+        background-color: #f7f7f7;
+
         padding: 3rem 4rem;
         line-height: 1.4;
 
@@ -68,7 +71,7 @@ div.frontpage {
                     background: black;
 
                     &:hover {
-                        background: #333;
+                        background: #231F20;
                         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2)
                     }
                 }
