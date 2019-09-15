@@ -11,9 +11,6 @@
 .text-center {
   text-align: center; }
 
-/*********************
-1. WEB FONTS
-*********************/
 @font-face {
   font-family: 'Manifold DSA';
   font-display: fallback;
@@ -30,17 +27,6 @@
   font-weight: normal;
   font-weight: 400;
   font-style: normal; }
-
-/******************************************************************
-23. fullPage.js Plugin Changes
-******************************************************************/
-.fullpage-wrapper .mcw-fp-section p,
-.fullpage-wrapper .mcw-fp-section li {
-  font-size: 1.2rem; }
-
-.fullpage-wrapper .mcw-fp-section .wp-block-image figcaption {
-  font-size: 0.9rem;
-  font-weight: 400; }
 
 header,
 body,
@@ -221,21 +207,6 @@ img.icon-list {
   float: left;
   margin: 1rem 1rem 0 0; }
 
-/*********************
-4. H1, H2, H3, H4, H5 P STYLES MASTERCOPY
-*********************/
-h1 a,
-.h1 a,
-h2 a,
-.h2 a,
-h3 a,
-.h3 a,
-h4 a,
-.h4 a,
-h5 a,
-.h5 a {
-  text-decoration: none; }
-
 h1 {
   font-size: 2.5rem;
   margin: 0.67em 0; }
@@ -260,6 +231,18 @@ h6 {
   font-size: 1rem;
   margin: 2.33em 0; }
 
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none; }
+
 a:link,
 a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
@@ -278,65 +261,18 @@ a:hover {
   color: #EC1F27;
   background-color: rgba(236, 31, 39, 0.1); }
 
-/*********************
-11. PAGE NAVI STYLES
-*********************/
-.page-navigation {
-  margin-top: 1rem; }
+.entry-content img {
+  max-width: 100%;
+  height: auto; }
 
-/*********************
-18. PLUGIN STYLES
-*********************/
-.gform_body ul {
-  list-style: none outside none;
-  margin: 0; }
-
-/*********************
-8. POSTS & CONTENT STYLES copy
-*********************/
-#content #inner-content {
-  padding: 1rem 0rem; }
-
-#content .entry-content figure {
+.entry-content figure {
   margin: 2rem 0; }
-
-#content #inner-content .article-header h1,
-#content #inner-content h2 {
-  margin-bottom: 0.5rem;
-  margin-top: 2rem; }
-
-.archive #content #inner-content .article-header h1,
-.archive #content #inner-content h2 {
-  margin-top: 0; }
 
 .entry-content p,
 .entry-content li {
   color: rgba(0, 0, 0, 0.9);
   font-size: 1.25rem;
   line-height: 1.58; }
-
-#content #inner-content .post p.byline {
-  color: rgba 0, 0, 0, 0.6; }
-
-#content #inner-content .category-minutes h2 {
-  border-top: 0.5rem solid;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 4rem 0 0.5rem 0; }
-
-.page-title .vcard {
-  border: 0px;
-  padding: 0px; }
-
-.byline {
-  color: #999; }
-
-.entry-content img {
-  max-width: 100%;
-  height: auto; }
-
-.post .entry-content a {
-  text-decoration: underline; }
 
 .entry-content .alignleft,
 .entry-content img.alignleft {
@@ -358,89 +294,67 @@ a:hover {
   border: 1px solid #cecece;
   padding: 10px; }
 
-.single .post .entry-content img.wp-post-image,
-.single .event-thumbnail-image .tribe-events-event-image img {
+#content #inner-content {
+  padding: 1rem 0rem; }
+
+#content #inner-content .article-header h1,
+#content #inner-content h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 2rem; }
+
+.archive #content #inner-content .article-header h1,
+.archive #content #inner-content h2 {
+  margin-top: 0; }
+
+#content #inner-content .post p.byline {
+  color: rgba(0, 0, 0, 0.6); }
+
+.page-title .vcard {
+  border: 0px;
+  padding: 0px; }
+
+.byline {
+  color: #999; }
+
+.post .entry-content a {
+  text-decoration: underline; }
+
+.single .post .entry-content img.wp-post-image {
   border-radius: 2rem 2rem 0rem 0rem; }
 
-.single .event-thumbnail-image .tribe-events-event-image {
-  margin-bottom: 0px; }
-
-.single .tribe-events-schedule .recurringinfo {
-  float: right;
-  background-color: #edeeef;
-  border-radius: 1rem;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.9rem; }
-
-.single .post .entry-content .post-thumbnail-caption,
-.single .event-thumbnail-image .event-thumbnail-caption {
+.single .post .entry-content .post-thumbnail-caption {
   padding: 1rem 1.5rem 1rem;
   background-color: #edeeef;
   border-radius: 0rem 0rem 2rem 2rem; }
-
-.single .tribe-events-schedule .recurringinfo .tribe-events-divider {
-  color: #edeeef; }
-
-.single-tribe_events .tribe-events-cal-links {
-  clear: initial; }
-
-.tribe-events-meta-group .tribe-events-single-section-title {
-  font-size: 1.5rem; }
-
-.tribe-events-gmap {
-  background-color: #EC1F27;
-  color: #fff;
-  border-radius: 2em;
-  font-size: 1rem;
-  transition: all 150ms;
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  text-transform: capitalize;
-  padding: 0.5rem 1rem;
-  line-height: 1;
-  display: inline-block; }
 
 .wp-caption {
   max-width: 80%;
   background: #eee;
   margin-left: 10%;
   padding: 10px 25px; }
+  .wp-caption img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%; }
+  .wp-caption p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center; }
 
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%; }
+.card {
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  padding: 2.2rem;
+  border: none;
+  text-align: center;
+  position: relative;
+  background: white; }
+  .card p {
+    text-align: left; }
 
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center; }
-
-/*********************
-9. 2018 POST FORMAT TESTING
-*********************/
-.post-template-single2018-php #content #inner-content header {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid #efefef;
-  margin-bottom: 2rem; }
-
-.post-template-single2018-php #content #inner-content main#main {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 2rem; }
-
-.post-template-single2018-php #content #inner-content div#sidebar1 {
-  margin-top: 4rem; }
-
-#content #inner-content .dsa-share {
-  font-size: 1.25rem;
-  margin-top: 1rem; }
-
-#content #inner-content .button.dsa-share {
-  padding: 0.75rem; }
-
-#content #inner-content .button.dsa-share .button-icon {
-  width: 1.5rem;
-  height: auto; }
+@media screen and (max-width: 40em) {
+  .card-gray {
+    margin-bottom: 2rem; } }
 
 .post-password-form input[type="submit"] {
   display: inline-block;
@@ -562,40 +476,33 @@ a:hover {
   border-bottom: 0px solid transparent;
   transition: background .35s ease-in-out;
   padding: 0.5rem 1rem; }
-
-.accordion-title:hover,
-.accordion-title:active,
-.accordion-title:focus {
-  color: #fff;
-  background-color: #0a0a0a; }
-
-.accordion-title:before {
-  font-size: 1.5rem;
-  line-height: 4rem;
-  margin-top: 0;
-  top: inherit; }
+  .accordion-title:hover, .accordion-title:active, .accordion-title:focus {
+    color: #fff;
+    background-color: #0a0a0a; }
+  .accordion-title:before {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    margin-top: 0;
+    top: inherit; }
+  .accordion-title img {
+    height: 4rem;
+    width: auto;
+    margin-right: 0.5rem; }
 
 :last-child:not(.is-active) > .accordion-title,
 :last-child > .accordion-content:last-child {
   border-bottom: 0.1rem solid #0a0a0a; }
-
-.accordion-title img {
-  height: 4rem;
-  width: auto;
-  margin-right: 0.5rem; }
 
 .accordion-content {
   border-top: 0.15rem solid #0a0a0a;
   border-left: 0.15rem solid #0a0a0a;
   border-right: 0.15rem solid #0a0a0a;
   border-bottom: 0px solid transparent; }
-
-.accordion-content ol {
-  padding-left: 2.5rem;
-  border-left: 0.1rem solid #0a0a0a; }
-
-.accordion-content ol li {
-  padding-left: 0.75rem; }
+  .accordion-content ol {
+    padding-left: 2.5rem;
+    border-left: 0.1rem solid #0a0a0a; }
+    .accordion-content ol li {
+      padding-left: 0.75rem; }
 
 /***************
 7. BUTTONS MASTER COPY
@@ -676,72 +583,68 @@ input[type="button"]:hover,
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px); }
 
+#content #inner-content .share-button {
+  font-size: 1.25rem;
+  margin-top: 1rem; }
+
+#content #inner-content .button.share-button {
+  padding: 0.75rem; }
+  #content #inner-content .button.share-button .button-icon {
+    width: 1.5rem;
+    height: auto; }
+
 /*********************
 12. COMMENT STYLES
 *********************/
 #comments .commentlist {
   margin-left: 0px; }
+  #comments .commentlist li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+    padding: 0.7335em 10px; }
+    #comments .commentlist li:last-child {
+      margin-bottom: 0; }
+    #comments .commentlist li[class*=depth-] {
+      margin-top: 1.1em; }
+    #comments .commentlist li.depth-1 {
+      margin-left: 0;
+      margin-top: 0; }
+    #comments .commentlist li:not(.depth-1) {
+      margin-left: 10px;
+      margin-top: 0;
+      padding-bottom: 0; }
+    #comments .commentlist li ul.children {
+      margin: 0; }
+  #comments .commentlist .vcard {
+    margin-left: 50px; }
+    #comments .commentlist .vcard cite.fn {
+      font-weight: 700;
+      font-style: normal; }
+    #comments .commentlist .vcard time {
+      float: right; }
+      #comments .commentlist .vcard time a {
+        color: #999;
+        text-decoration: none; }
+        #comments .commentlist .vcard time a:hover {
+          text-decoration: underline; }
+    #comments .commentlist .vcard img.avatar {
+      position: absolute;
+      left: 10px;
+      padding: 2px;
+      border: 1px solid #cecece;
+      background: #fff; }
+  #comments .commentlist .comment_content p {
+    margin: 0.7335em 0 1.5em;
+    font-size: 1em;
+    line-height: 1.5em; }
+  #comments .commentlist .comment-reply-link {
+    float: right; }
 
 #respond ul {
   margin-left: 0px; }
-
-.commentlist li {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  list-style-type: none;
-  margin-bottom: 1.5em;
-  padding: 0.7335em 10px; }
-
-.commentlist li:last-child {
-  margin-bottom: 0; }
-
-.commentlist li ul.children {
-  margin: 0; }
-
-.commentlist li[class*=depth-] {
-  margin-top: 1.1em; }
-
-.commentlist li.depth-1 {
-  margin-left: 0;
-  margin-top: 0; }
-
-.commentlist li:not(.depth-1) {
-  margin-left: 10px;
-  margin-top: 0;
-  padding-bottom: 0; }
-
-.commentlist .vcard {
-  margin-left: 50px; }
-
-.commentlist .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal; }
-
-.commentlist .vcard time {
-  float: right; }
-
-.commentlist .vcard time a {
-  color: #999;
-  text-decoration: none; }
-
-.commentlist .vcard time a:hover {
-  text-decoration: underline; }
-
-.commentlist .vcard img.avatar {
-  position: absolute;
-  left: 10px;
-  padding: 2px;
-  border: 1px solid #cecece;
-  background: #fff; }
-
-.commentlist .comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em; }
-
-.commentlist .comment-reply-link {
-  float: right; }
 
 /*********************
 15. FOOTER STYLES
@@ -752,31 +655,24 @@ input[type="button"]:hover,
   padding-top: 1em;
   background-color: #EC1F27;
   color: #fff; }
-
-.footer a {
-  color: #fff; }
-
-.footer a:hover {
-  background-color: #000;
-  color: #fff; }
-
-.footer h4 {
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  padding: 0.25em 1em;
-  font-weight: 400;
-  font-family: 'ManifoldDSA-Medium', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .footer a {
+    color: #fff; }
+    .footer a:hover {
+      background-color: #000;
+      color: #fff; }
+  .footer h4 {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em 1em;
+    font-weight: 400;
+    font-family: "ManifoldDSA-Medium", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 #dsa-footer .sidebar .widget {
   text-align: center; }
+  #dsa-footer .sidebar .widget div {
+    text-align: left; }
 
-#dsa-footer .sidebar .widget div {
-  text-align: left; }
-
-/*********************
-16. FORM STYLES
-*********************/
 [type=phone] {
   display: block;
   box-sizing: border-box;
@@ -798,17 +694,17 @@ input[type="button"]:hover,
   appearance: none; }
 
 input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-input#mce-FNAME:-ms-input-placeholder,
-input#mce-LNAME:-ms-input-placeholder,
-input#mce-EMAIL:-ms-input-placeholder {
+textarea:-ms-input-placeholder {
   color: #aaa; }
 
 input::placeholder,
-textarea::placeholder,
-input#mce-FNAME::placeholder,
-input#mce-LNAME::placeholder,
-input#mce-EMAIL::placeholder {
+textarea::placeholder {
+  color: #aaa; }
+
+input#mce-FNAME:-ms-input-placeholder, input#mce-LNAME:-ms-input-placeholder, input#mce-EMAIL:-ms-input-placeholder {
+  color: #aaa; }
+
+input#mce-FNAME::placeholder, input#mce-LNAME::placeholder, input#mce-EMAIL::placeholder {
   color: #aaa; }
 
 #page #mc_embed_signup .button {
@@ -817,28 +713,20 @@ input#mce-EMAIL::placeholder {
   border-radius: 2em;
   transition: all 150ms;
   text-transform: uppercase;
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
-#page #mc_embed_signup .button.dark:hover {
-  background-color: #231F20;
-  color: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px); }
+  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  #page #mc_embed_signup .button.dark:hover {
+    background-color: #231F20;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); }
 
 input[type="submit"] {
   background-color: #EC1F27;
   padding: 1rem;
   color: white;
   border: 0px; }
-
-input[type="submit"]:hover {
-  background-color: black; }
-
-/*********************
-5. HEADER STYLES
-*********************/
-.header ul.off-canvas-list li {
-  list-style: none; }
+  input[type="submit"]:hover {
+    background-color: black; }
 
 /*********************
 10. IMAGE GALLERY STYLES
@@ -865,28 +753,25 @@ input[type="submit"]:hover {
 6. MENU & NAVIGATION MASTER COPY
 *********************/
 .top-bar {
-  padding: 0; }
-
-.top-bar .title-area {
-  z-index: 1; }
+  padding: 0;
+  background-color: #EC1F27; }
+  .top-bar .title-area {
+    z-index: 1; }
+  .top-bar ul {
+    background-color: #EC1F27; }
+  .top-bar a,
+  .top-bar ul a {
+    color: white; }
 
 .off-canvas-list ul {
   margin-left: 0; }
+  .off-canvas-list ul li a {
+    border-bottom: 0px; }
+  .off-canvas-list ul .dropdown {
+    margin-left: 20px; }
 
-.off-canvas-list ul li a {
-  border-bottom: 0px; }
-
-.off-canvas-list ul .dropdown {
-  margin-left: 20px; }
-
-.top-bar,
-.top-bar ul,
 .off-canvas {
   background-color: #EC1F27; }
-
-.top-bar a,
-.top-bar ul a {
-  color: white; }
 
 .top-bar-right a,
 .off-canvas .menu > li > a {
@@ -909,7 +794,7 @@ input[type="submit"]:hover {
   color: #EC1F27; }
 
 .btn.bg-DSAred {
-  color: #fff; }
+  color: white; }
 
 .txt-DSAblack {
   color: #231F20; }
@@ -941,6 +826,34 @@ a.txt-DSAwhite:hover {
   font-size: 1.2rem;
   line-height: 1; }
 
+.menu.vertical > li {
+  padding-top: 0; }
+
+.menu > li.active > a {
+  background: white;
+  color: #EC1F27; }
+  .menu > li.active > a:hover {
+    color: #EC1F27;
+    background-color: white; }
+
+.off-canvas .menu > li > a:hover,
+.top-bar-right a:hover {
+  color: #EC1F27;
+  background-color: white; }
+
+.top-bar a:hover,
+.top-bar ul a:hover {
+  color: #EC1F27;
+  background-color: white; }
+
+#menu-footer.menu > li {
+  width: 45%;
+  display: inline-block; }
+
+.menu > li > a.dsa-top-name:hover {
+  background-color: #EC1F27;
+  color: white; }
+
 .menu li a {
   padding: 1rem;
   line-height: 1;
@@ -949,101 +862,13 @@ a.txt-DSAwhite:hover {
 .menu li img {
   margin: 20px; }
 
-.menu.vertical > li {
-  padding-top: 0; }
-
-.menu > li.active > a {
-  background: #fff;
-  color: #EC1F27; }
-
-.menu > li.active > a:hover,
-.off-canvas .menu > li > a:hover,
-.top-bar-right a:hover,
-.top-bar a:hover,
-.top-bar ul a:hover {
-  color: #EC1F27;
-  background-color: #fee; }
-
-#menu-footer.menu > li {
-  width: 45%;
-  display: inline-block; }
-
-.menu > li > a.dsa-top-name:hover {
-  background-color: #EC1F27;
-  color: #fff; }
-
-/*********************
-13. COMMENT FORM STYLES
-*********************/
-.respond-form {
-  margin: 1.5em 10px;
-  padding-bottom: 2.2em; }
-
-.respond-form form {
-  margin: 0.75em 0; }
-
-.respond-form form li {
-  list-style-type: none;
-  clear: both;
-  margin-bottom: 0.7335em; }
-
-.respond-form form li label,
-.respond-form form li small {
-  display: none; }
-
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url],
-.respond-form form textarea {
-  padding: 3px 6px;
-  background: #efefef;
-  border: 2px solid #cecece;
-  line-height: 1.5em; }
-
-.respond-form form input[type=text]:focus,
-.respond-form form input[type=email]:focus,
-.respond-form form input[type=url]:focus,
-.respond-form form textarea:focus {
-  background: #fff; }
-
-.respond-form form input[type=text]:invalid,
-.respond-form form input[type=email]:invalid,
-.respond-form form input[type=url]:invalid,
-.respond-form form textarea:invalid {
-  outline: none;
-  border-color: #fbc2c4;
-  background-color: #f6e7eb;
-  -ms-box-shadow: none;
-  box-shadow: none; }
-
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url] {
-  max-width: 400px;
-  min-width: 250px; }
-
-.respond-form form textarea {
-  resize: none;
-  width: 97.3%;
-  height: 150px; }
-
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
-
-.nocomments {
-  margin: 0 20px 1.1em; }
-
 /*********************
 14. SIDEBARS & ASIDES
 *********************/
 .widget ul {
   margin: 0; }
-
-.widget ul li {
-  list-style: none; }
+  .widget ul li {
+    list-style: none; }
 
 @media print, screen and (min-width: 40em) {
   .single #inner-content .sidebar {
@@ -1069,9 +894,6 @@ table.sdsa-platform-table tr td:nth-child(1) {
   width: 6rem;
   vertical-align: text-top; }
 
-/*********************
-19. TABS
-*********************/
 .tabs {
   background-color: #EC1F27;
   border-bottom: 0; }
@@ -1079,16 +901,13 @@ table.sdsa-platform-table tr td:nth-child(1) {
 .tabs-title > a {
   color: white;
   font-size: 1rem; }
-
-.tabs-title > a:focus,
-.tabs-title > a[aria-selected=true] {
-  color: black;
-  background: white;
-  box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2); }
-
-.tabs-title > a:hover {
-  color: white;
-  background: black; }
+  .tabs-title > a:focus, .tabs-title > a[aria-selected=true] {
+    color: black;
+    background: white;
+    box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2); }
+  .tabs-title > a:hover {
+    color: white;
+    background: black; }
 
 .tabs-panel {
   box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2); }
@@ -1110,191 +929,110 @@ figure.hero {
     min-height: 40vh;
     object-fit: cover; }
 
-div.diptych {
-  position: relative;
-  background: white;
-  padding: 50px; }
-
-div.frontpage {
-  position: relative;
-  padding-bottom: 50px; }
-  div.frontpage .plate {
-    background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
-    background-size: 18px 16px;
-    background-color: #f7f7f7;
-    padding: 3rem 4rem;
-    line-height: 1.4; }
-    div.frontpage .plate h1 {
-      font-size: 1.875rem;
-      line-height: 1.2;
-      font-weight: 500;
-      letter-spacing: -0.015em;
-      margin: 0 -10px 2.5rem 0; }
-    div.frontpage .plate p {
-      margin-bottom: 1.75em; }
-    div.frontpage .plate p:last-of-type {
-      margin-bottom: 0; }
-    div.frontpage .plate .actions {
-      padding-top: 40px; }
-      div.frontpage .plate .actions ul {
-        text-align: center;
-        margin: 0px; }
-        div.frontpage .plate .actions ul li {
-          display: inline-block;
-          margin: 0 6px 10px 0; }
-      div.frontpage .plate .actions a {
-        display: inline-block;
-        text-transform: uppercase;
-        color: white;
-        padding: 10px 30px 10px;
-        background: #EC1F27;
-        font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 1.0625rem;
-        border: none;
-        cursor: pointer;
-        transition: all 150ms; }
-        div.frontpage .plate .actions a:hover {
-          background: #EC1F27;
-          transform: translateY(-2px);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
-        div.frontpage .plate .actions a.dark {
-          background: black; }
-          div.frontpage .plate .actions a.dark:hover {
-            background: #231F20;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
-  div.frontpage .diptych .card {
-    text-align: center;
-    border: 0px transparent;
+.content-card {
+  background: #f7f7f7 url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
+  background-size: 18px 16px;
+  padding: 3rem 4rem;
+  line-height: 1.4; }
+  .content-card h1 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    margin: 0 -10px 2.5rem 0; }
+  .content-card p {
+    margin-bottom: 1.75em; }
+  .content-card p:last-of-type {
     margin-bottom: 0; }
-  @media (max-width: 767px) {
-    div.frontpage {
-      background: url("../images/ui-foregrounds/mobile-mural.png") no-repeat left top;
-      background-size: 100% auto; } }
 
-.card {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding: 2rem;
-  border: none;
-  background-color: #fff; }
-  .card p {
-    text-align: left; }
-
-@media screen and (max-width: 40em) {
-  .card-gray {
-    margin-bottom: 2rem; } }
+/*********************
+11. PAGE NAVI STYLES
+*********************/
+.page-navigation {
+  margin-top: 1rem; }
 
 .newsletter-signup {
-  background: url("../../images/ui-glyphs/stripes-red.svg") repeat-x left bottom;
-  background-size: 18px 16px;
-  background-color: #f7f7f7;
+  background: #f7f7f7 url("../../images/ui-glyphs/stripes-red.svg") repeat-x left bottom !important;
+  background-size: 18px 16px !important;
   -ms-flex-order: 1;
   order: 1;
-  box-shadow: 0 -5px 0 #f7f7f7;
   margin-top: -5rem; }
   .newsletter-signup .grid-x {
     padding: 40px 0 12px; }
-
-@media screen and (min-width: 1100px) {
-  .frontpage .diptych .newsletter-signup .pairing {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center; }
-  .frontpage .diptych .newsletter-signup figure {
-    width: 29.116465863454%;
+  .newsletter-signup figure {
+    max-width: 145px;
+    margin: 0 auto 30px; }
+  .newsletter-signup .fields {
+    max-width: 250px;
     margin: 0 auto; }
-  .frontpage .diptych .newsletter-signup .form {
-    width: 61.847389558233%;
-    margin: 0; } }
-
-.frontpage .diptych .newsletter-signup .frontpage .diptych .newsletter-signup figure {
-  max-width: 145px;
-  margin: 0 auto 30px; }
-
-.frontpage .diptych .newsletter-signup .fields {
-  max-width: 250px;
-  margin: 0 auto; }
-
-.frontpage .diptych .newsletter-signup h1 {
-  font-size: 1.875rem;
-  font-weight: 500;
-  line-height: 1.05;
-  margin-bottom: 41px; }
-
-.frontpage .diptych .newsletter-signup input[type="text"],
-.frontpage .diptych .newsletter-signup input[type="email"] {
-  border: none;
-  color: black;
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  display: inline-block;
-  text-align: center;
-  width: 45%;
-  background: white;
-  padding: 11px 10px 11px;
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05); }
-
-input#mce-FNAME:-ms-input-placeholder,
-input#mce-LNAME:-ms-input-placeholder,
-input#mce-EMAIL:-ms-input-placeholder {
-  color: #aaa; }
-
-input#mce-FNAME::placeholder,
-input#mce-LNAME::placeholder,
-input#mce-EMAIL::placeholder {
-  color: #aaa; }
-
-.frontpage .diptych .newsletter-signup h1 {
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-
-.frontpage .diptych .newsletter-signup input[type="email"] {
-  width: 100%; }
-
-.frontpage .diptych .newsletter-signup input::-webkit-input-placeholder,
-.frontpage .diptych .newsletter-signup input::-ms-input-placeholder,
-.frontpage .diptych .newsletter-signup input::placeholder {
-  color: #aaa; }
-
-.frontpage .diptych .newsletter-signup input[type="submit"] {
-  display: inline-block;
-  text-transform: uppercase;
-  color: white;
-  padding: 12px 30px 12px;
-  background: #EC1F27;
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 1.0625rem;
-  border: none;
-  cursor: pointer;
-  transition: all 150ms; }
-
-.frontpage .diptych .newsletter-signup input[type="submit"].small {
-  padding: 6px 13px 3px; }
-
-.frontpage .diptych .newsletter-signup input[type="submit"]:hover {
-  background: #f04e54;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
-
-.frontpage .diptych .newsletter-signup input[type="submit"].dark {
-  background: black; }
-
-.frontpage .diptych .newsletter-signup input[type="submit"].dark:hover {
-  background: #231F20;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+  .newsletter-signup h1 {
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 41px; }
+  .newsletter-signup input[type="text"], .newsletter-signup input[type="email"] {
+    border: none;
+    color: black;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+    background: white;
+    padding: 11px 10px 11px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05); }
+  .newsletter-signup input[type="email"] {
+    width: 100%; }
+  .newsletter-signup input:-ms-input-placeholder, .newsletter-signup input#mce-FNAME:-ms-input-placeholder, .newsletter-signup input#mce-LNAME:-ms-input-placeholder, .newsletter-signup input#mce-EMAIL:-ms-input-placeholder {
+    color: #aaa; }
+  .newsletter-signup input::placeholder, .newsletter-signup input#mce-FNAME::placeholder, .newsletter-signup input#mce-LNAME::placeholder, .newsletter-signup input#mce-EMAIL::placeholder {
+    color: #aaa; }
+  .newsletter-signup input[type="submit"] {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    padding: 12px 30px 12px;
+    background: #EC1F27;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.0625rem;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms; }
+    .newsletter-signup input[type="submit"].small {
+      padding: 6px 13px 3px; }
+    .newsletter-signup input[type="submit"]:hover {
+      background: #ff0061;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+    .newsletter-signup input[type="submit"].dark {
+      background: #231F20; }
+      .newsletter-signup input[type="submit"].dark:hover {
+        background: black;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 992px) {
+    .newsletter-signup .pairing {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: center;
+      align-items: center; }
+    .newsletter-signup figure {
+      width: 29.116465863454%;
+      margin: 0 auto; }
+    .newsletter-signup .form {
+      width: 61.847389558233%;
+      margin: 0; } }
 
 .text-carousel-card {
-  background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
-  background-size: 18px 109px, 18px 16px;
-  background-color: #EC1F27;
+  background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom !important;
+  background-size: 18px 16px !important;
+  background-color: #EC1F27 !important;
   color: white;
   -ms-flex-order: 2;
   order: 2;
@@ -1392,7 +1130,6 @@ button.close {
   max-width: none !important; }
 
 .info-section {
-  padding: 50px 0;
   padding: 50px 0; }
   .info-section h2 {
     font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -1401,3 +1138,82 @@ button.close {
     background-color: #292d2f; }
   .info-section#events-section {
     background-color: #EC1F27; }
+
+.single .event-thumbnail-image .tribe-events-event-image {
+  margin-bottom: 0px; }
+  .single .event-thumbnail-image .tribe-events-event-image img {
+    border-radius: 2rem 2rem 0rem 0rem; }
+
+.single .tribe-events-schedule .recurringinfo {
+  float: right;
+  background-color: #edeeef;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem; }
+
+.single .event-thumbnail-image .event-thumbnail-caption {
+  padding: 1rem 1.5rem 1rem;
+  background-color: #edeeef;
+  border-radius: 0rem 0rem 2rem 2rem; }
+
+.single .tribe-events-schedule .recurringinfo .tribe-events-divider {
+  color: #edeeef; }
+
+.single-tribe_events .tribe-events-cal-links {
+  clear: initial; }
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+  font-size: 1.5rem; }
+
+.tribe-events-gmap {
+  background-color: #EC1F27;
+  color: #fff;
+  border-radius: 2em;
+  font-size: 1rem;
+  transition: all 150ms;
+  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  display: inline-block; }
+
+table.tribe-events-calendar tbody tr:nth-child(even) {
+  background-color: #fefefe; }
+
+.tribe-events-calendar div[id*=tribe-events-daynum-] {
+  font-size: 1.35rem;
+  color: #231F20;
+  text-align: right;
+  background: transparent; }
+  .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+    font-size: 1.35rem;
+    color: #231F20;
+    text-align: right;
+    background: transparent; }
+
+.events-archive.events-gridview #tribe-events-content table .type-tribe_events {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0; }
+  .events-archive.events-gridview #tribe-events-content table .type-tribe_events:last-child {
+    border-bottom: 0px solid transparent; }
+  .events-archive.events-gridview #tribe-events-content table .type-tribe_events a.url {
+    display: block;
+    width: 100%; }
+
+#tribe-events-content .tribe-events-calendar div[id*=tribe-events-event-] h3.tribe-events-month-event-title {
+  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.9rem; }
+
+@media print, screen and (min-width: 40em) {
+  .tribe-events-tooltip h3 {
+    font-size: 1rem;
+    padding: 0 0.25rem;
+    font-weight: bolder; } }
+
+.tribe-events-tooltip .tribe-events-event-body {
+  font-size: 0.8rem; }
+
+#tribe-events-pg-template,
+.tribe-events-pg-template {
+  margin: 4rem auto; }

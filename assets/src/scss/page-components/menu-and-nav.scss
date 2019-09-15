@@ -1,36 +1,43 @@
 /*********************
 6. MENU & NAVIGATION MASTER COPY
 *********************/
+
 .top-bar {
   padding: 0;
-}
+  background-color: $base-color;
 
-.top-bar .title-area {
-  z-index: 1;
+  .title-area {
+    z-index: 1;
+  }
+
+  ul {
+    background-color: $base-color;
+  }
+
+  a,
+  ul a {
+    color: white;
+  }
 }
 
 .off-canvas-list ul {
   margin-left: 0;
+
+  li a {
+    border-bottom: 0px;
+  }
+
+  .dropdown {
+    margin-left: 20px;
+  }
 }
 
-.off-canvas-list ul li a {
-  border-bottom: 0px;
-}
 
-.off-canvas-list ul .dropdown {
-  margin-left: 20px;
-}
-
-.top-bar,
-.top-bar ul,
 .off-canvas {
   background-color: $base-color;
 }
 
-.top-bar a,
-.top-bar ul a {
-  color: white;
-}
+
 
 .top-bar-right a,
 .off-canvas .menu>li>a {
@@ -58,7 +65,7 @@
 }
 
 .btn.bg-DSAred {
-  color: #fff;
+  color: white;
 }
 
 .txt-DSAblack {
@@ -90,11 +97,57 @@ a.txt-DSAwhite:hover {
   vertical-align: top;
 }
 
-.menu>li>a.dsa-top-name {
+.menu {
+  >li>a.dsa-top-name {
+    display: inline-block;
+    padding: 1rem 0 1rem 0.35rem;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  &.vertical>li {
+    padding-top: 0;
+  }
+
+  >li.active>a {
+    background: white;
+    color: $base-color;
+
+    &:hover {
+      color: $base-color;
+      background-color: white;
+    }
+  }
+}
+
+// this is new
+
+.off-canvas .menu>li>a:hover,
+.top-bar-right a:hover {
+  color: $base-color;
+  background-color: white;
+}
+
+.top-bar {
+
+  a:hover,
+  ul a:hover {
+    color: $base-color;
+    background-color: white;
+  }
+}
+
+// this is new
+
+#menu-footer.menu>li {
+  width: 45%;
   display: inline-block;
-  padding: 1rem 0 1rem 0.35rem;
-  font-size: 1.2rem;
-  line-height: 1;
+}
+
+.menu>li>a.dsa-top-name:hover {
+  background-color: $base-color;
+  color: white;
+  // this is new
 }
 
 .menu {
@@ -111,35 +164,4 @@ a.txt-DSAwhite:hover {
       margin: 20px;
     }
   }
-}
-
-.menu.vertical>li {
-  padding-top: 0;
-}
-
-// this is new
-.menu>li.active>a {
-  background: #fff;
-  color: $base-color;
-}
-
-.menu>li.active>a:hover,
-.off-canvas .menu>li>a:hover,
-.top-bar-right a:hover,
-.top-bar a:hover,
-.top-bar ul a:hover {
-  color: $base-color;
-  background-color: #fee;
-}
-
-// this is new
-
-#menu-footer.menu>li {
-  width: 45%;
-  display: inline-block;
-}
-
-.menu>li>a.dsa-top-name:hover {
-  background-color: $base-color;
-  color: #fff; // this is new
 }

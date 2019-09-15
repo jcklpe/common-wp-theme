@@ -181,6 +181,24 @@ input[type="button"]:hover,
   transform: translateY(-2px);
 }
 
+//- SHARE BUTTON
+
+#content #inner-content {
+  .share-button {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .button.share-button {
+    padding: 0.75rem;
+
+    .button-icon {
+      width: 1.5rem;
+      height: auto;
+    }
+  }
+}
+
 
 
 // .button.success {

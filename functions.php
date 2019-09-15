@@ -1,32 +1,32 @@
 <?php // Theme support options
-require_once(get_template_directory().'/assets/src/php/functions/theme-support.php');
+require_once(get_template_directory() . '/assets/src/php/functions/theme-support.php');
 
 // WP Head and other cleanup functions
-require_once(get_template_directory().'/assets/src/php/functions/cleanup.php');
+require_once(get_template_directory() . '/assets/src/php/functions/cleanup.php');
 
 // Register scripts and stylesheets
-require_once(get_template_directory().'/assets/src/php/functions/enqueue-scripts.php');
+require_once(get_template_directory() . '/assets/src/php/functions/enqueue-scripts.php');
 
 // Register custom menus and menu walkers
-require_once(get_template_directory().'/assets/src/php/functions/menu.php');
+require_once(get_template_directory() . '/assets/src/php/functions/menu.php');
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/assets/src/php/functions/sidebar.php');
+require_once(get_template_directory() . '/assets/src/php/functions/sidebar.php');
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/assets/src/php/functions/comments.php');
+require_once(get_template_directory() . '/assets/src/php/functions/comments.php');
 
 // Replace 'older/newer' post links with numbered navigation
-require_once(get_template_directory().'/assets/src/php/functions/page-navi.php');
+require_once(get_template_directory() . '/assets/src/php/page-components/page-navigation.php');
 
 // Adds support for multiple languages
-require_once(get_template_directory().'/assets/translation/translation.php');
+require_once(get_template_directory() . '/assets/translation/translation.php');
 
 // Add custom metaboxes
-require(get_template_directory().'/assets/src/php/functions/custom-metaboxes.php');
+require(get_template_directory() . '/assets/src/php/functions/custom-metaboxes.php');
 
 // Add custom settings to admin panel for
-require_once(get_template_directory().'/assets/src/php/functions/custom-global-settings.php');
+require_once(get_template_directory() . '/assets/src/php/functions/custom-global-settings.php');
 
 
 // add_action('enqueue_block_editor_assets', 'load_custom_blocks');
@@ -78,7 +78,8 @@ require_once(get_template_directory().'/assets/src/php/functions/custom-global-s
  * IMPORTANT: Flush permalinks after pasting this code: http://tri.be/support/documentation/troubleshooting-404-errors/
  * Updated to work with post 3.10 versions
  */
-function tribe_attachment_404_fix () {
+function tribe_attachment_404_fix()
+{
     if (class_exists('Tribe__Events__Main')) {
         remove_action('init', array(Tribe__Events__Main::instance(), 'init'), 10);
         add_action('init', array(Tribe__Events__Main::instance(), 'init'), 1);

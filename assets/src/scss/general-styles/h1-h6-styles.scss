@@ -1,20 +1,4 @@
-/*********************
-4. H1, H2, H3, H4, H5 P STYLES MASTERCOPY
-*********************/
-
-h1 a,
-.h1 a,
-h2 a,
-.h2 a,
-h3 a,
-.h3 a,
-h4 a,
-.h4 a,
-h5 a,
-.h5 a {
-  text-decoration: none;
-}
-
+//- H1-H6 Styles
 h1 {
   font-size: 2.5rem;
   margin: 0.67em 0;
@@ -43,4 +27,17 @@ h5 {
 h6 {
   font-size: 1rem;
   margin: 2.33em 0;
+}
+
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
 }

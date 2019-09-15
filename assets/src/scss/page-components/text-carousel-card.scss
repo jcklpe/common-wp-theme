@@ -1,7 +1,8 @@
 .text-carousel-card {
-    background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
-    background-size: 18px 109px, 18px 16px;
-    background-color: $base-color;
+
+    background: url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom !important;
+    background-size: 18px 16px !important;
+    background-color: $base-color !important;
     color: white;
     order: 2;
     //margin-top: -1rem;

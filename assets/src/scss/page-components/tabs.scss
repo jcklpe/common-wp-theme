@@ -1,29 +1,26 @@
-/*********************
-19. TABS
-*********************/
-
+//- TABS
 .tabs {
-    background-color: $base-color;
-    border-bottom: 0;
-  }
+  background-color: $base-color;
+  border-bottom: 0;
+}
 
-  .tabs-title>a {
-    color: white;
-    font-size: 1rem;
-  }
+.tabs-title>a {
+  color: white;
+  font-size: 1rem;
 
-  .tabs-title>a:focus,
-  .tabs-title>a[aria-selected=true] {
+  &:focus,
+  &[aria-selected=true] {
     color: black;
     background: white;
     box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .tabs-title>a:hover {
+  &:hover {
     color: white;
     background: black;
   }
+}
 
-  .tabs-panel {
-    box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2);
-  }
+.tabs-panel {
+  box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.2);
+}

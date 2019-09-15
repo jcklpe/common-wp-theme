@@ -1,0 +1,27 @@
+//- CONTENT CARD
+// this is a card that can be placed with custom content on the frontpage
+
+.content-card {
+    background: #f7f7f7 url("../../images/ui-glyphs/stripes-black.svg") repeat-x left bottom;
+    background-size: 18px 16px;
+    padding: 3rem 4rem;
+    line-height: 1.4;
+
+    h1 {
+        font-size: 1.875rem;
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: -0.015em;
+        margin: 0 -10px 2.5rem 0
+    }
+
+    p {
+        margin-bottom: 1.75em
+    }
+
+    p:last-of-type {
+        margin-bottom: 0
+    }
+
+
+}

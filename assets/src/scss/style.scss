@@ -12,13 +12,11 @@
 // general styles that apply on a broad based stylistic level that isn't contained to just one component or piece of UI. Type and palette hiearchies should go here.
 
 @import 'general-styles/fonts';
-@import 'general-styles/full-page';
 @import 'general-styles/general-styles';
 @import 'general-styles/h1-h6-styles';
 @import 'general-styles/link-styles';
-@import 'general-styles/page-navi';
-@import 'general-styles/plugins';
 @import 'general-styles/post-and-content';
+@import 'general-styles/card';
 @import 'general-styles/post-format';
 @import 'general-styles/print-styles';
 
@@ -30,25 +28,23 @@
 @import 'page-components/comments';
 @import 'page-components/footer';
 @import 'page-components/forms';
-@import 'page-components/header';
 @import 'page-components/image-gallery';
 @import 'page-components/menu-and-nav';
-@import 'page-components/respond-form';
 @import 'page-components/sidebar';
 @import 'page-components/tables';
 @import 'page-components/tabs';
 @import 'page-components/hero';
-@import 'page-components/diptych';
-@import 'page-components/frontpage';
-@import 'page-components/card';
+@import 'page-components/content-card';
+@import 'page-components/page-navigation';
 @import 'page-components/newsletter-signup';
 @import 'page-components/text-carousel-card';
 @import 'page-components/alert';
 @import 'page-components/sections';
+@import 'page-components/tribe-events';
 
 // full on page wide template
 //- Page Templates
-@import 'page-templates/homepage';
+@import 'page-templates/calendar-and-events';
 
 
 

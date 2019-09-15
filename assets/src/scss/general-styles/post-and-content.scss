@@ -1,152 +1,133 @@
-/*********************
-8. POSTS & CONTENT STYLES copy
-*********************/
-#content #inner-content {
-    padding: 1rem 0rem;
+//- Post and Content
+
+// the content of a post
+.entry-content {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  figure {
+    margin: 2rem 0;
+  }
+
+  p,
+  li {
+    color: $black9;
+    font-size: 1.25rem;
+    line-height: 1.58;
+  }
+
+  .alignleft,
+  img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+  }
+
+  .alignright,
+  img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+  }
+
+  video,
+  object {
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre {
+    background: #eee;
+    border: 1px solid #cecece;
+    padding: 10px;
+  }
 }
 
-#content .entry-content figure {
-    margin: 2rem 0;
+// end of post content entry
+
+#content {
+  #inner-content {
+    padding: 1rem 0rem;
+  }
+
+
+
+  #inner-content {
+
+    .article-header h1,
+    h2 {
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
 }
 
 //this is from master
 
-#content #inner-content .article-header h1,
-#content #inner-content h2 {
-    margin-bottom: 0.5rem;
-    margin-top: 2rem;
-}
+.archive #content #inner-content {
 
-.archive #content #inner-content .article-header h1,
-.archive #content #inner-content h2 {
+  .article-header h1,
+  h2 {
     margin-top: 0;
+  }
 }
 
-.entry-content p,
-.entry-content li {
-    color: $black9;
-    font-size: 1.25rem;
-    line-height: 1.58;
-}
 
-#content #inner-content .post p.byline {
-    color: rgba (0, 0, 0, 0.6);
-}
+#content #inner-content {
+  .post p.byline {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-#content #inner-content .category-minutes h2 {
-    border-top: 0.5rem solid;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 4rem 0 0.5rem 0;
 }
 
 .page-title .vcard {
-    border: 0px;
-    padding: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
 .byline {
-    color: $gray;
+  color: $gray;
 }
 
-.entry-content img {
-    max-width: 100%;
-    height: auto;
-}
 
 .post .entry-content a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.entry-content .alignleft,
-.entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-}
 
-.entry-content .alignright,
-.entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-}
 
-.entry-content video,
-.entry-content object {
-    max-width: 100%;
-    height: auto;
-}
-
-.entry-content pre {
-    background: #eee;
-    border: 1px solid #cecece;
-    padding: 10px;
-}
-
-.single .post .entry-content img.wp-post-image,
-.single .event-thumbnail-image .tribe-events-event-image img {
+.single {
+  .post .entry-content img.wp-post-image {
     border-radius: 2rem 2rem 0rem 0rem;
+  }
 
-}
 
-.single .event-thumbnail-image .tribe-events-event-image {
-    margin-bottom: 0px;
-}
-
-.single .tribe-events-schedule .recurringinfo {
-    float: right;
-    background-color: $off-white;
-    border-radius: 1rem;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.9rem;
-}
-
-.single .post .entry-content .post-thumbnail-caption,
-.single .event-thumbnail-image .event-thumbnail-caption {
+  .post .entry-content .post-thumbnail-caption {
     padding: 1rem 1.5rem 1rem;
     background-color: $off-white;
     border-radius: 0rem 0rem 2rem 2rem;
+  }
+
 }
 
-.single .tribe-events-schedule .recurringinfo .tribe-events-divider {
-    color: $off-white;
-}
 
-.single-tribe_events .tribe-events-cal-links {
-    clear: initial;
-}
-
-.tribe-events-meta-group .tribe-events-single-section-title {
-    font-size: 1.5rem;
-}
-
-.tribe-events-gmap {
-    background-color: $base-color;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 1rem;
-    transition: all 150ms;
-    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    text-transform: capitalize;
-    padding: 0.5rem 1rem;
-    line-height: 1;
-    display: inline-block;
-}
 
 .wp-caption {
-    max-width: 80%;
-    background: #eee;
-    margin-left: 10%;
-    padding: 10px 25px;
-}
+  max-width: 80%;
+  background: #eee;
+  margin-left: 10%;
+  padding: 10px 25px;
 
-.wp-caption img {
+  img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%;
-}
+  }
 
-.wp-caption p.wp-caption-text {
+  p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
     text-align: center;
+  }
 }

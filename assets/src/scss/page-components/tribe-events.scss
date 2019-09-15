@@ -1,0 +1,51 @@
+//- TRIBE EVENTS
+
+.single {
+    .event-thumbnail-image .tribe-events-event-image {
+        img {
+            border-radius: 2rem 2rem 0rem 0rem;
+        }
+
+        margin-bottom: 0px;
+    }
+
+    .tribe-events-schedule .recurringinfo {
+        float: right;
+        background-color: $off-white;
+        border-radius: 1rem;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .event-thumbnail-image .event-thumbnail-caption {
+        padding: 1rem 1.5rem 1rem;
+        background-color: $off-white;
+        border-radius: 0rem 0rem 2rem 2rem;
+    }
+
+    .tribe-events-schedule .recurringinfo .tribe-events-divider {
+        color: $off-white;
+    }
+}
+
+
+.single-tribe_events .tribe-events-cal-links {
+    clear: initial;
+}
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+    font-size: 1.5rem;
+}
+
+.tribe-events-gmap {
+    background-color: $base-color;
+    color: #fff;
+    border-radius: 2em;
+    font-size: 1rem;
+    transition: all 150ms;
+    font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    display: inline-block;
+}

@@ -7,30 +7,30 @@
     padding-top: 1em;
     background-color: $base-color;
     color: #fff;
-}
 
-.footer a {
-    color: #fff;
-}
+    a {
+        color: #fff;
 
-.footer a:hover {
-    background-color: #000;
-    color: #fff;
-}
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
 
-.footer h4 {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding: 0.25em 1em;
-    font-weight: 400;
-    font-family: 'ManifoldDSA-Medium', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+    h4 {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding: 0.25em 1em;
+        font-weight: 400;
+        font-family: "ManifoldDSA-Medium", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
 }
 
 #dsa-footer .sidebar .widget {
     text-align: center;
-}
 
-#dsa-footer .sidebar .widget div {
-    text-align: left;
+    div {
+        text-align: left;
+    }
 }
