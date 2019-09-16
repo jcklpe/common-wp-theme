@@ -34,7 +34,7 @@ table.tribe-events-calendar tbody tr:nth-child(even) {
 }
 
 #tribe-events-content .tribe-events-calendar div[id*=tribe-events-event-] h3.tribe-events-month-event-title {
-  font-family: 'Manifold DSA',
+  font-family: $base-type,
     Roboto,
     Helvetica,
     Arial,

@@ -20,7 +20,7 @@
     }
 
     h1 {
-        font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-size: 1.875rem;
         font-weight: 500;
         line-height: 1.05;
@@ -34,7 +34,7 @@
         &[type="email"] {
             border: none;
             color: black;
-            font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             display: inline-block;
             text-align: center;
             width: 45%;
@@ -63,7 +63,7 @@
             color: white;
             padding: 12px 30px 12px;
             background: $base-color;
-            font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             border-radius: 30px;
             font-weight: 700;
             font-size: 1.0625rem;

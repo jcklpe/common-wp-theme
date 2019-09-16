@@ -1,6 +1,13 @@
-/*********************
-14. SIDEBARS & ASIDES
-*********************/
+.sidebar {
+
+  &#sidebar1 {
+    padding-left: 5rem;
+
+  }
+
+
+}
+
 .widget ul {
   margin: 0;
 
@@ -14,6 +21,6 @@
 @media print,
 screen and (min-width: 40em) {
   .single #inner-content .sidebar {
-    margin-top: 100vh;
+    // margin-top: 100vh;
   }
 }

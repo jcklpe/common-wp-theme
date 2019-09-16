@@ -17,8 +17,9 @@
 @import 'general-styles/link-styles';
 @import 'general-styles/post-and-content';
 @import 'general-styles/card';
-@import 'general-styles/post-format';
 @import 'general-styles/print-styles';
+@import 'general-styles/forms';
+@import 'general-styles/tables';
 
 
 //- Page Components
@@ -27,11 +28,9 @@
 @import 'page-components/buttons';
 @import 'page-components/comments';
 @import 'page-components/footer';
-@import 'page-components/forms';
 @import 'page-components/image-gallery';
 @import 'page-components/menu-and-nav';
 @import 'page-components/sidebar';
-@import 'page-components/tables';
 @import 'page-components/tabs';
 @import 'page-components/hero';
 @import 'page-components/content-card';
@@ -42,11 +41,13 @@
 @import 'page-components/sections';
 @import 'page-components/tribe-events';
 
-// full on page wide template
+
 //- Page Templates
+// full on page wide template
 @import 'page-templates/calendar-and-events';
 
 
 
-// as much styling should be contained to individual component level stylings defined and used through gutenberg blocks content editor, so as to ensure maximum usability for non devs.
+
 //- Blocks
+// as much styling should be contained to individual component level stylings defined and used through gutenberg blocks content editor, so as to ensure maximum usability for non devs.

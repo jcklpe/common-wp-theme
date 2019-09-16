@@ -1,21 +1,22 @@
 <?php get_header(); ?>
 
-	<div id="content" class="grid-container">
+<div id="content" class="grid-container">
 
-		<div id="inner-content" class="grid-x grid-x-margin">
+	<div id="inner-content" class="grid-x grid-x-margin">
 
-		    <main id="main" class="cell medium-12 dsa-readable" role="main">
+		<main id="main" class="cell medium-12 readable" role="main">
 
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<?php get_template_part( 'assets/src/php/page-components/loop', 'page' ); ?>
+					<?php get_template_part('assets/src/php/page-components/loop', 'page'); ?>
 
-				<?php endwhile; endif; ?>
+			<?php endwhile;
+			endif; ?>
 
-			</main> <!-- end #main -->
+		</main> <!-- end #main -->
 
-		</div> <!-- end #inner-content -->
+	</div> <!-- end #inner-content -->
 
-	</div> <!-- end #content -->
+</div> <!-- end #content -->
 
 <?php get_footer(); ?>

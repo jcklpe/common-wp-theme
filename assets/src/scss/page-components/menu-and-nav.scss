@@ -56,6 +56,7 @@
   margin: 4rem 0 3rem 0;
 }
 
+//TODO: replace the branding here
 .bg-DSAblack {
   background-color: $dark-gray;
 }
@@ -98,7 +99,7 @@ a.txt-DSAwhite:hover {
 }
 
 .menu {
-  >li>a.dsa-top-name {
+  >li>a.top-name {
     display: inline-block;
     padding: 1rem 0 1rem 0.35rem;
     font-size: 1.2rem;
@@ -144,7 +145,7 @@ a.txt-DSAwhite:hover {
   display: inline-block;
 }
 
-.menu>li>a.dsa-top-name:hover {
+.menu>li>a.top-name:hover {
   background-color: $base-color;
   color: white;
   // this is new

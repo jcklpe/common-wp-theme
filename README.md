@@ -14,12 +14,14 @@ You can also use the command `gulp watch` to watch the `src` folder for any chan
 
 ## TODO:
 
-- [ ] componentize out scss parts and reorganize build process
-- [ ] replace all hardcoded logos with global custom fields
-- [ ] replace all hardcoded text with global custom fields
-- [ ] convert all custom template blocks into template partials
-- [ ] convert all template partials into Gutenberg Blocks to be used in posts
+- [x] componentize out scss parts and reorganize build process
+- [x] replace all hardcoded logos with global custom fields
+- [x] replace all hardcoded text with global custom fields
+- [x] convert all custom template blocks into template partials
 - [ ] white label all organizational references
+- [ ] convert all template partials into Gutenberg Blocks to be used in posts
+- [ ] build more Blocks to cover additional page designs
+- [ ] Lots of other stuff
 
 ## License
 

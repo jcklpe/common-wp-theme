@@ -1,4 +1,4 @@
-<?php if (get_post_meta($post->ID, '_dsa_alert_box', true)) : ?>
+<?php if (get_post_meta($post->ID, 'alert_metabox_value', true)) : ?>
 
     <br>
 
@@ -7,10 +7,10 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/white/bullhorn.svg" />
         </div>
         <div class="cell large-10 medium-8 small-6">
-            <?php echo apply_filters('the_content', get_post_meta($post->ID, '_dsa_alert_box', true)); ?>
+            <?php echo apply_filters('the_content', get_post_meta($post->ID, 'alert_metabox_value', true)); ?>
         </div>
         <div class="cell large-1 medium-2 small-3">
-            <button id="dsa-hide" class="close cell large-1" aria-label="Dismiss alert" data-close>
+            <button id="hide" class="close cell large-1" aria-label="Dismiss alert" data-close>
                 <span aria-hidden="true">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/white/checkbox-x.svg" />
                 </span>
@@ -19,7 +19,7 @@
     </div>
     <script>
         jQuery(document).ready(function() {
-                jQuery("#dsa-hide").click(function() {
+                jQuery("#hide").click(function() {
                         jQuery("#alert").hide();
                     }
 

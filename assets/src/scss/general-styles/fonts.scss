@@ -1,8 +1,12 @@
 //- Load Fonts
+
+$base-type: 'Manifold DSA';
+
 @charset "UTF-8";
 
+//TODO: variablize font hierarchy stuff to make it easier to change out fonts
 @font-face {
-  font-family: 'Manifold DSA';
+  font-family: $base-type;
   font-display: fallback;
   src: url('../../fonts/ManifoldDSA-Bold.woff2') format('woff2'),
     /* Super Modern Browsers */
@@ -17,7 +21,7 @@
 
 
 @font-face {
-  font-family: 'Manifold DSA';
+  font-family: $base-type;
   font-display: fallback;
   src: url('../../fonts/ManifoldDSA-Medium.woff2') format('woff2'),
     /* Super Modern Browsers */

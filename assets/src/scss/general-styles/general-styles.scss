@@ -1,4 +1,13 @@
 //- General Styles Master Branch Version
+
+//TODO: Handle remaining DSA unbranding
+//TODO: Fix buttons on front page for events and blog section
+//TODO: go through general styles and break out unecessary stuff.
+
+//TODO: Finish variablizing type stuff.
+
+
+
 header,
 body,
 p,
@@ -7,7 +16,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.25;
 }
 
@@ -123,24 +132,24 @@ img.icon-list {
   border-bottom: 8px solid $dark-gray;
 }
 
-.sdsa-page-hero {
-  background-attachment: initial;
-  background-size: 1rem, 100%;
-  background-repeat: repeat, no-repeat;
-  padding: 1rem;
-  border-radius: 1rem;
-  min-height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: left top, center 25%;
-}
+// .sdsa-page-hero {
+//   background-attachment: initial;
+//   background-size: 1rem, 100%;
+//   background-repeat: repeat, no-repeat;
+//   padding: 1rem;
+//   border-radius: 1rem;
+//   min-height: 20rem;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-position: left top, center 25%;
+// }
 
-.sdsa-page-hero .page-title {
-  color: white;
-  margin: 1rem;
-  font-size: 4rem;
-}
+// .sdsa-page-hero .page-title {
+//   color: white;
+//   margin: 1rem;
+//   font-size: 4rem;
+// }
 
 .archive #content {
   background-color: $base-color;
@@ -165,7 +174,7 @@ img.icon-list {
   font-size: 100%;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  font-family: 'Manifold DSA', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 // this is from the original

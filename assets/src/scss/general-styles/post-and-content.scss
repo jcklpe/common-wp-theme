@@ -1,69 +1,76 @@
 //- Post and Content
 
-// the content of a post
-.entry-content {
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  figure {
-    margin: 2rem 0;
-  }
-
-  p,
-  li {
-    color: $black9;
-    font-size: 1.25rem;
-    line-height: 1.58;
-  }
-
-  .alignleft,
-  img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-  }
-
-  .alignright,
-  img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-  }
-
-  video,
-  object {
-    max-width: 100%;
-    height: auto;
-  }
-
-  pre {
-    background: #eee;
-    border: 1px solid #cecece;
-    padding: 10px;
-  }
-}
 
 // end of post content entry
 
 #content {
   #inner-content {
     padding: 1rem 0rem;
-  }
+
+    .post {
+
+      .article-header h1,
+      h2 {
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+      }
+
+      p.byline {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
 
 
 
-  #inner-content {
 
-    .article-header h1,
-    h2 {
-      margin-bottom: 0.5rem;
-      margin-top: 2rem;
+
+    // the content of a post
+    .entry-content {
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      figure {
+        margin: 2rem 0;
+      }
+
+      p,
+      li {
+        color: $black9;
+        font-size: 1.25rem;
+        line-height: 1.58;
+      }
+
+      .alignleft,
+      img.alignleft {
+        margin-right: 1.5em;
+        display: inline;
+      }
+
+      .alignright,
+      img.alignright {
+        margin-left: 1.5em;
+        display: inline;
+      }
+
+      video,
+      object {
+        max-width: 100%;
+        height: auto;
+      }
+
+      pre {
+        background: #eee;
+        border: 1px solid #cecece;
+        padding: 10px;
+      }
     }
   }
 }
 
-//this is from master
 
 .archive #content #inner-content {
 
@@ -74,44 +81,11 @@
 }
 
 
-#content #inner-content {
-  .post p.byline {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-}
 
 .page-title .vcard {
   border: 0px;
   padding: 0px;
 }
-
-.byline {
-  color: $gray;
-}
-
-
-.post .entry-content a {
-  text-decoration: underline;
-}
-
-
-
-.single {
-  .post .entry-content img.wp-post-image {
-    border-radius: 2rem 2rem 0rem 0rem;
-  }
-
-
-  .post .entry-content .post-thumbnail-caption {
-    padding: 1rem 1.5rem 1rem;
-    background-color: $off-white;
-    border-radius: 0rem 0rem 2rem 2rem;
-  }
-
-}
-
-
 
 .wp-caption {
   max-width: 80%;
