@@ -41,7 +41,7 @@ input {
   transition: all 150ms;
   text-transform: uppercase;
 
-  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-font, $backup-fonts;
 
   &.dark:hover {
     background-color: $dark-gray;

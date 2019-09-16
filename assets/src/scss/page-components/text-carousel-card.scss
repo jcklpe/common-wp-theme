@@ -90,7 +90,7 @@
             color: white;
             padding: 12px 30px 12px;
             background: $base-color;
-            font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: $base-font, $backup-fonts;
             border-radius: 30px;
             font-weight: 700;
             font-size: 1.0625rem;

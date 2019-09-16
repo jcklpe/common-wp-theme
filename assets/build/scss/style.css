@@ -11,6 +11,13 @@
 .text-center {
   text-align: center; }
 
+.txt-white {
+  color: white; }
+
+a.txt-white:hover {
+  background-color: #231F20;
+  color: white; }
+
 @font-face {
   font-family: "Manifold DSA";
   font-display: fallback;
@@ -36,7 +43,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
   line-height: 1.25; }
 
 header,
@@ -149,7 +156,7 @@ img.icon-list {
   font-size: 100%;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; }
 
 .archive-header,
 .archive-header .page-title {
@@ -436,7 +443,7 @@ input#mce-FNAME::placeholder, input#mce-LNAME::placeholder, input#mce-EMAIL::pla
   border-radius: 2em;
   transition: all 150ms;
   text-transform: uppercase;
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; }
   #page #mc_embed_signup .button.dark:hover {
     background-color: #231F20;
     color: #fff;
@@ -498,9 +505,11 @@ table tbody tr:nth-child(even) {
     .accordion-content ol li {
       padding-left: 0.75rem; }
 
-/***************
-7. BUTTONS MASTER COPY
-****************/
+a.button {
+  border-radius: 30px; }
+  a.button.dark {
+    background-color: #231F20; }
+
 div.wp-block-button {
   display: inline-block;
   margin: 0 6px 10px 0; }
@@ -544,7 +553,7 @@ input[type="button"],
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   transition: all 150ms;
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
   font-weight: bold;
   font-weight: 600;
   text-decoration: none; }
@@ -660,7 +669,7 @@ input[type="button"]:hover,
     display: inline-block;
     padding: 0.25em 1em;
     font-weight: 400;
-    font-family: "ManifoldDSA-Medium", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+    font-family: "ManifoldDSA-Medium", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; }
 
 #footer .sidebar .widget {
   text-align: center; }
@@ -688,9 +697,6 @@ input[type="button"]:hover,
   background-color: #f7f7f7;
   border: 1px solid #d7d7d7; }
 
-/*********************
-6. MENU & NAVIGATION MASTER COPY
-*********************/
 .top-bar {
   padding: 0;
   background-color: #EC1F27; }
@@ -726,38 +732,9 @@ input[type="button"]:hover,
   color: #231F20;
   margin: 4rem 0 3rem 0; }
 
-.bg-DSAblack {
-  background-color: #231F20; }
-
-.txt-DSAred {
-  color: #EC1F27; }
-
-.btn.bg-DSAred {
-  color: white; }
-
-.txt-DSAblack {
-  color: #231F20; }
-
-.txt-DSAwhite,
-.txt-white {
-  color: white; }
-
-a.txt-DSAwhite:hover {
-  background-color: #231F20;
-  color: white; }
-
 .top-bar a:hover,
 .menu .active a {
   background: #231F20; }
-
-.top-bar img.dsa-rose-mark {
-  height: 2.5rem;
-  width: auto;
-  display: inline-block;
-  padding: 0;
-  margin: 0.25rem 0 0 0.25rem;
-  line-height: 1;
-  vertical-align: top; }
 
 .menu > li > a.top-name {
   display: inline-block;
@@ -889,7 +866,7 @@ figure.hero {
   .newsletter-signup input[type="text"], .newsletter-signup input[type="email"] {
     border: none;
     color: black;
-    font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
     display: inline-block;
     text-align: center;
     width: 45%;
@@ -911,7 +888,7 @@ figure.hero {
     color: white;
     padding: 12px 30px 12px;
     background: #EC1F27;
-    font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
     border-radius: 30px;
     font-weight: 700;
     font-size: 1.0625rem;
@@ -1010,7 +987,7 @@ figure.hero {
       color: white;
       padding: 12px 30px 12px;
       background: #EC1F27;
-      font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
       border-radius: 30px;
       font-weight: 700;
       font-size: 1.0625rem;
@@ -1036,7 +1013,7 @@ figure.hero {
 button.close {
   background-color: transparent;
   color: white;
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
   font-weight: 400;
   line-height: 2rem;
   margin-top: 0.25rem;
@@ -1047,7 +1024,7 @@ button.close {
 .info-section {
   padding: 50px 0; }
   .info-section h2 {
-    font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
     font-weight: 400; }
   .info-section.news-section {
     background-color: #292d2f; }
@@ -1086,7 +1063,7 @@ button.close {
   border-radius: 2em;
   font-size: 1rem;
   transition: all 150ms;
-  font-family: "Manifold DSA", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
   text-transform: capitalize;
   padding: 0.5rem 1rem;
   line-height: 1;

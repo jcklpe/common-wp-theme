@@ -5,7 +5,7 @@
     padding: 50px 0;
 
     h2 {
-        font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: $base-font, $backup-fonts;
         font-weight: 400;
     }
 
@@ -20,5 +20,14 @@
     //- Events Section
     &#events-section {
         background-color: $base-color;
+
+        // .cell {
+ //     display: flex;
+
+ //     .find-out-more {
+ //         align-self: flex-end;
+ //     }
+ // }
+
     }
 }

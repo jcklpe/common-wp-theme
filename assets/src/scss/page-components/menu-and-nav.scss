@@ -1,7 +1,4 @@
-/*********************
-6. MENU & NAVIGATION MASTER COPY
-*********************/
-
+//- MENU AND NAVIGATION
 .top-bar {
   padding: 0;
   background-color: $base-color;
@@ -56,47 +53,16 @@
   margin: 4rem 0 3rem 0;
 }
 
-//TODO: replace the branding here
-.bg-DSAblack {
-  background-color: $dark-gray;
-}
 
-.txt-DSAred {
-  color: $base-color;
-}
 
-.btn.bg-DSAred {
-  color: white;
-}
 
-.txt-DSAblack {
-  color: $dark-gray;
-}
-
-.txt-DSAwhite,
-.txt-white {
-  color: white;
-}
-
-a.txt-DSAwhite:hover {
-  background-color: $dark-gray;
-  color: white;
-}
 
 .top-bar a:hover,
 .menu .active a {
   background: $dark-gray;
 }
 
-.top-bar img.dsa-rose-mark {
-  height: 2.5rem;
-  width: auto;
-  display: inline-block;
-  padding: 0;
-  margin: 0.25rem 0 0 0.25rem;
-  line-height: 1;
-  vertical-align: top;
-}
+
 
 .menu {
   >li>a.top-name {
@@ -121,8 +87,6 @@ a.txt-DSAwhite:hover {
   }
 }
 
-// this is new
-
 .off-canvas .menu>li>a:hover,
 .top-bar-right a:hover {
   color: $base-color;
@@ -138,8 +102,6 @@ a.txt-DSAwhite:hover {
   }
 }
 
-// this is new
-
 #menu-footer.menu>li {
   width: 45%;
   display: inline-block;
@@ -148,7 +110,6 @@ a.txt-DSAwhite:hover {
 .menu>li>a.top-name:hover {
   background-color: $base-color;
   color: white;
-  // this is new
 }
 
 .menu {

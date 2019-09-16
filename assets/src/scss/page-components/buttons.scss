@@ -1,6 +1,12 @@
-/***************
-7. BUTTONS MASTER COPY
-****************/
+//- BUTTONS
+
+a.button {
+  border-radius: 30px;
+
+  &.dark {
+    background-color: $dark-gray;
+  }
+}
 
 div.wp-block-button {
   display: inline-block;
@@ -11,7 +17,7 @@ div.wp-block-button {
     text-transform: uppercase;
     color: white;
     padding: 10px 30px 10px;
-    font-family: $base-type,
+    font-family: $base-font,
       Roboto,
       Helvetica,
       Arial,
@@ -56,79 +62,9 @@ a.button.radius.button-white {
   color: black;
 }
 
-// a.hollow {
-//   border-width: 2px;
-// }
-
-// a.button.hollow {
-//   border-width: 2px;
-//   border-color: $base-color;
-//   color: $base-color;
-// }
-
-// a.button.radius.button-white:hover {
-//   border: none;
-//   background-color: $base-color;
-//   color: white;
-// }
-
-// a.button.button-clear-white {
-//   background-color: transparent;
-//   color: white;
-//   border: 1px solid white;
-//   margin-left: 1rem;
-// }
-
-// a.button.button-red-white {
-//   background-color: $base-color;
-//   color: white;
-// }
-
-// a.button.button-clear-blue {
-//   background-color: white;
-//   color: #5555ee;
-//   border: 2px solid #5555ee;
-// }
-
-// a.button.button-clear-blue {
-//   background-color: #5555ee;
-//   color: white;
-//   border: 2px solid #5555ee;
-// }
-
-// a.button.button-clear-black {
-//   background-color: white;
-//   color: $dark-gray;
-//   border: 2px solid $dark-gray;
-// }
-
-// a.button.button-clear-black:hover {
-//   background-color: $dark-gray;
-//   color: white;
-//   border: 2px solid $dark-gray;
-// }
-
-// a.button.button-clear-gold {
-//   background-color: #E5B900;
-//   color: white;
-//   border: 2px solid #E5B900;
-// }
-
-// a.button.button-clear-gold:hover {
-//   background-color: #FFDD4C;
-//   color: white;
-//   border: 2px solid #FFDD4C;
-// }
-
-// .button.radius {
-//   border-radius: 1rem;
-
-// }
-
 .button-group.expanded .button {
   padding: 0.85em 0.5em;
 }
-
 
 
 //- Pagination buttons
@@ -143,7 +79,7 @@ input[type="button"],
   padding: 0.5rem 1rem;
   transition: all 150ms;
   // text-transform: uppercase;
-  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-font, $backup-fonts;
   font-weight: bold;
   font-weight: 600;
   text-decoration: none;
@@ -198,17 +134,3 @@ input[type="button"]:hover,
     }
   }
 }
-
-
-
-// .button.success {
-//   border-color: #3adb76;
-// }
-
-// .button.alert {
-//   border-color: #cc4b37;
-// }
-
-// .button.warning {
-//   border-color: #ffae00;
-// }

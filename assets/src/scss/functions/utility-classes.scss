@@ -13,3 +13,13 @@
 .text-center {
     text-align: center;
   }
+
+
+.txt-white {
+  color: white;
+}
+
+a.txt-white:hover {
+  background-color: $dark-gray;
+  color: white;
+}

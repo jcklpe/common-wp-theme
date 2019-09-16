@@ -1,12 +1,17 @@
+@charset "UTF-8";
+
+//- Font Variables
+
+$base-font: 'Manifold DSA';
+$backup-fonts: 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+
+
 //- Load Fonts
 
-$base-type: 'Manifold DSA';
-
-@charset "UTF-8";
 
 //TODO: variablize font hierarchy stuff to make it easier to change out fonts
 @font-face {
-  font-family: $base-type;
+  font-family: $base-font;
   font-display: fallback;
   src: url('../../fonts/ManifoldDSA-Bold.woff2') format('woff2'),
     /* Super Modern Browsers */
@@ -21,7 +26,7 @@ $base-type: 'Manifold DSA';
 
 
 @font-face {
-  font-family: $base-type;
+  font-family: $base-font;
   font-display: fallback;
   src: url('../../fonts/ManifoldDSA-Medium.woff2') format('woff2'),
     /* Super Modern Browsers */

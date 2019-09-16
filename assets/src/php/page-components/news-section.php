@@ -4,8 +4,8 @@
             <img src="
         <?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/white/typewriter.svg" loading="lazy" class="cell large-2 large-offset-5 medium-4 medium-offset-4 small-6 small-offset-3" />
             <br />
-            /TODO: whtie labe the white cell -->
-            <h2 class="section-title txt-DSAwhite cell">
+
+            <h2 class="section-title txt-white cell">
                 Dispatches
             </h2>
         </div>

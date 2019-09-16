@@ -43,7 +43,7 @@
     border-radius: 2em;
     font-size: 1rem;
     transition: all 150ms;
-    font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: $base-font, $backup-fonts;
     text-transform: capitalize;
     padding: 0.5rem 1rem;
     line-height: 1;

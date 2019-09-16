@@ -16,7 +16,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-font, $backup-fonts;
   line-height: 1.25;
 }
 
@@ -174,7 +174,7 @@ img.icon-list {
   font-size: 100%;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  font-family: $base-type, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $base-font, $backup-fonts;
 }
 
 // this is from the original
