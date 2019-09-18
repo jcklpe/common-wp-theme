@@ -180,7 +180,7 @@ img.icon-list {
 .home .page-title {
   display: none; }
 
-.dsa-main {
+.main {
   padding-bottom: 2rem; }
 
 .icon-bullet {
@@ -190,7 +190,7 @@ img.icon-list {
   float: left;
   margin-top: 0.5em; }
 
-.dsa-main-logo {
+.main-logo {
   float: left;
   margin: 1rem 1rem 0 0; }
 
@@ -669,7 +669,7 @@ input[type="button"]:hover,
     display: inline-block;
     padding: 0.25em 1em;
     font-weight: 400;
-    font-family: "ManifoldDSA-Medium", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; }
+    font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; }
 
 #footer .sidebar .widget {
   text-align: center; }

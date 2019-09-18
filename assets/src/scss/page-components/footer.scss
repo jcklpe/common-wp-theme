@@ -23,7 +23,7 @@
         display: inline-block;
         padding: 0.25em 1em;
         font-weight: 400;
-        font-family: "ManifoldDSA-Medium", $backup-fonts;
+        font-family: $base-font, $backup-fonts;
     }
 }
 

@@ -91,9 +91,6 @@ add_action('after_setup_theme', 'tribe_attachment_404_fix');
 
 
 
-/*****
-
-
 
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/php/functions/disable-emoji.php');
@@ -105,7 +102,7 @@ add_action('after_setup_theme', 'tribe_attachment_404_fix');
 // require_once(get_template_directory().'/assets/php/functions/login.php');
 
 // Customize the WordPress admin
-// require_once(get_template_directory().'/assets/php/functions/admin.php');
+require_once(get_template_directory() . '/assets/src/php/functions/admin.php');
 
 // Related post function - no need to rely on plugins
 // require_once(get_template_directory().'/assets/php/functions/related-posts.php');
@@ -114,3 +111,9 @@ add_action('after_setup_theme', 'tribe_attachment_404_fix');
 
 // Use this as a template for custom post types
 // require_once(get_template_directory().'/assets/php/functions/custom-post-type.php');
+
+
+//- SECURITY
+
+// disable xmlrpc
+add_filter('xmlrpc_enabled', '__return_false');
