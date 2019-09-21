@@ -10,7 +10,7 @@ This theme comes with a [gulp](https://gulpjs.com/) based build system. It's sup
 
 To build the theme you just need to install the package manager [npm](https://www.npmjs.com/) and run `npm install` in the theme root folder then run `gulp build` to build a new version of the `build` files.
 
-You can also use the command `gulp watch` to watch the `src` folder for any changes to the files as you work so that it can seamlessly build new versions of the build files in the background.
+You can also use the command `gulp watch` to watch thesrc` folder for any changes to the files as you work so that it can seamlessly build new versions of the build files in the background.
 
 ## TODO:
 

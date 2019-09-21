@@ -1,7 +1,8 @@
 //- BUTTONS
 
-a.button {
-  border-radius: 30px;
+a.button,
+a.tribe-events-button {
+  border-radius: 30px !important;
 
   &.dark {
     background-color: $dark-gray;

@@ -46,6 +46,9 @@ h5 {
   font-family: "Manifold DSA", 'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
   line-height: 1.25; }
 
+p {
+  line-height: 1.5; }
+
 header,
 body,
 p {
@@ -320,16 +323,12 @@ a:hover {
   .card-gray {
     margin-bottom: 2rem; } }
 
-/******************************************************************
-24. PRINT STYLESHEET
-******************************************************************/
 @media print {
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
+    filter: none !important; }
   a,
   a:visited {
     color: #444 !important;
@@ -505,9 +504,11 @@ table tbody tr:nth-child(even) {
     .accordion-content ol li {
       padding-left: 0.75rem; }
 
-a.button {
-  border-radius: 30px; }
-  a.button.dark {
+a.button,
+a.tribe-events-button {
+  border-radius: 30px !important; }
+  a.button.dark,
+  a.tribe-events-button.dark {
     background-color: #231F20; }
 
 div.wp-block-button {
