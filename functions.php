@@ -37,37 +37,35 @@ require_once(get_template_directory() . '/assets/src/php/functions/custom-global
 // }
 
 
-// add_action( 'enqueue_block_editor_assets', 'block_editor_scripts' );
+add_action( 'enqueue_block_editor_assets', 'block_editor_scripts' );
 
-// function block_editor_scripts() {
-// 	wp_enqueue_script(
-// 		'block_editor_scripts',
-// 		get_stylesheet_directory() . '/assets/blocks/block.build.js',
-// 		array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-components' ),
-// 		''
-// 	);
+function block_editor_scripts() {
+	wp_enqueue_script(
+		'block_editor_scripts',
+		get_stylesheet_directory_uri() . '/assets/blocks/block.build.js',
+		array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-components' ),
+		''
+	);
 
+	wp_enqueue_style(
+		'block_editor_styles',
+		get_stylesheet_directory_uri()  . '/assets/blocks/editor.css',
+		array(),
+		''
+	);
+}
 
+//- ADD BLOCK ASSETS FOR FRONTEND
+add_action( 'enqueue_block_assets', 'block_frontend_styles' );
 
-// 	wp_enqueue_style(
-// 		'block_editor_styles',
-// 		get_stylesheet_directory()  . '/assets/blocks/editor.css',
-// 		array(),
-// 		''
-// 	);
-// }
-
-// //- ADD BLOCK ASSETS FOR FRONTEND
-// add_action( 'enqueue_block_assets', 'block_frontend_styles' );
-
-// function block_frontend_styles() {
-// 	wp_enqueue_style(
-// 		'block_frontend_styles',
-// 		get_stylesheet_directory()  . '/assets/blocks/style.css',
-// 		array(),
-// 		''
-// 	);
-// }
+function block_frontend_styles() {
+	wp_enqueue_style(
+		'block_frontend_styles',
+		get_stylesheet_directory_uri()  . '/assets/blocks/style.css',
+		array(),
+		''
+	);
+}
 
 
 
