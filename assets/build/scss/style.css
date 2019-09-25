@@ -463,9 +463,6 @@ input[type="submit"] {
 table tbody tr:nth-child(even) {
   background-color: #ebeef3; }
 
-/*********************
-20. Accordion
-*********************/
 .accordion-title {
   font-size: 1.5rem;
   line-height: 4rem;
@@ -510,6 +507,9 @@ a.tribe-events-button {
   a.button.dark,
   a.tribe-events-button.dark {
     background-color: #231F20; }
+
+a.tribe-events-button {
+  background-color: #231F20 !important; }
 
 div.wp-block-button {
   display: inline-block;

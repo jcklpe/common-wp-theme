@@ -1,0 +1,76 @@
+//- EVENT PAGE SINGLE
+
+.single-tribe_events .tribe-events-event-meta {
+    font-size: 13px;
+}
+
+.single-tribe_events .tribe-events-event-meta {
+    background: #fafafa;
+    border: 1px solid #eee;
+    margin: 30px 0;
+}
+
+body,
+header,
+p {
+    font-family: ManifoldDSA-Medium, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+}
+
+.clearfix::after,
+.clearfix::before,
+.tribe-clearfix::after,
+.tribe-clearfix::before {
+    content: "";
+    display: table;
+}
+
+.single-tribe_events .tribe-events-event-meta {
+    font-size: 13px;
+}
+
+body,
+header,
+p {
+    font-family: ManifoldDSA-Medium, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+}
+
+.tribe-events-event-meta .column,
+.tribe-events-event-meta .tribe-events-meta-group {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    margin: 0 0 20px;
+    padding: 0 4%;
+    text-align: left;
+    vertical-align: top;
+    width: 33.3333%;
+    zoom: 1;
+}
+
+.tribe-events-event-meta .column,
+.tribe-events-event-meta .tribe-events-meta-group {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 0 4%;
+    text-align: left;
+    vertical-align: top;
+    width: 33.3333%;
+    zoom: 1;
+}
+
+.single-tribe_events .tribe-events-meta-group+.tribe-events-meta-group+.tribe-events-meta-group-gmap {
+    clear: both;
+    display: block;
+    float: none;
+    width: auto;
+}

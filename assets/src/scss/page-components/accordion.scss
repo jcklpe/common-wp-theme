@@ -1,6 +1,4 @@
-/*********************
-20. Accordion
-*********************/
+//- ACCORDION
 .accordion-title {
   font-size: 1.5rem;
   line-height: 4rem;
@@ -48,9 +46,11 @@
   border-left: 0.15rem solid #0a0a0a;
   border-right: 0.15rem solid #0a0a0a;
   border-bottom: 0px solid transparent;
+
   ol {
     padding-left: 2.5rem;
     border-left: 0.1rem solid #0a0a0a;
+
     li {
       padding-left: 0.75rem;
     }
