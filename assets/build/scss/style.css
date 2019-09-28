@@ -1068,7 +1068,112 @@ button.close {
   text-transform: capitalize;
   padding: 0.5rem 1rem;
   line-height: 1;
-  display: inline-block; }
+  display: inline-block;
+  margin: 20px 10px; }
+
+.event-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: start;
+  align-items: start; }
+  .event-info p {
+    margin-top: 25px; }
+
+.event-date {
+  margin-top: 25px; }
+
+.event-description {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.event-details-block {
+  margin-top: -40px; }
+  .event-details-block .date-block {
+    margin-bottom: 30px; }
+  .event-details-block .location-block {
+    margin-bottom: 30px; }
+
+.single-tribe_events .tribe-events-event-meta {
+  font-size: 13px; }
+
+.single-tribe_events .tribe-events-event-meta {
+  background: #fafafa;
+  border: 1px solid #eee;
+  margin: 30px 0; }
+
+body,
+header,
+p {
+  font-family: ManifoldDSA-Medium, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
+body {
+  font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0a0a0a; }
+
+.clearfix::after,
+.clearfix::before,
+.tribe-clearfix::after,
+.tribe-clearfix::before {
+  content: "";
+  display: table; }
+
+.single-tribe_events .tribe-events-event-meta {
+  font-size: 13px; }
+
+body,
+header,
+p {
+  font-family: ManifoldDSA-Medium, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400; }
+
+.tribe-events-event-meta .column,
+.tribe-events-event-meta .tribe-events-meta-group {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 0 4%;
+  text-align: left;
+  vertical-align: top;
+  width: 33.3333%;
+  zoom: 1; }
+
+.tribe-events-event-meta .column,
+.tribe-events-event-meta .tribe-events-meta-group {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 0 4%;
+  text-align: left;
+  vertical-align: top;
+  width: 33.3333%;
+  zoom: 1; }
+
+.single-tribe_events .tribe-events-meta-group + .tribe-events-meta-group + .tribe-events-meta-group-gmap {
+  clear: both;
+  display: block;
+  float: none;
+  width: auto; }
+
+.tribe-events-event-image {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .tribe-events-event-image img {
+    width: 100%; }
 
 table.tribe-events-calendar tbody tr:nth-child(even) {
   background-color: #fefefe; }

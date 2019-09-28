@@ -47,7 +47,6 @@ p {
 .tribe-events-event-meta .tribe-events-meta-group {
     box-sizing: border-box;
     display: inline-block;
-    float: left;
     margin: 0 0 20px;
     padding: 0 4%;
     text-align: left;
@@ -73,4 +72,14 @@ p {
     display: block;
     float: none;
     width: auto;
+}
+
+.tribe-events-event-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
 }

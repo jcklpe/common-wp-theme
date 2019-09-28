@@ -29,43 +29,18 @@ require(get_template_directory() . '/assets/src/php/functions/custom-metaboxes.p
 require_once(get_template_directory() . '/assets/src/php/functions/custom-global-settings.php');
 
 
-// add_action('enqueue_block_editor_assets', 'load_custom_blocks');
-// // This function loads the plugin.
-// function load_custom_blocks() {
-//   require(get_template_directory().'/Jackalope-Gutenberg/05-media-block/index.php');
-
+//- CUSTOM BLOCKS
+// This function loads the plugin.
+// function load_custom_blocks()
+// {
+// 	require(get_template_directory() . '/assets/blocks/index.php');
 // }
 
+// add_action('enqueue_block_editor_assets', 'load_custom_blocks');
 
-add_action( 'enqueue_block_editor_assets', 'block_editor_scripts' );
 
-function block_editor_scripts() {
-	wp_enqueue_script(
-		'block_editor_scripts',
-		get_stylesheet_directory_uri() . '/assets/blocks/block.build.js',
-		array( 'wp-blocks', 'wp-i18n', 'wp-editor', 'wp-components' ),
-		''
-	);
 
-	wp_enqueue_style(
-		'block_editor_styles',
-		get_stylesheet_directory_uri()  . '/assets/blocks/editor.css',
-		array(),
-		''
-	);
-}
 
-//- ADD BLOCK ASSETS FOR FRONTEND
-add_action( 'enqueue_block_assets', 'block_frontend_styles' );
-
-function block_frontend_styles() {
-	wp_enqueue_style(
-		'block_frontend_styles',
-		get_stylesheet_directory_uri()  . '/assets/blocks/style.css',
-		array(),
-		''
-	);
-}
 
 
 
@@ -78,10 +53,10 @@ function block_frontend_styles() {
  */
 function tribe_attachment_404_fix()
 {
-    if (class_exists('Tribe__Events__Main')) {
-        remove_action('init', array(Tribe__Events__Main::instance(), 'init'), 10);
-        add_action('init', array(Tribe__Events__Main::instance(), 'init'), 1);
-    }
+	if (class_exists('Tribe__Events__Main')) {
+		remove_action('init', array(Tribe__Events__Main::instance(), 'init'), 10);
+		add_action('init', array(Tribe__Events__Main::instance(), 'init'), 1);
+	}
 }
 
 add_action('after_setup_theme', 'tribe_attachment_404_fix');
