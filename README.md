@@ -24,8 +24,10 @@ You can also use the command `gulp watch` to watch the `src` folder for any chan
 - [x] convert all custom template blocks into template partials
 - [x] white label all organizational references
 - [x] break out block components into a separate companion plugin
-- [ ] convert all template partials into Gutenberg Blocks to be used in posts
-- [ ] build more Blocks to cover additional page designs
+- [ ] complete [blocks companion plugin](https://github.com/jcklpe/common-wp-blocks). 
+- [ ] re-align php templates in light of more flexible blocks based page building project.
+- [ ] Build theme scss to "overlay" the default styling of the block companion plugin to make this easier for people to customize for other contexts
+- [ ] convert build process to gulp 4
 - [ ] Lots of other stuff
 
 ## License
