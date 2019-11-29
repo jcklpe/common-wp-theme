@@ -812,7 +812,6 @@ figure.hero {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: absolute;
   z-index: -1;
   margin: 0;
   width: 100vw;
