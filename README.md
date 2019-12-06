@@ -6,11 +6,11 @@ This is a wordpress theme for non-profit use. It's focus is on simple visual des
 
 ## Requirements
 
-In order to use this theme fully you need to install the [[Common WP Blocks]](https://github.com/jcklpe/common-wp-blocks) plugin and the [[The Events Calendar]](https://wordpress.org/plugins/the-events-calendar/). In order to make edits to the theme you need to have a basic familiarity with [cli](https://www.youtube.com/watch?v=4RPtJ9UyHS0&t=), [npm](https://www.npmjs.com/), and [gulp](https://gulpjs.com/), 
+In order to use this theme fully you need to install the [[Common WP Blocks]](https://github.com/jcklpe/common-wp-blocks) plugin and the [[The Events Calendar]](https://wordpress.org/plugins/the-events-calendar/). In order to make edits to the theme you need to have a basic familiarity with [cli](https://www.youtube.com/watch?v=4RPtJ9UyHS0&t=), [npm](https://www.npmjs.com/), and [gulp](https://gulpjs.com/),
 
 ## Build Process
 
-This theme uses a gulp build system. 
+This theme uses a gulp build system.
 
 To build the theme you just need to install the package manager [npm](https://www.npmjs.com/) and run `npm install` in the theme root folder then run `gulp build` to build a new version of the `build` files.
 
@@ -24,7 +24,7 @@ You can also use the command `gulp watch` to watch the `src` folder for any chan
 - [x] convert all custom template blocks into template partials
 - [x] white label all organizational references
 - [x] break out block components into a separate companion plugin
-- [ ] complete [blocks companion plugin](https://github.com/jcklpe/common-wp-blocks). 
+- [ ] complete [blocks companion plugin](https://github.com/jcklpe/common-wp-blocks).
 - [ ] re-align php templates in light of more flexible blocks based page building project.
 - [ ] Build theme scss to "overlay" the default styling of the block companion plugin to make this easier for people to customize for other contexts
 - [ ] convert build process to gulp 4
@@ -32,4 +32,4 @@ You can also use the command `gulp watch` to watch the `src` folder for any chan
 
 ## License
 
-This theme uses modified version of GPL 3 which restricts use and distribution of this software to non-profit non-capitalist uses.
+licensed under Cooperative Work License v 1.0
