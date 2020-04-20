@@ -5,7 +5,10 @@
 const dir = {
     src: "./assets/src/",
     build: "./assets/build/",
-    root: "./"
+    vendor: "./assets/vendor/",
+    root: "./",
+    // Replace with URL of your local site
+    localDevURL: "dev-colab.test/"
   },
   // gulp plugins etc
   gulp = require("gulp"),
@@ -14,9 +17,9 @@ const dir = {
   cssnano = require("cssnano"),
   autoprefixer = require("gulp-autoprefixer"),
   sourcemaps = require("gulp-sourcemaps"),
-  //NOTE: commenting this out becuase it's whining about something or other and I don't even use this thing. its another thing from a previous dev
-  // jshint = require("gulp-jshint"),
-  stylish = require("jshint-stylish"),
+  //NOTE: commenting this out because it's whining about something or other and I don't even use this thing. its another thing from a previous dev
+//   jshint = require("gulp-jshint"),
+//   stylish = require("jshint-stylish"),
   uglify = require("gulp-uglify"),
   concat = require("gulp-concat"),
   rename = require("gulp-rename"),
@@ -32,10 +35,10 @@ var browsersync = false;
 
 //- CSS
 //config
-var css = {
+var scss = {
   src: dir.src + "scss/*.scss",
   watch: dir.src + "scss/**/*.scss", //*/
-  build: dir.build,
+  build: dir.build + "scss/",
   sassOpts: {
     outputStyle: "expanded",
     //   imagePath       : images.build,
@@ -53,17 +56,17 @@ var css = {
   ]
 };
 
-// CSS processing
+// SCSS processing
 gulp.task(
   "scss",
   gulp.series(() => {
     return gulp
-      .src(css.src)
+      .src(scss.src)
       .pipe(sourcemaps.init())
-      .pipe(sass(css.sassOpts))
-      .pipe(postcss(css.processors))
+      .pipe(sass(scss.sassOpts))
+      .pipe(postcss(scss.processors))
       .pipe(sourcemaps.write("./"))
-      .pipe(gulp.dest(css.build))
+      .pipe(gulp.dest(scss.build))
       .pipe(
         browsersync
           ? browsersync.reload({
@@ -74,31 +77,16 @@ gulp.task(
   })
 );
 
-//- CSS
+//- Javascript
 //config
 var js = {
-  src: dir.src + "scss/*.scss",
-  watch: dir.src + "scss/**/*.scss", //*/
-  build: dir.build,
-  sassOpts: {
-    outputStyle: "expanded",
-    //   imagePath       : images.build,
-    precision: 3,
-    errLogToConsole: true
-  },
-  processors: [
-    require("postcss-assets")({
-      // loadPaths: ['images/'],
-      basePath: dir.build
-      // baseUrl: "/wp-content/themes/jackalope/"
-    }),
-    require("autoprefixer")(),
-    require("css-mqpacker"),
-    require("cssnano")
-  ]
+src: dir.src + "js/*.js",
+watch: dir.src + "js/**/*.js",
+foundation: dir.vendor + "foundation-sites/js/",
+build: dir.build + "js/",
 };
 
-// JSHint, concat, and minify JavaScript
+// concat and minify JavaScript
 gulp.task(
   "site-js",
   gulp.series(() => {
@@ -106,8 +94,6 @@ gulp.task(
       .src(js.src)
       .pipe(plumber())
       .pipe(sourcemaps.init())
-      .pipe(jshint())
-      .pipe(jshint.reporter("jshint-stylish"))
       .pipe(concat("scripts.js"))
       .pipe(gulp.dest(js.build))
       .pipe(
@@ -128,36 +114,36 @@ gulp.task(
   })
 );
 
-// JSHint, concat, and minify Foundation JavaScript
+// concat, and minify Foundation JavaScript
 gulp.task(
   "foundation-js",
   gulp.series(() => {
     return gulp
       .src([
         // Foundation core - needed if you want to use any of the components below
-        "./vendor/foundation-sites/js/foundation.core.js",
-        "./vendor/foundation-sites/js/foundation.util.*.js",
+        dir.vendor + "foundation.cor*.js",
+        dir.vendor + "foundation.util.*.js",
 
         // Pick the components you need in your project
-        "./vendor/foundation-sites/js/foundation.abide.js",
-        "./vendor/foundation-sites/js/foundation.accordion.js",
-        "./vendor/foundation-sites/js/foundation.accordionMenu.js",
-        "./vendor/foundation-sites/js/foundation.drilldown.js",
-        "./vendor/foundation-sites/js/foundation.dropdown.js",
-        "./vendor/foundation-sites/js/foundation.dropdownMenu.js",
-        "./vendor/foundation-sites/js/foundation.equalizer.js",
-        "./vendor/foundation-sites/js/foundation.interchange.js",
-        "./vendor/foundation-sites/js/foundation.magellan.js",
-        "./vendor/foundation-sites/js/foundation.offcanvas.js",
-        "./vendor/foundation-sites/js/foundation.orbit.js",
-        "./vendor/foundation-sites/js/foundation.responsiveMenu.js",
-        "./vendor/foundation-sites/js/foundation.responsiveToggle.js",
-        "./vendor/foundation-sites/js/foundation.reveal.js",
-        "./vendor/foundation-sites/js/foundation.slider.js",
-        "./vendor/foundation-sites/js/foundation.sticky.js",
-        "./vendor/foundation-sites/js/foundation.tabs.js",
-        "./vendor/foundation-sites/js/foundation.toggler.js",
-        "./vendor/foundation-sites/js/foundation.tooltip.js"
+        dir.vendor + "foundation.abid*.js",
+        dir.vendor + "foundation.accordi*n.js",
+        dir.vendor + "foundation.accordionMen*.js",
+        dir.vendor + "foundation.dr*lldown.js",
+        dir.vendor + "foundation.drop*own.js",
+        dir.vendor + "foundation.dro*downMenu.js",
+        dir.vendor + "foundation.equ*lizer.js",
+        dir.vendor + "foundation.int*rchange.js",
+        dir.vendor + "foundation.mage*lan.js",
+        dir.vendor + "foundation.offca*vas.js",
+        dir.vendor + "foundation.orb*t.js",
+        dir.vendor + "foundation.res*onsiveMenu.js",
+        dir.vendor + "foundation.respon*iveToggle.js",
+        dir.vendor + "foundation.rev*al.js",
+        dir.vendor + "foundation.sli*er.js",
+        dir.vendor + "foundation.stick*.js",
+        dir.vendor + "foundation.t*bs.js",
+        dir.vendor + "foundation.t*ggler.js",
+        dir.vendor + "foundation.tool*ip.js"
       ])
       .pipe(
         babel({
@@ -179,18 +165,9 @@ gulp.task(
   })
 );
 
-// Update Foundation with Bower and save to /vendor
-// gulp.task("bower",
-// gulp.series(() => {
-//   return bower({
-//     cmd: "update"
-//   }).pipe(gulp.dest("vendor/"));
-//   })
-// );
-
 // Browser-Sync watch files and inject changes
 gulp.task(
-  "browsersync",
+  "dev",
   gulp.series(() => {
     // Watch files
     var files = [
@@ -201,36 +178,35 @@ gulp.task(
     ];
 
     browserSync.init(files, {
-      // Replace with URL of your local site
-      proxy: "http://localhost/"
+
+      proxy: dir.localDevURL
     });
 
-    gulp.watch("./assets/src/scss/**/*.scss", ["scss"]);
+    //watch scss
+      gulp.watch(scss.watch, gulp.series("scss"));
+
+    // watch js
     gulp
-      .watch("./assets/src/js/*.js", ["site-js"])
+      .watch("./assets/src/js/*.js", gulp.series("site-js"))
       .on("change", browserSync.reload);
   })
 );
 
 // Watch files for changes (without Browser-Sync)
 gulp.task(
-  "watch",
-  gulp.series(() => {
-    // Watch .scss files
-    gulp.watch("./assets/src/scss/**/*.scss", ["scss"]);
+    "watch",
+    gulp.series(() => {
+        // Watch .scss files
+        gulp.watch(["./assets/src/scss/**/*.scss"], gulp.series("scss"));
 
-    // Watch site-js files
-    gulp.watch("./assets/src/js/*.js", ["site-js"]);
-
-    // Watch foundation-js files
-    gulp.watch("./vendor/foundation-sites/js/*.js", ["foundation-js"]);
-  })
+        // Watch site-js files
+        gulp.watch("./assets/src/js/*.js", gulp.series("site-js"));
+    })
 );
 
 // Run styles, site-js and foundation-js
 gulp.task(
   "default",
-  gulp.series(() => {
-    gulp.start("scss", "site-js", "foundation-js");
-  })
+    gulp.series("scss", "site-js", "foundation-js")
+
 );

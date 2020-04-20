@@ -12,9 +12,9 @@ In order to use this theme fully you need to install the [[Common WP Blocks]](ht
 
 This theme uses a gulp build system.
 
-To build the theme you just need to install the package manager [npm](https://www.npmjs.com/) and run `npm install` in the theme root folder then run `gulp build` to build a new version of the `build` files.
+To build the theme you just need to install the package manager [npm](https://www.npmjs.com/) and run `npm install` in the theme root folder then run `gulp` to build a new version of the `build` files.
 
-You can also use the command `gulp watch` to watch the `src` folder for any changes to the files as you work so that it can seamlessly build new versions of the build files in the background.
+You can also use the command `gulp dev` to watch the `src` folder for any changes to the files as you work so that it can seamlessly build new versions of the build files in the background. Browsersync is included so when you first dev it will open up a proxy server in your default browser which will reload the page every time there is a new build.
 
 ## TODO:
 
@@ -27,7 +27,7 @@ You can also use the command `gulp watch` to watch the `src` folder for any chan
 - [ ] complete [blocks companion plugin](https://github.com/jcklpe/common-wp-blocks).
 - [ ] re-align php templates in light of more flexible blocks based page building project.
 - [ ] Build theme scss to "overlay" the default styling of the block companion plugin to make this easier for people to customize for other contexts
-- [ ] convert build process to gulp 4
+- [x] convert build process to gulp 4
 - [ ] Lots of other stuff
 
 ## License

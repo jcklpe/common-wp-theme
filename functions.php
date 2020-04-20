@@ -72,7 +72,9 @@ add_action('after_setup_theme', 'tribe_attachment_404_fix');
 //require_once(get_template_directory().'/assets/php/functions/editor-styles.php');
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/php/functions/login.php');
+require_once(get_template_directory().'/assets/src/php/functions/login.php');
+
+
 
 // Customize the WordPress admin
 require_once(get_template_directory() . '/assets/src/php/functions/admin.php');
