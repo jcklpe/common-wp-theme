@@ -1,14 +1,26 @@
 //- MENU AND NAVIGATION
+#top-bar-menu.top-bar {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  .top-bar-right {
+    display: flex;
+  }
+}
+
 .top-bar {
   padding: 0;
-  background-color: $base-color;
+  background-color: $base-color !important;
 
   .title-area {
     z-index: 1;
   }
 
+
+
   ul {
-    background-color: $base-color;
+    background-color: $base-color !important;
   }
 
   a,

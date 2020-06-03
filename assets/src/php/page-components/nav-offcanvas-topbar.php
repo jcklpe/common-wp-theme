@@ -10,7 +10,11 @@ $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
 <div class="top-bar hide-for-print" id="top-bar-menu">
 	<div class="top-bar-left float-left">
 		<ul class="menu">
-			<li><img src="<?php echo $logo[0]; ?>" width="35" height="35" alt="" /> <a href="<?php echo home_url(); ?>" class="top-name"><?php bloginfo('name'); ?></a></li>
+			<li>
+				<img src="<?php echo $logo[0]; ?>" width="35" height="35" alt="" />
+
+				 <a href="<?php echo home_url(); ?>" class="top-name"><?php bloginfo('name'); ?></a>
+			</li>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
