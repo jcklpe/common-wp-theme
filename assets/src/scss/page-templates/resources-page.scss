@@ -1,0 +1,20 @@
+//- Resources Page
+
+.resources-header {
+    background: $base-color;
+    color: white;
+    padding: 10px 25px;
+    position: relative;
+    width: 140%;
+    margin-left: -9vw;
+    margin-top: 125px;
+
+}
+
+.wp-block-column {
+
+    .wp-block-image {
+        display: flex;
+        justify-content: center;
+    }
+}

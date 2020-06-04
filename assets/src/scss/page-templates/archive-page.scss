@@ -1,0 +1,25 @@
+//- Archive Page
+
+.archive-item-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.archive-item-excerpt {
+    margin-bottom: 2rem;
+}
+
+
+
+#content.archive-page {
+    background: whitesmoke;
+
+    article.archive-card {
+        background: white;
+        padding: 2.2rem 4rem;
+        box-shadow:  31px 31px 61px #ebebeb,
+                 -31px -31px 61px #ffffff;
+    }
+}

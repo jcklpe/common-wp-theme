@@ -1,7 +1,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('archive-card card'); ?> role="article">
+
 	<div class="grid-x grid-margin-x">
 		<div class="archive-item-background cell large-4 medium-4 small-12">
-			<a href="<?php the_permalink() ?>" class="archive-image-link">
+			<a
+			href="<?php the_permalink() ?>"
+			class="archive-image-link">
 				<?php
 				if (has_post_thumbnail()) {
 					the_post_thumbnail('large');
@@ -12,9 +15,20 @@
 			</a>
 
 		</div>
+
 		<header class="archive-item-content cell large-8 medium-8 small-12">
-			<h2 class="txt-bold archive-item-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="txt-bold archive-item-title">
+				<a
+				href="<?php the_permalink() ?>"
+				rel="bookmark"
+				title="<?php the_title_attribute(); ?>"
+				>
+				<?php the_title(); ?>
+				</a>
+			</h2>
+
 			<?php include(get_template_directory() . '/assets/src/php/page-components/byline.php'); ?>
+
 			<section class="archive-item-excerpt" itemprop="articleBody">
 				<?php the_excerpt(); ?>
 			</section> <!-- end archive-item-excerpt -->

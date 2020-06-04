@@ -25,6 +25,39 @@
         font-weight: 400;
         font-family: $base-font, $backup-fonts;
     }
+
+    #footerLeft {
+        display: flex;
+        justify-content: center;
+
+        .widget {
+            display: flex;
+                flex-direction: column;
+            ul {
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+
+    }
+
+    #footerRight {
+        display: flex;
+        justify-content: center;
+        .widget {
+            display: flex;
+                flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+    }
 }
 
 #footer .sidebar .widget {
