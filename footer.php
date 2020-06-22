@@ -1,30 +1,30 @@
-				<footer class="footer padding-tophide-for-print" role="contentinfo">
-					<div class="grid-container">
-						<div id="footer" class="hide-for-print grid-x grid-margin-x grid-margin-y">
-							<?php get_sidebar('footerLeft'); ?>
-							<?php get_sidebar('footerRight'); ?>
-						</div>
-					</div>
+<footer class="footer padding-tophide-for-print" role="contentinfo">
+	<!-- <div class="grid-container"> -->
+	<div id="footers-container" class="hide-for-print ">
+		<?php get_sidebar('footerLeft'); ?>
+		<?php get_sidebar('footerCenter'); ?>
+		<?php get_sidebar('footerRight'); ?>
+	</div>
+	<!-- </div> -->
 
+	<div class="grid-container footer-lastline">
+		<nav role="navigation">
+			<?php joints_footer_links(); ?>
+		</nav>
 
+		<p class="source-org copyright">
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>
+		</p>
 
-					<div class="grid-container">
-						<div id="inner-footer" class="grid-x grid-margin-x grid-margin-y">
-							<div class="large-6 medium-12 cell hide-for-print">
-								<nav role="navigation">
-									<?php joints_footer_links(); ?>
-								</nav>
-							</div>
-							<div class="large-6 medium-12 cell">
-								<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
-							</div>
-						</div>
-					</div> <!-- end #inner-footer -->
-				</footer> <!-- end .footer -->
-				</div> <!-- end .main-content -->
-				</div> <!-- end .off-canvas-wrapper -->
-				<?php wp_footer(); ?>
+	</div> <!-- end #inner-footer -->
+</footer> <!-- end .footer -->
 
-				</body>
+<!-- the below tags have matching tags thar are also turned off in the header.php.  -->
+<!-- </div> end .main-content -->
+<!-- </div> end .off-canvas-wrapper -->
 
-				</html> <!-- end page -->
+<?php wp_footer(); ?>
+
+</body>
+
+</html> <!-- end page -->

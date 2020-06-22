@@ -47,17 +47,17 @@
 
 <body <?php body_class(); ?>>
 
-
-	<div class="off-canvas-wrapper">
+<!-- //NOTE: these tags were here for the Foundations framework based off canvas navigation thing, which I got rid of because it was over complicated and didn't really add anything to what we needed. Kept here as a record though.  -->
+	<!-- <div class="off-canvas-wrapper">
 
 		<?php get_template_part('assets/src/php/page-components/content', 'offcanvas'); ?>
 
-		<div class="off-canvas-content" data-off-canvas-content>
+		<div class="off-canvas-content" data-off-canvas-content> -->
 
-			<header class="header hide-for-print" role="banner">
+
 
 				<!-- This navs will be applied to the topbar, above all content
 						  To see additional nav styles, visit the /parts directory -->
-				<?php get_template_part('assets/src/php/page-components/nav', 'offcanvas-topbar'); ?>
+				<?php get_template_part('assets/src/php/page-components/nav', 'simple'); ?>
 
-			</header> <!-- end .header -->
+			 <!-- end .header -->

@@ -43,6 +43,16 @@ function joints_register_sidebars() {
 	));
 
 	register_sidebar(array(
+		'id' => 'footercenter',
+		'name' => __('Footer Center', 'jointswp'),
+		'description' => __('Populates center of the footer', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
+	register_sidebar(array(
 		'id' => 'footerright',
 		'name' => __('Footer Right', 'jointswp'),
 		'description' => __('Populates top-right of footer.', 'jointswp'),

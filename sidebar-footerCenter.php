@@ -1,8 +1,8 @@
-<div id="footerRight" class="sidebar sidebar-footer" role="complementary">
+<div id="footerCenter" class="sidebar sidebar-footer" role="complementary">
 
-	<?php if ( is_active_sidebar( 'footerright' ) ) : ?>
+	<?php if ( is_active_sidebar( 'footercenter' ) ) : ?>
 
-		<?php dynamic_sidebar( 'footerright' ); ?>
+		<?php dynamic_sidebar( 'footercenter' ); ?>
 
 	<?php else : ?>
 

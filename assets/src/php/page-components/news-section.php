@@ -9,6 +9,7 @@
                 News
             </h2>
         </div>
+
         <div class="">
             <?php
             $how_many_last_posts = intval(get_post_meta($post->ID, 'archived-posts-no', true));
@@ -44,6 +45,8 @@
         </div>
 
 
+
+
         <?php
         //NOTE: Here's how to show posts according to category isntead of by just general post type. This might be useful in the future depending on how blog posts end up getting structured.
         // Get the ID of a given category
@@ -60,7 +63,9 @@
             <a class="button" href="<?php echo site_url(); ?>/?post_type=post">
                 See All
             </a>
+
         </div>
+
 
     </div>
 </div>

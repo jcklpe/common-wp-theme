@@ -16,7 +16,7 @@ $location_image = get_stylesheet_directory_uri() . "/assets/images/icons/white/l
 			<h2 class="section-title txt-white cell">
 				Upcoming Events
 			</h2>
-
+<div class="card-test">
 			<div class="cell grid-x grid-margin-x grid-margin-y">
 				<?php // Retrieve the next 2 upcoming events
 
@@ -24,7 +24,7 @@ $location_image = get_stylesheet_directory_uri() . "/assets/images/icons/white/l
 
 					//plugin is activated
 					$events = tribe_get_events(array(
-						'posts_per_page' => 3, 'start_date' => date('Y-m-d H:i:s', strtotime("-6 hours")),
+						'posts_per_page' => 5, 'start_date' => date('Y-m-d H:i:s', strtotime("-6 hours")), 'end_date' => date('Y-m-d H:i:s', strtotime("+1 week 2 days")),
 						// this was in the old one but gotten taken out for some reason
 						// 'tax_query'=> array(
 						// 	array(
@@ -53,7 +53,16 @@ $location_image = get_stylesheet_directory_uri() . "/assets/images/icons/white/l
 				<?php } else {
 					echo 'This template uses The Events Calendar plugin. Please install first';
 				} ?>
+
 			</div>
+			</div>
+
 		</div>
+
 	</div>
+
 </div>
+
+			</div>
+			</div>
+			</div>

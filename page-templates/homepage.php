@@ -39,7 +39,7 @@ $thumbURL = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
     //NOTE: this is the original components from the Seattle theme componentized out as php template partials but someday these should be converted into actual Gutenberg blocks
     // include( get_template_directory() . '/assets/src/php/page-components/frontpage.php' );
 
-    //NOTE: Someday both of these should be converted to Gutenberg Blocks but right now that's beyond my knoledge. Also it's kinda dicey because the events one realies on The Event Calendar plugin and I'm not really sure how to grab guten from the php stuff through a gutenberg block
+    //NOTE: Someday both of these should be converted to Gutenberg Blocks but right now that's beyond my knowledge. Also it's kinda dicey because the events one realies on The Event Calendar plugin and I'm not really sure how to grab guten from the php stuff through a gutenberg block
     include(get_template_directory() . '/assets/src/php/page-components/events-section.php');
 
     include(get_template_directory() . '/assets/src/php/page-components/news-section.php');

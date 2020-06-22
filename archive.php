@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
-<div id="content">
+
+<div id="content" class="archive-page">
 
 	<div id="inner-content" class="grid-container">
 
 		<main id="main" class="grid-x grid-margin-x" role="main">
 
 			<header class="archive-header">
-				<h1 class="page-title"> <?php single_term_title(); ?> </h1>
+				<h1 class="page-title"> <?php single_term_title(); ?>  </h1>
 				<?php the_archive_description('<div class="taxonomy-description">', '</div>'); ?>
 			</header>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -27,7 +28,7 @@
 
 		</main> <!-- end #main -->
 
-		<!-- <?php get_sidebar(); ?> -->
+		<?php // get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 

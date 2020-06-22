@@ -4,7 +4,7 @@
 
 	<div id="inner-content" class="grid-x grid-margin-x">
 
-		<main id="main" class="cell large-8 medium-8" role="main">
+		<main id="main" class="cell large-12 medium-12" role="main">
 
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -22,7 +22,7 @@
     		/* no sidebar for category minutes */
 		}
 		else {
-			get_sidebar();
+			// get_sidebar();
 		}
 		?>
 

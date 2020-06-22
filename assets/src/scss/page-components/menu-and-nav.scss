@@ -139,3 +139,26 @@
     }
   }
 }
+
+div.top-bar-right.show-for-small-only {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+
+}
+
+ul.vertical.medium-horizontal.menu {
+
+
+  @include breakpoint(mobile) {
+    flex-wrap: wrap !important;
+  }
+  @include breakpoint(desktop) {
+    flex-wrap: nowrap !important;
+    }
+}
